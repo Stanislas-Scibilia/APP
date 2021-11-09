@@ -3,16 +3,7 @@
 
 <section>
     <article>
-        <a href="connexion.php" class="bouton">
-            
-            <!-- image de connexion -->
-            <img src="" alt="">
-
-            <div class="text-bouton">
-                CONNEXION
-            </div>
-
-        </a>
+  <a href="connexion.php"> Connexion </a>
 
         <form action="" method="post">
             <div class="presentation-inscription">Contacte ta salle pour récupérer ton identifiant.</div>
