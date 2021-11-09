@@ -1,1 +1,18 @@
-body {background-color : #32244c;}
+body {
+background-color : #32244c; 
+color : white;
+}
+
+a:link, a:visited {
+border-style : solid;
+border-color : #e91e63;
+background-color : #e91e63;
+color : white;
+font-size : 25px;
+width : 20%;
+text-align : left;
+text-decoration : none;
+}
+a:hover, a:active {
+background-color : red;
+}
