@@ -1,21 +1,22 @@
 <section>
-    <article>
-  <a href="connexion.php"> Connexion </a>
+    <article class="connexion">
+        <a href="connexion.php"> Connexion </a>
 
         <form action="" method="post">
-            <div class="presentation-inscription">Contacte ta salle pour récupérer ton identifiant.</div>
-            <input type="text" name="identifiant" id="identifiant" placeholder="identifiant">
-            <input type="password" name="motdepasse" id="motdepasse" placeholder="mot de passe">
-            <input type="submit" value="S'inscrire">
+        <div class="element_connexion">Contacte ta salle pour récupérer ton identifiant.</div>
+        <input class="element_connexion" type="text" name="identifiant" id="identifiant" placeholder="identifiant">
+	<br>
+        <input class="element_connexion" type="password" name="motdepasse" id="motdepasse" placeholder="mot de passe">
+        <br> 
+	<input class="element_connexion" type="submit" value="S'inscrire">
         </form>
     </article>
 
-    <article>
-        <h1>
-            Qui sommes-nous ?
-        </h1>
-
-        <div class="contenu">
+    <article class="article1">
+        <div style="font-size : 60px;">
+            <b> Qui sommes-nous ? </b>
+        </div>
+        <div>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores quae laboriosam ab ullam eligendi dignissimos aut consequatur. Perspiciatis explicabo, dolorem rem non voluptate similique nemo voluptates ad odit accusantium et.
         </div>
 </article>
@@ -43,3 +44,5 @@
         </div>
     </div>
 </section>
+
+</body>
