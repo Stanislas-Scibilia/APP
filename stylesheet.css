@@ -31,6 +31,10 @@ a:hover, a:active {
 	margin : 10px;
 }
 
+.titre_article1 {
+	font-size : 60px;
+}
+
 .article1 {
 	font-size : 40px;
 	float : right;
