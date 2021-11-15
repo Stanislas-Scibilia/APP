@@ -44,3 +44,33 @@ a:hover, a:active {
 	text-align : center;
 }
 /*modification*/
+nav {
+	border: 2px black solid;
+	background-color: #884EA0;
+	background-attachment: fixed;
+	top: 0;
+	padding-left: 1em;
+	padding-right: 1em;
+
+}
+.nav-list {
+	padding: 1rem 0;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	list-style: none;
+
+}
+
+.nav-item a {
+	color: white;
+	text-transform: uppercase;
+	letter-spacing: 1,3px;
+	font-size: 25px;
+	text-decoration: none;
+}
+
+a:hover{
+	color: black;
+	text-decoration: underline;
+}
