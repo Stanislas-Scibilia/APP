@@ -1,0 +1,75 @@
+body {
+	background-color : #32244c; 
+	color : white;
+}
+
+a:link, a:visited { /*bouton de connexion*/
+	border-style : solid;
+	border-color : #e91e63;
+	background-color : #e91e63;
+	padding : 1px 25px;
+	color : white;
+	font-size : 25px;
+	text-align : left;
+	text-decoration : none;
+	margin : 10px;
+	
+}
+
+a:hover, a:active {
+	background-color : red;
+
+}
+
+.connexion {
+	margin-top: 20px;
+	margin-left : 10px;
+	float: left;
+}
+
+.element_connexion {
+	margin : 10px;
+}
+
+.titre_article1 {
+	font-size : 60px;
+}
+
+.article1 {
+	font-size : 40px;
+	float : right;
+	width : 50%;
+	border : double 7px white;
+	padding : 10px;
+	text-align : center;
+}
+nav {
+	border: 2px black solid;
+	background-color: #884EA0;
+	background-attachment: fixed;
+	top: 0;
+	padding-left: 1em;
+	padding-right: 1em;
+
+}
+.nav-list {
+	padding: 1rem 0;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	list-style: none;
+
+}
+
+.nav-item a {
+	color: white;
+	text-transform: uppercase;
+	letter-spacing: 1,3px;
+	font-size: 25px;
+	text-decoration: none;
+}
+
+a:hover{
+	color: black;
+	text-decoration: underline;
+}
