@@ -1,3 +1,4 @@
+<link rel="stylesheet" href="stylesheet.css">
 <nav>
 			<ul class="nav-list">
 				<li class="nav-item"><a href="...">CONCEPT</a></li>
