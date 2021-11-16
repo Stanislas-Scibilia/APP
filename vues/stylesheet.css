@@ -107,4 +107,6 @@ a:hover{
 
 section {
 	display: block;
+	float: left;
 }
+
