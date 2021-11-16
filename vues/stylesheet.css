@@ -104,3 +104,7 @@ a:hover{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color:crimson;
 }
+
+section {
+	display: block;
+}
