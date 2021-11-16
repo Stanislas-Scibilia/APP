@@ -3,7 +3,7 @@ body {
 	color : white;
 }
 
-.connexion a:link, a:visited { /*bouton de connexion*/
+.connexion a:link, .connexion a:visited { /*bouton de connexion*/
 	border-style : solid;
 	border-color : #e91e63;
 	background-color : #e91e63;
