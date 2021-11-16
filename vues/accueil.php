@@ -22,25 +22,27 @@
 </article>
 </section>
 
-<section>
-    <div class="capteur">
-        <img src="" alt="">
-        <div class="text">
-            capteur cardiaque
-        </div>
-    </div>
+<section class="capteurs">
+    <ul>
+        <li>
+            <img src="" alt="">
+            <div class="text">
+                capteur cardiaque
+            </div>
+        </li>
 
-    <div class="capteur">
-        <img src="" alt="">
-        <div class="text">
-            capteur CO2
-        </div>
-    </div>
+        <li>
+            <img src="" alt="">
+            <div class="text">
+                capteur CO2
+            </div>
+        </li>
 
-    <div class="capteur">
-        <img src="" alt="">
-        <div class="text">
-            capteur sonore
-        </div>
-    </div>
+        <li>
+            <img src="" alt="">
+            <div class="text">
+                capteur sonore
+            </div>
+        </li>
+    </ul>
 </section>
