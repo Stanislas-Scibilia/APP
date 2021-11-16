@@ -11,19 +11,19 @@
     content: " ";
 }
 
-ul{
+.breadcrumb ul{
     list-style-type: none;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-ul :link{
+.breadcrumb ul :link{
     list-style-type: none;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color:black;
     text-decoration: none;
 }
 
-ul :hover{
+.breadcrumb ul :hover{
     list-style-type: none;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color:crimson;
