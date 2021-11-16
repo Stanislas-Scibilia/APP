@@ -104,6 +104,13 @@ a:hover{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color:crimson;
 }
+<<<<<<< HEAD
 .nav-image {
 	background-color: none;
 }
+=======
+
+section {
+	display: block;
+}
+
