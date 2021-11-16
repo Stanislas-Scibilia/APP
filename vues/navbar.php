@@ -1,6 +1,7 @@
 <link rel="stylesheet" href="stylesheet.css">
 <nav>
 			<ul class="nav-list">
+				<li class="nav-item"><a href="..."><img src="numeric'air.png" alt="logo" /></a></li>
 				<li class="nav-item"><a href="...">CONCEPT</a></li>
 				<li class="nav-item"><a href="...">ABONNEMENTS</a></li>
 				<li class="nav-item"><a href="...">FAQ</a></li>
