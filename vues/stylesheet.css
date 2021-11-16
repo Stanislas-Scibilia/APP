@@ -16,7 +16,7 @@ body {
 	
 }
 
-.connexion a:hover, a:active {
+.connexion a:hover, .connexion a:active {
 	background-color : red;
 	color: black;
 	text-decoration: underline;
