@@ -3,7 +3,7 @@ body {
 	color : white;
 }
 
-a:link, a:visited { /*bouton de connexion*/
+.connexion a:link, a:visited { /*bouton de connexion*/
 	border-style : solid;
 	border-color : #e91e63;
 	background-color : #e91e63;
@@ -16,7 +16,7 @@ a:link, a:visited { /*bouton de connexion*/
 	
 }
 
-a:hover, a:active {
+.connexion a:hover, a:active {
 	background-color : red;
 
 }
@@ -70,7 +70,7 @@ nav {
 	text-decoration: none;
 }
 
-a:hover{
+.connexion a:hover{
 	color: black;
 	text-decoration: underline;
 }
