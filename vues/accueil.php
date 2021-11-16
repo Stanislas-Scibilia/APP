@@ -10,7 +10,7 @@
  <body>
 <section>
     <article class="connexion">
-        <a href="connexion.php"> Connexion </a>
+        <a class = "bouton_connexion" href="connexion.php"> Connexion </a>
 
         <form action="" method="post">
         <div class="element_connexion">Contacte ta salle pour <br> récupérer ton identifiant.</div>
