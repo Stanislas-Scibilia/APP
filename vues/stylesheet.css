@@ -156,4 +156,7 @@ footer {
   width: 40px;
   margin: 10px 10px
 }
->>>>>>> c8465251b5318d3f3f5a2f5e6c21e295eab29562
+.nav-image a {
+	background-color: none;
+	
+}
