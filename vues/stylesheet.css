@@ -43,9 +43,11 @@ body {
 	float : right;
 	width : 50%;
 	border : double 7px white;
+	border-radius : 100px;
 	padding : 10px;
 	text-align : center;
 }
+
 nav {
 	border: 2px black solid;
 	background-color: #884EA0;
