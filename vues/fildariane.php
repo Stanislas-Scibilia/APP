@@ -1,36 +1,3 @@
-<style>
-.breadcrumb ul {
-    display:inline-flex;
-}
-
-.breadcrumb li::before {
-    content: "> ";
-}
-    
-.breadcrumb li:first-child::before {
-    content: " ";
-}
-
-.breadcrumb ul{
-    list-style-type: none;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
-.breadcrumb ul :link{
-    list-style-type: none;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color:black;
-    text-decoration: none;
-}
-
-.breadcrumb ul :hover{
-    list-style-type: none;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color:crimson;
-}
-
-</style>
-
 <nav aria-label="Breadcrumb" class="breadcrumb">
     <ul>
         <li><a href=""> Home </a></li>
