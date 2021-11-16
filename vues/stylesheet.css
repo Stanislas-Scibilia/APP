@@ -104,11 +104,18 @@ nav {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color:crimson;
 }
+<<<<<<< HEAD
+.nav-image {
+	background-color: none;
+}
+=======
 
 section {
 	display: block;
 }
 
+<<<<<<< HEAD
+=======
 footer {
   padding: 100px 20px;
   background: #32244c;
@@ -149,3 +156,4 @@ footer {
   width: 40px;
   margin: 10px 10px
 }
+>>>>>>> c8465251b5318d3f3f5a2f5e6c21e295eab29562
