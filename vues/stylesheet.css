@@ -104,3 +104,6 @@ a:hover{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color:crimson;
 }
+.nav-image {
+	background-color: none;
+}
