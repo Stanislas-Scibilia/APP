@@ -18,6 +18,10 @@ switch($function) {
     case 'jeuLudique':
         $view = 'jeuLudique';
         break;
+
+    case 'admin':
+        $view = 'admin';
+        break;
 }
 
 include('vues/header.php');
