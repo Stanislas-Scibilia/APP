@@ -107,6 +107,45 @@ a:hover{
 
 section {
 	display: block;
-	float: left;
 }
 
+footer {
+  padding: 100px 20px;
+  background: #32244c;
+  color: white;
+  flex-shrink: 0;
+  flex-direction: column;
+}
+.contenu-footer {
+  width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  font-size: 20p;
+  padding: 50px 0 100px
+}
+
+.bloc {
+  width: 25%;
+  margin: 0 30px;
+}
+
+/* contact */
+.footer-rejoindreFit h3,
+.footer-AideInfo h3,
+.footer-InfiniteMeasures h3,
+.footer-Activités h3 {
+  font-size: 25px;
+  padding-bottom: 20px;
+}
+
+.footer-rejoindreFit p {
+  padding: 5px 0;
+}
+
+/* media */
+.liste-media img {
+  width: 40px;
+  margin: 10px 10px
+}
