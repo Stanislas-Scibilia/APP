@@ -27,6 +27,10 @@ switch($function) {
         $vue = 'gen.id';
         break;
     
+    case 'inscription':
+        $vue = 'inscription';
+        break;
+    
     default:
         $vue = '404';
         break;
