@@ -19,7 +19,7 @@
         <div>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores quae laboriosam ab ullam eligendi dignissimos aut consequatur. Perspiciatis explicabo, dolorem rem non voluptate similique nemo voluptates ad odit accusantium et.
         </div>
-</article>
+    </article>
 </section>
 
 <section class="capteurs">
