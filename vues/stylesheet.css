@@ -148,3 +148,7 @@ footer {
   width: 40px;
   margin: 10px 10px
 }
+
+.container {
+	margin: auto;
+}

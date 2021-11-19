@@ -16,11 +16,19 @@ switch($function) {
         break;
     
     case 'jeuLudique':
-        $view = 'jeuLudique';
+        $vue = 'jeuLudique';
         break;
 
     case 'admin':
-        $view = 'admin';
+        $vue = 'admin';
+        break;
+    
+    case 'gen.id':
+        $vue = 'gen.id';
+        break;
+    
+    default:
+        $vue = '404';
         break;
 }
 
