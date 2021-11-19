@@ -13,7 +13,6 @@ body {
 	text-align : center;
 	text-decoration : none;
 	margin : 10px;
-	
 }
 
 .connexion a:hover, .connexion a:active {
@@ -47,6 +46,13 @@ body {
 	padding : 10px;
 	text-align : center;
 }
+
+.column {
+	float: left;
+	width: 33.33%;
+	padding: 15px;
+	  }
+  
 
 nav {
 	border: 2px black solid;
@@ -124,6 +130,11 @@ footer {
   font-size: 20p;
   padding: 50px 0 100px
 }
+
+.contenu-footer a{
+	text-decoration: none;
+	color: rgb(255, 255, 255);
+	}
 
 .bloc {
   width: 25%;
