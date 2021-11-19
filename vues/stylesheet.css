@@ -13,7 +13,6 @@ body {
 	text-align : center;
 	text-decoration : none;
 	margin : 10px;
-	
 }
 
 .connexion a:hover, .connexion a:active {
@@ -47,6 +46,13 @@ body {
 	padding : 10px;
 	text-align : center;
 }
+
+.column {
+	float: left;
+	width: 33.33%;
+	padding: 15px;
+	  }
+  
 
 nav {
 	border: 2px black solid;
