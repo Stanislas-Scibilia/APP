@@ -3,7 +3,7 @@ body {
 	color : white;
 }
 
-a:link, a:visited { /*bouton de connexion*/
+.connexion a:link, .connexion a:visited { /*bouton de connexion*/
 	border-style : solid;
 	border-color : #e91e63;
 	background-color : #e91e63;
@@ -16,8 +16,10 @@ a:link, a:visited { /*bouton de connexion*/
 	
 }
 
-a:hover, a:active {
+.connexion a:hover, .connexion a:active {
 	background-color : red;
+	color: black;
+	text-decoration: underline;
 
 }
 
@@ -41,9 +43,11 @@ a:hover, a:active {
 	float : right;
 	width : 50%;
 	border : double 7px white;
+	border-radius : 100px;
 	padding : 10px;
 	text-align : center;
 }
+
 nav {
 	border: 2px black solid;
 	background-color: #884EA0;
@@ -68,11 +72,6 @@ nav {
 	letter-spacing: 1,3px;
 	font-size: 25px;
 	text-decoration: none;
-}
-
-a:hover{
-	color: black;
-	text-decoration: underline;
 }
 
 .breadcrumb ul {

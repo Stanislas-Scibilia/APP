@@ -19,28 +19,30 @@
         <div>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores quae laboriosam ab ullam eligendi dignissimos aut consequatur. Perspiciatis explicabo, dolorem rem non voluptate similique nemo voluptates ad odit accusantium et.
         </div>
-</article>
+    </article>
 </section>
 
-<section>
-    <div class="capteur">
-        <img src="" alt="">
-        <div class="text">
-            capteur cardiaque
-        </div>
-    </div>
+<section class="capteurs">
+    <ul>
+        <li>
+            <img src="" alt="">
+            <div class="text">
+                capteur cardiaque
+            </div>
+        </li>
 
-    <div class="capteur">
-        <img src="" alt="">
-        <div class="text">
-            capteur CO2
-        </div>
-    </div>
+        <li>
+            <img src="" alt="">
+            <div class="text">
+                capteur CO2
+            </div>
+        </li>
 
-    <div class="capteur">
-        <img src="" alt="">
-        <div class="text">
-            capteur sonore
-        </div>
-    </div>
+        <li>
+            <img src="" alt="">
+            <div class="text">
+                capteur sonore
+            </div>
+        </li>
+    </ul>
 </section>
