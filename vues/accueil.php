@@ -23,17 +23,17 @@
 </section>
 
 <section>
-    <div class="column">
+    <div class="capteur_cardiaque">
         <img src="" alt="">
         <h2> Capteur cardiaque </h2>
     </div>    
 
-    <div class="column">
+    <div class="capteur_CO2">
         <img src="" alt="">
         <h2> Capteur CO2 </h2>
     </div>    
 
-    <div class="column">
+    <div class="capteur_sonore">
         <img src="" alt="">
         <h2> Capteur sonore </h2>
     </div>
