@@ -16,7 +16,6 @@ body {
 }
 
 .connexion a:hover, .connexion a:active {
-	background-color : red;
 	color: black;
 	text-decoration: underline;
 
@@ -47,13 +46,23 @@ body {
 	text-align : center;
 }
 
-.column {
-	float: left;
-	width: 33.33%;
-	padding: 15px;
+.capteur_cardiaque {
+	position : absolute;
+	left : 0px;
+	top : 600px;
 	  }
   
+.capteur_CO2 {
+	position : absolute;
+	left : 690px;
+	top : 600px;
+	  }
 
+.capteur_sonore {
+	position : absolute;
+	right : 0px;
+	top : 600px;
+		}
 nav {
 	border: 2px black solid;
 	background-color: #884EA0;
