@@ -173,3 +173,16 @@ footer {
 	margin: auto;
 	text-align: center;
 }
+
+aside {
+	float: right;
+}
+
+.donnees-env {
+	float: left;
+}
+
+.perf-ami {
+	top: 0;
+	right: 0;
+}
