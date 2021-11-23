@@ -21,5 +21,7 @@
 
 <aside>
     <h1>FAQ</h1>
-    <div class="question"></div>
+    <div class="question">
+    <b>question</b> Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque rerum ducimus minima quibusdam dolor error amet architecto ea sapiente sit quasi enim dignissimos unde, assumenda dolorum modi. Aliquam, iure? Eius!
+    </div>
 </aside>
