@@ -49,20 +49,21 @@ body {
 .capteur_cardiaque {
 	position : absolute;
 	left : 0px;
-	top : 600px;
-	  }
+	top : 800px;
+		  }
   
 .capteur_CO2 {
 	position : absolute;
-	left : 690px;
-	top : 600px;
-	  }
+	top : 800px;
+	margin-right : 200px;
+	margin-left : 690px;
+		  }
 
 .capteur_sonore {
 	position : absolute;
 	right : 0px;
-	top : 600px;
-		}
+	top : 800px;
+			}
 nav {
 	border: 2px black solid;
 	background-color: #884EA0;
@@ -167,4 +168,17 @@ section {
 .container {
 	margin: auto;
 	text-align: center;
+}
+
+aside {
+	float: right;
+}
+
+.donnees-env {
+	float: left;
+}
+
+.perf-ami {
+	top: 0;
+	right: 0;
 }
