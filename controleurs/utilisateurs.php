@@ -31,6 +31,10 @@ switch($function) {
         $vue = 'inscription';
         break;
     
+    case 'profil':
+        $vue = 'profil';
+        break;
+    
     default:
         $vue = '404';
         break;
