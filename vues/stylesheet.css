@@ -1,6 +1,7 @@
 body {
 	background-color : #32244c; 
 	color : white;
+	margin: 0;
 }
 
 .connexion a:link, .connexion a:visited { /*bouton de connexion*/
@@ -18,7 +19,6 @@ body {
 .connexion a:hover, .connexion a:active {
 	color: black;
 	text-decoration: underline;
-
 }
 
 .connexion {
@@ -143,7 +143,7 @@ footer {
 .contenu-footer a{
 	text-decoration: none;
 	color: rgb(255, 255, 255);
-	}
+}
 
 .bloc {
   width: 25%;
