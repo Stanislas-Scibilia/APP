@@ -1,7 +1,3 @@
-/** {
-	box-sizing: border-box;
-}
-*/
 body {
 	background-color : #32244c; 
 	color : white;
@@ -50,11 +46,9 @@ body {
 	text-align : center;
 }
 
-span.capteur {
-	display : inline-block;
-	padding : 15px;
-	margin-top : 400px;
-	width : 33.3%;	
+.capteur {
+	column-count : 3;
+	margin-top : 800px;	
 }
 
 nav {
