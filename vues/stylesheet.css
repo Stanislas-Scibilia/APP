@@ -1,6 +1,7 @@
-* {
+/** {
 	box-sizing: border-box;
 }
+*/
 body {
 	background-color : #32244c; 
 	color : white;
@@ -11,7 +12,7 @@ body {
 	border-style : solid;
 	border-color : #e91e63;
 	background-color : #e91e63;
-	padding : 1px 25px;
+	padding : 1px 30px;
 	color : white;
 	font-size : 25px;
 	text-align : center;
@@ -49,24 +50,13 @@ body {
 	text-align : center;
 }
 
-.capteur_cardiaque {
-	position : absolute;
-	left : 0px;
-	top : 800px;
-		  }
-  
-.capteur_CO2 {
-	position : absolute;
-	top : 800px;
-	margin-right : 200px;
-	margin-left : 690px;
-		  }
+span.capteur {
+	display : inline-block;
+	padding : 15px;
+	margin-top : 400px;
+	width : 33.3%;	
+}
 
-.capteur_sonore {
-	position : absolute;
-	right : 0px;
-	top : 800px;
-			}
 nav {
 	border: 2px black solid;
 	background-color: #884EA0;
