@@ -177,12 +177,11 @@ aside {
 	float: left;
 }
 
-<<<<<<< Updated upstream
 .perf-ami {
 	top: 0;
 	right: 0;
 }
-=======
+
 .container {
 	margin: auto;
 	text-align: center;
@@ -217,7 +216,7 @@ aside {
         transform: translateX(-1000px);
     }
     100% {
-        transform: : translateX(0);
+        transform: translateX(0);
     }
 }
->>>>>>> Stashed changes
+
