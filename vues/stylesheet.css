@@ -177,7 +177,47 @@ aside {
 	float: left;
 }
 
+<<<<<<< Updated upstream
 .perf-ami {
 	top: 0;
 	right: 0;
 }
+=======
+.container {
+	margin: auto;
+	text-align: center;
+}
+
+.slider {
+    width: calc(500px * 3);
+    animation: glisse 20s infinite;
+}
+
+.slide {
+    float: left;
+}
+
+@keyframes glisse {
+    0% {
+        transform: translateX(0);
+    }
+    10% {
+        transform: translateX(0);
+    }
+    33% {
+        transform: translateX(-500px);
+    }
+    43% {
+        transform: translateX(-500px);
+    }
+    66% {
+        transform: translateX(-1000px);
+    }
+    76% {
+        transform: translateX(-1000px);
+    }
+    100% {
+        transform: : translateX(0);
+    }
+}
+>>>>>>> Stashed changes
