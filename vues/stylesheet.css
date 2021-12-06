@@ -111,52 +111,53 @@ section {
 	display: block;
 }
 
-      footer {
-        padding: 10px 10px;
-        background: #32244c;
-        color: white;
-        flex-shrink: 0;
-        flex-direction: column;
-      }
-      .contenu-footer {
-        width: 1200px;
-        margin: 0 auto;
-        display: flex;
-        justify-content: center;
-        align-items: flex-start;
-        font-size: 20p;
-        padding: 5px 0 5px;
-		color: white;
-      }
+footer {
+    padding: 10px 10px;
+    background: #32244c;
+    color: white;
+    flex-shrink: 0;
+    flex-direction: column;
+}
 
-	  .contenu-footer a{
-		text-decoration: none;
-		color: rgb(255, 255, 255);
-		}
+.contenu-footer {
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    font-size: 20p;
+    padding: 5px 0 5px;
+	color: white;
+}
 
-      .bloc {
-        width: 25%;
-        margin: 0 30px;
-      }
+.contenu-footer a{
+	text-decoration: none;
+	color: rgb(255, 255, 255);
+}
+
+.bloc {
+    width: 25%;
+    margin: 0 30px;
+}
 
       /* contact */
-      .footer-rejoindreFit h3,
-      .footer-AideInfo h3,
-      .footer-InfiniteMeasures h3,
-      .footer-Activités h3 {
-        font-size: 25px;
-        padding-bottom: 20px;
-      }
+.footer-rejoindreFit h3,
+.footer-AideInfo h3,
+.footer-InfiniteMeasures h3,
+.footer-Activités h3 {
+    font-size: 25px;
+    padding-bottom: 20px;
+}
 
-      .footer-rejoindreFit p {
-        padding: 5px 0;
-      }
+.footer-rejoindreFit p {
+    padding: 5px 0;
+}
 
-      /* media */
-      .liste-media img {
-        width: 40px;
-        margin: 10px 10px
-      }
+/* media */
+.liste-media img {
+    width: 40px;
+    margin: 10px 10px
+}
 
 .container {
 	margin: auto;
