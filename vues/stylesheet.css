@@ -1,5 +1,5 @@
 body {
-	background-color : #32244c; 
+	background-color : #19061a;
 	color : white;
 	margin: 0;
 }
@@ -53,7 +53,7 @@ body {
 
 nav {
 	border: 2px black solid;
-	background-color: #884EA0;
+	background-color: #32244c;
 	background-attachment: fixed;
 	top: 0;
 	padding-left: 1em;
@@ -113,7 +113,7 @@ section {
 
 footer {
     padding: 10px 10px;
-    background: #32244c;
+    background: #19061a;
     color: white;
     flex-shrink: 0;
     flex-direction: column;
