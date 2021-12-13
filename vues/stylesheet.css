@@ -1,14 +1,13 @@
 body {
-	background-color : #19061a;
+	background-color : #32244c; 
 	color : white;
-	margin: 0;
 }
 
 .connexion a:link, .connexion a:visited { /*bouton de connexion*/
 	border-style : solid;
 	border-color : #e91e63;
 	background-color : #e91e63;
-	padding : 1px 30px;
+	padding : 1px 25px;
 	color : white;
 	font-size : 25px;
 	text-align : center;
@@ -17,8 +16,10 @@ body {
 }
 
 .connexion a:hover, .connexion a:active {
+	background-color : red;
 	color: black;
 	text-decoration: underline;
+
 }
 
 .connexion {
@@ -52,10 +53,11 @@ body {
 	justify-content : space-between;
 	margin-top : 500px;	
 }
+  
 
 nav {
 	border: 2px black solid;
-	background-color: #32244c;
+	background-color: #884EA0;
 	background-attachment: fixed;
 	top: 0;
 	padding-left: 1em;
@@ -114,162 +116,51 @@ section {
 }
 
 footer {
-    padding: 10px 10px;
-    background: #19061a;
-    color: white;
-    flex-shrink: 0;
-    flex-direction: column;
+  padding: 100px 20px;
+  background: #32244c;
+  color: white;
+  flex-shrink: 0;
+  flex-direction: column;
 }
-
 .contenu-footer {
-    width: 1200px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    font-size: 20p;
-    padding: 5px 0 5px;
-	color: white;
+  width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  font-size: 20p;
+  padding: 50px 0 100px
 }
 
 .contenu-footer a{
 	text-decoration: none;
 	color: rgb(255, 255, 255);
-}
+	}
 
 .bloc {
-    width: 25%;
-    margin: 0 30px;
+  width: 25%;
+  margin: 0 30px;
 }
 
-      /* contact */
+/* contact */
 .footer-rejoindreFit h3,
 .footer-AideInfo h3,
 .footer-InfiniteMeasures h3,
 .footer-Activités h3 {
-    font-size: 25px;
-    padding-bottom: 20px;
+  font-size: 25px;
+  padding-bottom: 20px;
 }
 
 .footer-rejoindreFit p {
-    padding: 5px 0;
+  padding: 5px 0;
 }
 
 /* media */
 .liste-media img {
-    width: 40px;
-    margin: 10px 10px
+  width: 40px;
+  margin: 10px 10px
 }
 
 .container {
 	margin: auto;
-	text-align: center;
-}
-
-aside {
-	float: right;
-}
-
-.donnees-env {
-	float: left;
-}
-
-.perf-ami {
-	top: 0;
-	right: 0;
-}
-
-.container {
-	margin: auto;
-	text-align: center;
-}
-
-.slider {
-    width: calc(500px * 3);
-    animation: glisse 20s infinite;
-}
-
-.slide {
-    float: left;
-}
-#Question1{
-	font-size: 28px;
-	color: white;
-	background-color: #CFA0E9;
-}
-
-#Question2{
-	font-size: 28px;
-	color: white;
-	background-color: #CFA0E9;
-}
-
-#Question3{
-	font-size: 28px;
-	color: white;
-	background-color: #CFA0E9;
-}
-
-#Question4{
-	font-size: 28px;
-	color: white;
-	background-color: #CFA0E9;
-}
-
-#Q1{
-	font-size: 28px;
-	color: white;
-	background-color: #CFA0E9;
-	display: none;
-}
-
-#Q2{
-	font-size: 28px;
-	color: white;
-	background-color: #CFA0E9;
-	display: none;
-}
-
-#Q3{
-	font-size: 28px;
-	color: white;
-	background-color: #CFA0E9;
-	display: none;
-}
-
-#Q4{
-	font-size: 28px;
-	color: white;
-	background-color: #CFA0E9;
-	display: none;
-}
-
-.image-FAQ{
-	float: right;
-	margin-right: 15em;
-}
-
-
-@keyframes glisse {
-    0% {
-        transform: translateX(0);
-    }
-    10% {
-        transform: translateX(0);
-    }
-    33% {
-        transform: translateX(-500px);
-    }
-    43% {
-        transform: translateX(-500px);
-    }
-    66% {
-        transform: translateX(-1000px);
-    }
-    76% {
-        transform: translateX(-1000px);
-    }
-    100% {
-        transform: translateX(0);
-    }
 }
