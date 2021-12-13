@@ -1,8 +1,7 @@
 <nav aria-label="Breadcrumb" class="breadcrumb">
     <ul>
-        <li><a href=""> Home </a></li>
-        <li><a href=""> Category </a></li>
-        <li><a href=""> Sub-Category </a></li>
-        <li><span aria-current="page">Product</span></li>
+        <li><a href="vues/accueil.php">Page d'accueil </a></li>
+        <li><a href="vues/">Page précédente</a></li>
+        <li><span aria-current="page">Page actuelle</span></li>
     </ul>
 </nav>
