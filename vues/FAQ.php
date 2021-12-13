@@ -24,4 +24,4 @@
 				</div>
 			</article>
 		</section>
-		<script src="FAQ.js"></script>
+		<script src="vues/FAQ.js"></script>
