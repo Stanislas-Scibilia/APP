@@ -4,7 +4,7 @@ body {
 	margin: 0;
 }
 
-.connexion a:link, .connexion a:visited { /*bouton de connexion*/
+.bouton_connexion a:link, .bouton_connexion a:visited { /*bouton de connexion*/
 	border-style : solid;
 	border-color : #e91e63;
 	background-color : #e91e63;
@@ -15,10 +15,25 @@ body {
 	text-decoration : none;
 }
 
-.connexion a:hover, .connexion a:active {
+.bouton_connexion a:hover, .bouton_connexion a:active {
 	background-color : red;
 	color: black;
 	text-decoration: underline;
+}
+
+.bouton_inscription a:link, .bouton_inscription a:visited{
+	border-style : solid;
+	border-color : white;
+	background-color : white;
+	text-decoration : none;
+	color : black;
+	padding : 1px 118px;
+}
+
+.bouton_inscription a:hover, .bouton_inscription a:active{
+	background-color : grey;
+	border-color : grey;
+	color : white;
 }
 
 .connexion {
@@ -101,7 +116,7 @@ nav {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.breadcrumb ul :link{
+.breadcrumb ul :link, .breadcrumb ul :visited{
 	color: white;
     list-style-type: none;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
