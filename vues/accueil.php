@@ -23,18 +23,18 @@
 </section>
 
 <section>
-    <div class="column">
-        <img src="" alt="">
-        <h2> Capteur cardiaque </h2>
-    </div>    
-
-    <div class="column">
-        <img src="" alt="">
-        <h2> Capteur CO2 </h2>
-    </div>    
-
-    <div class="column">
-        <img src="" alt="">
-        <h2> Capteur sonore </h2>
+<div class="capteur">
+        <div>
+            <img src="vues/capteur_cardiaque.png" alt="capteur cardiaque" width="300px" height="300px">
+            <h2> Capteur cardiaque </h2>
+        </div>
+        <div> 
+            <img src="vues/capteur_CO2.png" alt="capteur CO2" width="300px" height="300px">
+            <h2> Capteur CO2 </h2>
+        </div>
+        <div>
+            <img src="vues/capteur_sonore.png" alt="capteur sonore" width="300px" height="300px">
+            <h2> Capteur sonore </h2>
+        </div>
     </div>
 </section>
