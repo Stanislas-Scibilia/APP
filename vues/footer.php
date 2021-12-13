@@ -31,7 +31,7 @@
                    <ul class="liste-Activités">
                    <li><a href="#">Données physiques</a></li>
                    <li><a href="#">Données environnementales</a></li>
-                   <li><a href="#">Jeu ludique</a></li>
+                   <li><a href="#">Activité ludique</a></li>
             </div>
         </div>
     </footer>
