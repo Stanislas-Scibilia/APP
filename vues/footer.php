@@ -33,6 +33,13 @@
                    <li><a href="#">Données environnementales</a></li>
                    <li><a href="#">Jeu ludique</a></li>
             </div>
+            <div class="bloc footer-media">
+              <h3>Nos réseaux</h3>
+                  <ul class="liste-media">
+                  <li><a href="#"><img src="medias/fb.svg" alt="icones réseaux sociaux">Facebook/monsite</a></li>
+                  <li><a href="#"><img src="medias/twitter.svg" alt="icones réseaux sociaux">Twitter/lorem</a></li>
+                  <li><a href="#"><img src="medias/instagram.svg" alt="icones réseaux sociaux">Instagram/stuff</a></li>
+            </div>
          </div>
     </footer>
 </div>

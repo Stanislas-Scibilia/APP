@@ -5,10 +5,10 @@
         <form action="" method="post">
         <div class="element_connexion">Contacte ta salle pour <br> récupérer ton identifiant.</div>
         <input class="element_connexion" type="text" name="identifiant" id="identifiant" placeholder="identifiant">
-	    <br>
+	<br>
         <input class="element_connexion" type="password" name="motdepasse" id="motdepasse" placeholder="mot de passe">
         <br> 
-	    <input class="element_connexion" type="submit" value="S'inscrire">
+	<input class="element_connexion" type="submit" value="S'inscrire">
         </form>
     </article>
 
@@ -23,7 +23,7 @@
 </section>
 
 <section>
-    <div class="capteur">
+<div class="capteur">
         <div>
             <img src="vues/capteur_cardiaque.png" alt="capteur cardiaque" width="300px" height="300px">
             <h2> Capteur cardiaque </h2>
