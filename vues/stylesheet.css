@@ -1,5 +1,5 @@
 body {
-	background-color : #32244c; 
+	background-color : #19061a; 
 	color : white;
 }
 
@@ -57,7 +57,7 @@ body {
 
 nav {
 	border: 2px black solid;
-	background-color: #884EA0;
+	background-color: #32244c;
 	background-attachment: fixed;
 	top: 0;
 	padding-left: 1em;
