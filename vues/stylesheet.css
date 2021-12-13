@@ -164,3 +164,42 @@ footer {
 .container {
 	margin: auto;
 }
+
+.slider {
+	width: 500px;
+	overflow: hidden;
+	margin: 150px auto;
+}
+
+.slides {
+    width: calc(500px * 3);
+    animation: glisse 20s infinite;
+}
+
+.slide {
+    float: left;
+}
+
+@keyframes glisse {
+    0% {
+        transform: translateX(0);
+    }
+    10% {
+        transform: translateX(0);
+    }
+    33% {
+        transform: translateX(-500px);
+    }
+    43% {
+        transform: translateX(-500px);
+    }
+    66% {
+        transform: translateX(-1000px);
+    }
+    76% {
+        transform: translateX(-1000px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
