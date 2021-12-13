@@ -227,3 +227,128 @@ footer {
         transform: translateX(0);
     }
 }
+
+
+.imageal1{
+    display: block;
+    margin-top: -11px;
+    margin-right: -10px;
+    margin-left: -10px;
+}
+  
+#imageduhaut{
+    height: 400px;
+    width: 100%;
+}
+
+#aludique{
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 3.9rem;
+    color: white;
+    word-spacing: 16px;
+    text-align: center;
+    font-family: "Squada One", cursive;
+    background: rgb(207, 24, 33);
+    width: 530px;
+    height: 72px;
+    border-radius: 8px;
+    position: absolute;
+    top: 306px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+.texteal1{
+    margin-top: 260px;
+    margin-left: 47%;
+    margin-right: 20px;
+    font-size: 1.2rem;
+    z-index: 99;
+}
+
+.texteal2{
+    margin-top: 260px;
+    margin-left: 20px;
+    margin-right: 47%;
+    font-size: 1.2rem;
+    z-index: 99;
+}
+
+
+.videoal1{
+    position: absolute;
+    margin-top: -1180px;
+    margin-left: 10px;
+    height: 290px;
+    width: 654px;
+    border: 15px solid black;
+    overflow: hidden;
+  }
+
+#vidal1 {
+    position: float;
+    margin-top: -10px;
+    height: 380px;
+    width: 680px;
+    border: 13px solid rgb(156, 39, 39);
+    box-sizing: border-box;
+    }
+
+.videoal2{
+    position: absolute;
+    margin-top: -850px;
+    margin-left: 53%;
+    height: 290px;
+    width: 654px;
+    border: 15px solid black;
+    overflow: hidden;
+}
+
+#vidal2 {
+    position: float;
+    margin-top: -10px;
+    height: 380px;
+    width: 680px;
+    border: 13px solid rgb(156, 39, 39);
+    box-sizing: border-box;
+}
+
+.videoal3{
+    position: absolute;
+    margin-top: -530px;
+    margin-left: 10px;
+    height: 290px;
+    width: 654px;
+    border: 15px solid black;
+    overflow: hidden;
+  }
+
+#vidal3 {
+    position: float;
+    margin-top: -10px;
+    height: 380px;
+    width: 680px;
+    border: 13px solid rgb(156, 39, 39);
+    box-sizing: border-box;
+    }
+
+.videoal4{
+    position: absolute;
+    margin-top: -200px;
+    margin-left: 53%;
+    height: 290px;
+    width: 654px;
+    border: 15px solid black;
+    overflow: hidden;
+}
+    
+#vidal4 {
+    position: float;
+    margin-top: -10px;
+    height: 380px;
+    width: 680px;
+    border: 13px solid rgb(156, 39, 39);
+    box-sizing: border-box;
+}
