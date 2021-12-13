@@ -1,9 +1,8 @@
-    <header>
-        <h1>
-            Activite Ludique
-        </h1>
-    </header>
-    <section>
+ <section>
+ <img id="imageduhaut" src="imagehaut.jpg"></img>
+    <h1>
+        Activite Ludique
+    </h1>
         <br>
         <h2>
                 Bienvenue sur l'activite ludique de
