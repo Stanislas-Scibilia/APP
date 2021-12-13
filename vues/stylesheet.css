@@ -8,30 +8,32 @@ body {
 	border-style : solid;
 	border-color : #e91e63;
 	background-color : #e91e63;
-	padding : 1px 25px;
+	padding : 1px 100px;
 	color : white;
 	font-size : 25px;
 	text-align : center;
 	text-decoration : none;
-	margin : 10px;
 }
 
 .connexion a:hover, .connexion a:active {
 	background-color : red;
 	color: black;
 	text-decoration: underline;
-
 }
 
 .connexion {
-	margin-top: 20px;
-	margin-left : 10px;
-	float: left;
+	margin: 30px;
+	text-align : center;
 }
 
-.element_connexion {
-	margin : 10px;
-	text-align : center;
+.element_connexion{
+	margin:20px;
+}
+
+.barre_connexion{
+	margin : 20px;
+	width : 300px;
+	height : 20px;
 }
 
 .titre_article1 {
@@ -163,7 +165,13 @@ footer {
 }
 
 .container {
-	margin: auto;
+	text-align : center;
+}
+
+.barre_inscription{
+	margin : 10px;
+	width : 300px;
+	height : 25px;
 }
 
 .slider {
