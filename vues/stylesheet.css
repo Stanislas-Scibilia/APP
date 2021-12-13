@@ -1,6 +1,7 @@
 body {
 	background-color : #19061a; 
 	color : white;
+	margin: 0;
 }
 
 .connexion a:link, .connexion a:visited { /*bouton de connexion*/
