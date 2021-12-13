@@ -7,7 +7,7 @@
 		<section>
 			<article>
 				<button id="Question1">> Que propsons-nous ?</button><br />
-				<button id="Question2">> Dans quelle salle pouvons-nous retouver?</button><br />
+				<button id="Question2">> Dans quelle salle pouvons-nous retouver ?</button><br />
 				<button id="Question3">> Comment récuperer son identifiant et son mot de passe ?</button><br />
 				<button id="Question4">> Comment utiliser le produit ?</button><br />
 				<div id="Q1">
