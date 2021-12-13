@@ -35,6 +35,10 @@ switch($function) {
         $vue = 'profil';
         break;
     
+    case 'faq':
+        $vue = 'FAQ';
+        break;
+
     default:
         $vue = '404';
         break;
