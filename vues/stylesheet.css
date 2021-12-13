@@ -47,11 +47,12 @@ body {
 	text-align : center;
 }
 
-.column {
-	float: left;
-	width: 33.33%;
-	padding: 15px;
-	  }
+.capteur {
+	display : flex;
+	flex-direction : row;
+	justify-content : space-between;
+	margin-top : 500px;	
+}
   
 
 nav {
