@@ -15,8 +15,8 @@ switch($function) {
         $vue = 'connexion';
         break;
     
-    case 'jeuLudique':
-        $vue = 'jeuLudique';
+    case 'activité_ludique':
+        $vue = 'activité_ludique';
         break;
 
     case 'admin':
