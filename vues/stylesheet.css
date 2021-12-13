@@ -192,6 +192,63 @@ aside {
 .slide {
     float: left;
 }
+#Question1{
+	font-size: 28px;
+	color: white;
+	background-color: #CFA0E9;
+}
+
+#Question2{
+	font-size: 28px;
+	color: white;
+	background-color: #CFA0E9;
+}
+
+#Question3{
+	font-size: 28px;
+	color: white;
+	background-color: #CFA0E9;
+}
+
+#Question4{
+	font-size: 28px;
+	color: white;
+	background-color: #CFA0E9;
+}
+
+#Q1{
+	font-size: 28px;
+	color: white;
+	background-color: #CFA0E9;
+	display: none;
+}
+
+#Q2{
+	font-size: 28px;
+	color: white;
+	background-color: #CFA0E9;
+	display: none;
+}
+
+#Q3{
+	font-size: 28px;
+	color: white;
+	background-color: #CFA0E9;
+	display: none;
+}
+
+#Q4{
+	font-size: 28px;
+	color: white;
+	background-color: #CFA0E9;
+	display: none;
+}
+
+.image-FAQ{
+	float: right;
+	margin-right: 15em;
+}
+
 
 @keyframes glisse {
     0% {
