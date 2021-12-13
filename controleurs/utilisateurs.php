@@ -15,8 +15,8 @@ switch($function) {
         $vue = 'connexion';
         break;
     
-    case 'jeuLudique':
-        $vue = 'jeuLudique';
+    case 'activité_ludique':
+        $vue = 'activité_ludique';
         break;
 
     case 'admin':
@@ -35,6 +35,10 @@ switch($function) {
         $vue = 'profil';
         break;
     
+    case 'faq':
+        $vue = 'FAQ';
+        break;
+
     default:
         $vue = '404';
         break;
