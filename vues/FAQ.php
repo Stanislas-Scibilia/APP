@@ -1,4 +1,4 @@
-<p class="image-FAQ"><img src="FAQ.png"></p>
+<p class="image-FAQ"><img src="vues/FAQ.png"></p>
 
 		<header>
 			<h1 class="titre-FAQ">FAQ</h1>
