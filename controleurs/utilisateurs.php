@@ -25,6 +25,7 @@ switch($function) {
     
     case 'gen.id':
         $vue = 'gen.id';
+        $uuid = uniqid("", true);
         break;
     
     case 'inscription':
