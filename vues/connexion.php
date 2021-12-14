@@ -6,9 +6,9 @@
                 <input class="barre_connexion" type="text" name="identifiant" id="identifiant" placeholder="identifiant">
 	        <br>
                 <input class="barre_connexion" type="password" name="motdepasse" id="motdepasse" placeholder="mot de passe">
-                <br> 
+                <br>
+                <div class="bouton_connexion"> <input type="submit" value="connexion"> </div>
         </form>
         <br>
-        <div class="bouton_connexion"> <a href="connexion.php"> Connexion </a> </div>
         <?php if (isset($message)) {echo $message;} ?>
 </div>
