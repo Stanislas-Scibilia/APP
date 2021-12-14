@@ -1,5 +1,5 @@
 <div class="footer-clean">
-<footer>    
+    <footer>    
         <div class="contenu-footer">
 
             <div class="bloc footer-rejoindreFit">
@@ -27,19 +27,21 @@
            </div>
 
            <div class="bloc footer-Activités">
-                <h3>Activités</h3>
-                   <ul class="liste-Activités">
+               <h3>Activités</h3>
+               <ul class="liste-Activités">
                    <li><a href="#">Données physiques</a></li>
                    <li><a href="#">Données environnementales</a></li>
                    <li><a href="#">Activité ludique</a></li>
-            </div>
-
-            <div class="general">
-                <div class="element">Mentions Légales</div>
-                <div class="element">CGU</div>
-                <div class="element">CGV</div>
-                <div class="element">Paramétrer les cookies</div>
+                </div>
+                
             </div>
         </div>
     </footer>
+    <div class="general">
+        <div class="element">Mentions Légales</div>
+        <div class="element">CGU</div>
+        <div class="element">CGV</div>
+        <div class="element">Paramétrer les cookies</div>
+    </div>
+    
 </div>
