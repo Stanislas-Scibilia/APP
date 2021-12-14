@@ -1,6 +1,6 @@
 <section>
     <div class="imageal1">
-        <img id="imageduhaut" src="imagehaut.jpg"></img>
+        <img id="imageduhaut" src="vues/imagehaut.jpg"></img>
     </div>
     <br>
         <h1 id="aludique">Activite Ludique</h1>
