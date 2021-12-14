@@ -6,11 +6,12 @@
         <h1 id="aludique">Activite Ludique</h1>
     <br>
     <br>
-    <h2 id="h2al">
-        Bienvenue sur l'activite ludique de Fit'Analysor
-    </h2>
-    <h3 id="h3al">Tentez votre chance en jouant au jeu ludique. Le principe est simple, Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta omnis distinctio laboriosam assumenda, reprehenderit cumque debitis iusto laudantium fugit deserunt alias quasi dolor, a, nesciunt voluptates inventore dolores. Inventore quasi, non totam recusandae sit illo ex odio! Dolore, quasi quo?  
-    </h3>
+    <p id="h2al">
+    Bienvenue sur l'activite ludique de Fit'Analysor
+
+    </p>
+    <p id="h3al">Tentez votre chance en jouant au jeu ludique. Le principe est simple, Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta omnis distinctio laboriosam assumenda, reprehenderit cumque debitis iusto laudantium fugit deserunt alias quasi dolor, a, nesciunt voluptates inventore dolores. Inventore quasi, non totam recusandae sit illo ex odio! Dolore, quasi quo?  
+    </p>
     <div class="texteal1">
         <p>
         <em>"C'est une triste chose de songer que la nature parle et que le genre humain ne l'écoute pas"</em>  
@@ -40,7 +41,7 @@
         </p>  
     </div>
     <div class="videoal1">
-        <video id="vidal1" src="vues/vid01.mp4" controls controlsList="nodownload nofullscreen noremoteplayback" loop autoplay muted height="300"></video>  
+        <video id="vidal1" src="vues/vid01.mp4" controls controlsList="nodownload nofullscreen noremoteplayback" loop  muted height="300"></video>  
     </div>
     <div class="videoal2">
         <video id="vidal2" src="vues/vid01.mp4" controls controlsList="nodownload nofullscreen noremoteplayback" loop muted height="300"></video>  
