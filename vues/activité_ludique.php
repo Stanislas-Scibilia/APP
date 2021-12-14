@@ -13,30 +13,30 @@
     </h3>
     <div class="texteal1">
         <p>
-        "C'est une triste chose de songer que la nature parle et que le genre humain ne l'écoute pas"  
+        <em>"C'est une triste chose de songer que la nature parle et que le genre humain ne l'écoute pas"</em>  
         <br>
-        Victor Hugo
+        <h3>Victor Hugo</h3>
         </p>  
     </div>
     <div class="texteal2">
         <p>
-        "Les espèces qui survivent ne sont pas les espèces les plus fortes, ni les plus intelligentes, mais celles qui s'adaptent le mieux aux changements"  
+        <em>"Les espèces qui survivent ne sont pas les espèces les plus fortes, ni les plus intelligentes, mais celles qui s'adaptent le mieux aux changements"</em>  
         <br>
-        Charles Darwin
+        <h3>Charles Darwin</h3>
     </p>  
     </div>
     <div class="texteal1">
         <p>
-        "A l'échelle cosmique, l'eau est plus rare que l'or."
+        <em>"A l'échelle cosmique, l'eau est plus rare que l'or."</em>
         <br>
-        Hubert Reeves  
+        <h3>Hubert Reeves</h3> 
         </p>  
     </div>
     <div class="texteal2">
         <p>
-        "Ce qui caractérise notre époque, c'est la perfection des moyens et la confusion des fins."
+        <em>"Ce qui caractérise notre époque, c'est la perfection des moyens et la confusion des fins."</em>
         <br>
-        Albert Einstein
+        <h3>Albert Einstein</h3>
         </p>  
     </div>
     <div class="videoal1">
