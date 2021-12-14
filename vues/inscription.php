@@ -3,32 +3,32 @@
     
     <form action="" method="post">
            
-        <input type="text" name="prenom" id="prenom" placeholder="Prénom">
+        <input class="barre_inscription" type="text" name="prenom" id="prenom" placeholder="Prénom">
         <br>
-        <input type="text" name="nom" id="nom" placeholder="nom">
+        <input class="barre_inscription" type="text" name="nom" id="nom" placeholder="Nom">
         <br>
         <label for="datenaissance"> Date de naissance</label>
         <br>
-        <input type="date" name="datenaissance" id="datenaissance">
+        <input class="barre_inscription" type="date" name="datenaissance" id="datenaissance">
         <br>
-        <input list="genre" placeholder="genre">
+        <input class="barre_inscription" list="genre" placeholder="genre">
         <datalist id="genre">
             <option value="Femme">
             <option value="Homme">
             <option value="Autre">
         </datalist>
         <br>
-        <input type="email" name="mail" id="mail" placeholder="email@example.org">
+        <input class="barre_inscription" type="email" name="mail" id="mail" placeholder="email@example.org">
         <br>
-        <input type="text" name="adresse" id="adresse" placeholder="numéro & nom de rue">
+        <input class="barre_inscription" type="text" name="adresse" id="adresse" placeholder="numéro & nom de rue">
         <br>
-        <input type="text" name="codepostal" id="codepostal" placeholder="code postal">
+        <input class="barre_inscription" type="text" name="codepostal" id="codepostal" placeholder="code postal">
         <br>
-        <input type="text" name="ville" id="ville" placeholder="Ville">
+        <input class="barre_inscription" type="text" name="ville" id="ville" placeholder="Ville">
         <br>
-        <input type="password" name="motdepasse" id="motdepasse" placeholder="mot de passe">
+        <input class="barre_inscription" type="password" name="motdepasse" id="motdepasse" placeholder="mot de passe">
         <br>
-        <input type="password" name="motdepasse2" id="motdepasse2" placeholder="confirmez votre mot de passe">
+        <input class="barre_inscription" type="password" name="motdepasse2" id="motdepasse2" placeholder="confirmez votre mot de passe">
         <br>
         <p>Au moins 8 caractères et doit comporter des caractères spéciaux et numériques</p>
         <br>

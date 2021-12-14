@@ -1,37 +1,56 @@
+@import url("https://fonts.googleapis.com/css2?family=Squada+One&display=swap");
+
 body {
 	background-color : #19061a; 
 	color : white;
 	margin: 0;
 }
 
-.connexion a:link, .connexion a:visited { /*bouton de connexion*/
+.bouton_connexion a:link, .bouton_connexion a:visited { /*bouton de connexion*/
 	border-style : solid;
 	border-color : #e91e63;
 	background-color : #e91e63;
-	padding : 1px 25px;
+	padding : 1px 100px;
 	color : white;
 	font-size : 25px;
 	text-align : center;
 	text-decoration : none;
-	margin : 10px;
 }
 
-.connexion a:hover, .connexion a:active {
+.bouton_connexion a:hover, .bouton_connexion a:active {
 	background-color : red;
 	color: black;
 	text-decoration: underline;
+}
 
+.bouton_inscription a:link, .bouton_inscription a:visited{
+	border-style : solid;
+	border-color : white;
+	background-color : white;
+	text-decoration : none;
+	color : black;
+	padding : 1px 118px;
+}
+
+.bouton_inscription a:hover, .bouton_inscription a:active{
+	background-color : grey;
+	border-color : grey;
+	color : white;
 }
 
 .connexion {
-	margin-top: 20px;
-	margin-left : 10px;
-	float: left;
+	margin: 30px;
+	text-align : center;
 }
 
-.element_connexion {
-	margin : 10px;
-	text-align : center;
+.element_connexion{
+	margin:20px;
+}
+
+.barre_connexion{
+	margin : 20px;
+	width : 300px;
+	height : 20px;
 }
 
 .titre_article1 {
@@ -87,7 +106,7 @@ nav {
 }
 
 .breadcrumb li::before {
-    content: "> ";
+    content: " -> ";
 }
     
 .breadcrumb li:first-child::before {
@@ -99,17 +118,17 @@ nav {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.breadcrumb ul :link{
+.breadcrumb ul :link, .breadcrumb ul :visited{
+	color: white;
     list-style-type: none;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color:black;
     text-decoration: none;
 }
 
 .breadcrumb ul :hover{
     list-style-type: none;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color:crimson;
+    color:#e91e63;
 }
 
 section {
@@ -136,7 +155,7 @@ footer {
 .contenu-footer a{
 	text-decoration: none;
 	color: rgb(255, 255, 255);
-	}
+}
 
 .bloc {
   width: 25%;
@@ -163,7 +182,13 @@ footer {
 }
 
 .container {
-	margin: auto;
+	text-align : center;
+}
+
+.barre_inscription{
+	margin : 10px;
+	width : 300px;
+	height : 25px;
 }
 
 .slider {
@@ -203,4 +228,129 @@ footer {
     100% {
         transform: translateX(0);
     }
+}
+
+
+.imageal1{
+    display: block;
+    margin-top: -11px;
+    margin-right: -10px;
+    margin-left: -10px;
+}
+  
+#imageduhaut{
+    height: 400px;
+    width: 100%;
+}
+
+#aludique{
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 3.9rem;
+    color: white;
+    word-spacing: 16px;
+    text-align: center;
+    font-family: "Squada One", cursive;
+    background: rgb(207, 24, 33);
+    width: 530px;
+    height: 72px;
+    border-radius: 8px;
+    position: absolute;
+    top: 306px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+.texteal1{
+    margin-top: 260px;
+    margin-left: 47%;
+    margin-right: 20px;
+    font-size: 1.2rem;
+    z-index: 99;
+}
+
+.texteal2{
+    margin-top: 260px;
+    margin-left: 20px;
+    margin-right: 47%;
+    font-size: 1.2rem;
+    z-index: 99;
+}
+
+
+.videoal1{
+    position: absolute;
+    margin-top: -1180px;
+    margin-left: 10px;
+    height: 290px;
+    width: 654px;
+    border: 15px solid black;
+    overflow: hidden;
+  }
+
+#vidal1 {
+    position: float;
+    margin-top: -10px;
+    height: 380px;
+    width: 680px;
+    border: 13px solid rgb(156, 39, 39);
+    box-sizing: border-box;
+    }
+
+.videoal2{
+    position: absolute;
+    margin-top: -850px;
+    margin-left: 53%;
+    height: 290px;
+    width: 654px;
+    border: 15px solid black;
+    overflow: hidden;
+}
+
+#vidal2 {
+    position: float;
+    margin-top: -10px;
+    height: 380px;
+    width: 680px;
+    border: 13px solid rgb(156, 39, 39);
+    box-sizing: border-box;
+}
+
+.videoal3{
+    position: absolute;
+    margin-top: -530px;
+    margin-left: 10px;
+    height: 290px;
+    width: 654px;
+    border: 15px solid black;
+    overflow: hidden;
+  }
+
+#vidal3 {
+    position: float;
+    margin-top: -10px;
+    height: 380px;
+    width: 680px;
+    border: 13px solid rgb(156, 39, 39);
+    box-sizing: border-box;
+    }
+
+.videoal4{
+    position: absolute;
+    margin-top: -200px;
+    margin-left: 53%;
+    height: 290px;
+    width: 654px;
+    border: 15px solid black;
+    overflow: hidden;
+}
+    
+#vidal4 {
+    position: float;
+    margin-top: -10px;
+    height: 380px;
+    width: 680px;
+    border: 13px solid rgb(156, 39, 39);
+    box-sizing: border-box;
 }

@@ -1,12 +1,14 @@
 <div class="connexion">
-        <a href="connexion.php"> Connexion </a>
+        <div class="bouton_connexion"> <a href="connexion.php"> Connexion </a> </div>
+        <br>
+        <div class="element_connexion">Contacte ta salle pour récupérer ton identifiant</div>
 
         <form action="" method="post">
-        <div class="element_connexion">Contacte ta salle pour <br> récupérer ton identifiant.</div>
-        <input class="element_connexion" type="text" name="identifiant" id="identifiant" placeholder="identifiant">
-	    <br>
-        <input class="element_connexion" type="password" name="motdepasse" id="motdepasse" placeholder="mot de passe">
+        <input class="barre_connexion" type="text" name="identifiant" id="identifiant" placeholder="identifiant">
+	<br>
+        <input class="barre_connexion" type="password" name="motdepasse" id="motdepasse" placeholder="mot de passe">
         <br> 
-	    <input class="element_connexion" type="submit" value="S'inscrire">
         </form>
+        <br>
+        <div class="bouton_inscription"> <a href="/?fonction=inscription"> Inscription </a> </div>
 </div>
