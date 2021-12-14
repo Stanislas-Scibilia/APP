@@ -58,12 +58,13 @@ body {
 }
 
 .article1 {
-	font-size : 40px;
-	float : right;
-	width : 50%;
+	font-size : 30px;
+	margin: auto;
+    margin-top: 30px;
+	width : 70%;
 	border : double 7px white;
 	border-radius : 100px;
-	padding : 10px;
+	padding : 20px;
 	text-align : center;
 }
 
@@ -71,7 +72,8 @@ body {
 	display : flex;
 	flex-direction : row;
 	justify-content : space-between;
-	margin-top : 500px;	
+	margin-top : 300px;	
+    margin-bottom : 200px;
 }
   
 
@@ -137,7 +139,7 @@ section {
 }
 
 footer {
-  padding: 100px 20px;
+  padding: 5px 10px;
   background: #19061a;
   color: white;
   flex-shrink: 0;
@@ -150,7 +152,7 @@ footer {
   justify-content: center;
   align-items: flex-start;
   font-size: 20p;
-  padding: 50px 0 100px
+  padding: 50px 0 50px
 }
 
 .contenu-footer a{
@@ -366,4 +368,11 @@ padding-right: 20px;
     width: 680px;
     border: 13px solid rgb(156, 39, 39);
     box-sizing: border-box;
+}
+
+#h2al{
+    margin-left: 10px;
+}
+#h3al{
+    margin-left: 10px;
 }
