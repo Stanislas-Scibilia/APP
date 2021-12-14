@@ -13,22 +13,30 @@
     </h3>
     <div class="texteal1">
         <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel minus incidunt, quis quas quidem sapiente unde voluptate quaerat odio totam eveniet esse, pariatur est vero rem aliquid! Molestias, expedita facere.  
+        "C'est une triste chose de songer que la nature parle et que le genre humain ne l'écoute pas"  
+        <br>
+        Victor Hugo
         </p>  
     </div>
     <div class="texteal2">
         <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel minus incidunt, quis quas quidem sapiente unde voluptate quaerat odio totam eveniet esse, pariatur est vero rem aliquid! Molestias, expedita facere.  
-        </p>  
+        "Les espèces qui survivent ne sont pas les espèces les plus fortes, ni les plus intelligentes, mais celles qui s'adaptent le mieux aux changements"  
+        <br>
+        Charles Darwin
+    </p>  
     </div>
     <div class="texteal1">
         <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel minus incidunt, quis quas quidem sapiente unde voluptate quaerat odio totam eveniet esse, pariatur est vero rem aliquid! Molestias, expedita facere.  
+        "A l'échelle cosmique, l'eau est plus rare que l'or."
+        <br>
+        Hubert Reeves  
         </p>  
     </div>
     <div class="texteal2">
         <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel minus incidunt, quis quas quidem sapiente unde voluptate quaerat odio totam eveniet esse, pariatur est vero rem aliquid! Molestias, expedita facere.  
+        "Ce qui caractérise notre époque, c'est la perfection des moyens et la confusion des fins."
+        <br>
+        Albert Einstein
         </p>  
     </div>
     <div class="videoal1">
