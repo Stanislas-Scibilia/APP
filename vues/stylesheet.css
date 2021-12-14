@@ -75,7 +75,8 @@ body {
 	display : flex;
 	flex-direction : row;
 	justify-content : space-between;
-	margin-top : 500px;	
+	margin-top : 300px;	
+    margin-bottom : 200px;
 }
   
 
@@ -141,7 +142,7 @@ section {
 }
 
 footer {
-  padding: 100px 20px;
+  padding: 5px 10px;
   background: #19061a;
   color: white;
   flex-shrink: 0;
@@ -154,7 +155,7 @@ footer {
   justify-content: center;
   align-items: flex-start;
   font-size: 20p;
-  padding: 50px 0 100px
+  padding: 50px 0 50px
 }
 
 .contenu-footer a{
