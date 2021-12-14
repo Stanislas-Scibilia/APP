@@ -5,6 +5,7 @@
 		<li class="nav-item"><a href="/?fonction=accueil"> Données environementales </a></li>
 		<li class="nav-item"><a href="/?fonction=accueil">Performances amis</a></li>
 		<li class="nav-item"><a href="/?fonction=faq">FAQ</a></li>
+        <li class="nav-item"><a href="/?fonction=accueil">Mon compte</a></li>
         <li class="nav-item"><a href="/?fonction=deconnexion">Déconnexion</a></li>
 	</ul>
 </nav>
