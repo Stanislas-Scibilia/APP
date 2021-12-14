@@ -16,7 +16,7 @@
             <h2> Capteur cardiaque </h2>
         </div>
         <div> 
-            <img src="vues/capteur_CO2.png" alt="capteur CO2" width="300px" height="300px">
+            <img src="vues/capteur_CO2.jpg" alt="capteur CO2" width="300px" height="300px">
             <h2> Capteur CO2 </h2>
         </div>
         <div>
