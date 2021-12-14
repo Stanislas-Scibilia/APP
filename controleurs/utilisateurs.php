@@ -13,6 +13,13 @@ switch($function) {
     
     case 'connexion':
         $vue = 'connexion';
+        session_start();
+        if (!empty($_POST)) {
+            if ($_POST['identifiant']==='test' and $_POST['motdepasse']==='test') {
+                $_SESSION['connexion'] = true;
+                $message = "Vous êtes connecté.";
+            }
+        }
         break;
     
     case 'activité_ludique':

@@ -10,5 +10,5 @@
         </form>
         <br>
         <div class="bouton_connexion"> <a href="connexion.php"> Connexion </a> </div>
-        
+        <?= $message ?>
 </div>
