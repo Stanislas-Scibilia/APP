@@ -12,7 +12,7 @@
 <section>
     <div class="capteur">
         <div>
-            <img src="vues/capteur_cardiaque.png" alt="capteur cardiaque" width="300px" height="300px">
+            <img src="vues/capteur_cardiaque.jpg" alt="capteur cardiaque" width="300px" height="300px">
             <h2> Capteur cardiaque </h2>
         </div>
         <div> 
@@ -20,7 +20,7 @@
             <h2> Capteur CO2 </h2>
         </div>
         <div>
-            <img src="vues/capteur_sonore.png" alt="capteur sonore" width="300px" height="300px">
+            <img src="vues/capteur_sonore.jpg" alt="capteur sonore" width="300px" height="300px">
             <h2> Capteur sonore </h2>
         </div>
     </div>
