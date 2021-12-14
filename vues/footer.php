@@ -3,7 +3,7 @@
         <div class="contenu-footer">
 
             <div class="bloc footer-rejoindreFit">
-                   <h3>Rejoindre Fit'Analysor</h3>
+                   <h3>Nous rejoindre</h3>
                        <ul class="liste-rejoindreFit">
                        <li><a href="#">Proposer une salle</a></li>
                        <li><a href="#">Devenir licencié</a></li>
