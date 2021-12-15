@@ -110,10 +110,6 @@ nav {
 .breadcrumb ul {
     display:inline-flex;
 }
-
-.breadcrumb li::before {
-    content: " -> ";
-}
     
 .breadcrumb li:first-child::before {
     content: " ";
@@ -121,19 +117,19 @@ nav {
 
 .breadcrumb ul{
     list-style-type: none;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: "Open Sans", cursive;
 }
 
 .breadcrumb ul :link, .breadcrumb ul :visited{
 	color: white;
     list-style-type: none;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: "Open Sans", cursive;
     text-decoration: none;
 }
 
 .breadcrumb ul :hover{
     list-style-type: none;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: "Open Sans", cursive;
     color:#e91e63;
 }
 
