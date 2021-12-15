@@ -1,36 +1,59 @@
+@import url("https://fonts.googleapis.com/css2?family=Squada+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
+
+
 body {
-	background-color : #32244c; 
+	background-color : #19061a; 
 	color : white;
+    font-family: "Open Sans", cursive;
+	margin: 0;
 }
 
-.connexion a:link, .connexion a:visited { /*bouton de connexion*/
+.bouton_connexion a:link, .bouton_connexion a:visited { /*bouton de connexion*/
 	border-style : solid;
 	border-color : #e91e63;
 	background-color : #e91e63;
-	padding : 1px 25px;
+	padding : 1px 100px;
 	color : white;
 	font-size : 25px;
 	text-align : center;
 	text-decoration : none;
-	margin : 10px;
 }
 
-.connexion a:hover, .connexion a:active {
+.bouton_connexion a:hover, .bouton_connexion a:active {
 	background-color : red;
 	color: black;
 	text-decoration: underline;
+}
 
+.bouton_inscription a:link, .bouton_inscription a:visited{
+	border-style : solid;
+	border-color : white;
+	background-color : white;
+	text-decoration : none;
+	color : black;
+	padding : 1px 118px;
+}
+
+.bouton_inscription a:hover, .bouton_inscription a:active{
+	background-color : grey;
+	border-color : grey;
+	color : white;
 }
 
 .connexion {
-	margin-top: 20px;
-	margin-left : 10px;
-	float: left;
+	margin: 30px;
+	text-align : center;
 }
 
-.element_connexion {
-	margin : 10px;
-	text-align : center;
+.element_connexion{
+	margin:20px;
+}
+
+.barre_connexion{
+	margin : 20px;
+	width : 300px;
+	height : 20px;
 }
 
 .titre_article1 {
@@ -38,12 +61,13 @@ body {
 }
 
 .article1 {
-	font-size : 40px;
-	float : right;
-	width : 50%;
+	font-size : 30px;
+	margin: auto;
+    margin-top: 30px;
+	width : 70%;
 	border : double 7px white;
 	border-radius : 100px;
-	padding : 10px;
+	padding : 20px;
 	text-align : center;
 }
 
@@ -51,13 +75,14 @@ body {
 	display : flex;
 	flex-direction : row;
 	justify-content : space-between;
-	margin-top : 500px;	
+	margin-top : 300px;	
+    margin-bottom : 200px;
 }
   
 
 nav {
 	border: 2px black solid;
-	background-color: #884EA0;
+	background-color: #32244c;
 	background-attachment: fixed;
 	top: 0;
 	padding-left: 1em;
@@ -70,6 +95,7 @@ nav {
 	justify-content: space-between;
 	align-items: center;
 	list-style: none;
+    height : 40px;
 
 }
 
@@ -86,7 +112,7 @@ nav {
 }
 
 .breadcrumb li::before {
-    content: "> ";
+    content: " -> ";
 }
     
 .breadcrumb li:first-child::before {
@@ -98,17 +124,17 @@ nav {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.breadcrumb ul :link{
+.breadcrumb ul :link, .breadcrumb ul :visited{
+	color: white;
     list-style-type: none;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color:black;
     text-decoration: none;
 }
 
 .breadcrumb ul :hover{
     list-style-type: none;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color:crimson;
+    color:#e91e63;
 }
 
 section {
@@ -116,8 +142,8 @@ section {
 }
 
 footer {
-  padding: 100px 20px;
-  background: #32244c;
+  padding: 5px 10px;
+  background: #19061a;
   color: white;
   flex-shrink: 0;
   flex-direction: column;
@@ -129,13 +155,25 @@ footer {
   justify-content: center;
   align-items: flex-start;
   font-size: 20p;
-  padding: 50px 0 100px
+  padding: 50px 0 50px
 }
 
 .contenu-footer a{
 	text-decoration: none;
 	color: rgb(255, 255, 255);
-	}
+}
+
+.general {
+    background: #32244c;
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: flex;
+    flex-direction: row-reverse;
+}
+.element{
+padding-right: 20px;
+}
 
 .bloc {
   width: 25%;
@@ -162,5 +200,183 @@ footer {
 }
 
 .container {
-	margin: auto;
+	text-align : center;
+}
+
+.barre_inscription{
+	margin : 10px;
+	width : 300px;
+	height : 25px;
+}
+
+.slider {
+	width: 500px;
+	overflow: hidden;
+	margin: 150px auto;
+}
+
+.slides {
+    width: calc(500px * 3);
+    animation: glisse 20s infinite;
+}
+
+.slide {
+    float: left;
+}
+
+@keyframes glisse {
+    0% {
+        transform: translateX(0);
+    }
+    10% {
+        transform: translateX(0);
+    }
+    33% {
+        transform: translateX(-500px);
+    }
+    43% {
+        transform: translateX(-500px);
+    }
+    66% {
+        transform: translateX(-1000px);
+    }
+    76% {
+        transform: translateX(-1000px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+
+.imageal1{
+    display: block;
+    margin-top: -2px;
+    margin-right: 0px;
+    margin-left: 0px;
+}
+  
+#imageduhaut{
+    height: 400px;
+    width: 100%;
+}
+
+#aludique{
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 3.9rem;
+    color: white;
+    word-spacing: 16px;
+    text-align: center;
+    font-family: "Squada One", cursive;
+    background: rgb(207, 24, 33);
+    width: 530px;
+    height: 72px;
+    border-radius: 8px;
+    position: absolute;
+    top: 472px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+.texteal1{
+    margin-top: 260px;
+    margin-left: 47%;
+    margin-right: 20px;
+    font-size: 1.2rem;
+    z-index: 99;
+}
+
+.texteal2{
+    margin-top: 260px;
+    margin-left: 20px;
+    margin-right: 47%;
+    font-size: 1.2rem;
+    z-index: 99;
+}
+
+
+.videoal1{
+    position: absolute;
+    margin-top: -1290px;
+    margin-left: 10px;
+    height: 290px;
+    width: 654px;
+    border: 15px solid black;
+    overflow: hidden;
+  }
+
+#vidal1 {
+    position: float;
+    margin-top: -10px;
+    height: 380px;
+    width: 680px;
+    border: 13px solid rgb(156, 39, 39);
+    box-sizing: border-box;
+    }
+
+.videoal2{
+    position: absolute;
+    margin-top: -930px;
+    margin-left: 53%;
+    height: 290px;
+    width: 654px;
+    border: 15px solid black;
+    overflow: hidden;
+}
+
+#vidal2 {
+    position: float;
+    margin-top: -10px;
+    height: 380px;
+    width: 680px;
+    border: 13px solid rgb(156, 39, 39);
+    box-sizing: border-box;
+}
+
+.videoal3{
+    position: absolute;
+    margin-top: -545px;
+    margin-left: 10px;
+    height: 290px;
+    width: 654px;
+    border: 15px solid black;
+    overflow: hidden;
+  }
+
+#vidal3 {
+    position: float;
+    margin-top: -10px;
+    height: 380px;
+    width: 680px;
+    border: 13px solid rgb(156, 39, 39);
+    box-sizing: border-box;
+    }
+
+.videoal4{
+    position: absolute;
+    margin-top: -220px;
+    margin-left: 53%;
+    height: 290px;
+    width: 654px;
+    border: 15px solid black;
+    overflow: hidden;
+}
+    
+#vidal4 {
+    position: float;
+    margin-top: -10px;
+    height: 380px;
+    width: 680px;
+    border: 13px solid rgb(156, 39, 39);
+    box-sizing: border-box;
+}
+
+#h2al{
+    margin-left: 10px;
+}
+
+#h3al{
+    margin-left: 10px;
 }

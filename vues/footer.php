@@ -1,9 +1,9 @@
 <div class="footer-clean">
-<footer>    
+    <footer>    
         <div class="contenu-footer">
 
             <div class="bloc footer-rejoindreFit">
-                   <h3>Rejoindre Fit'Analysor</h3>
+                   <h3>Nous rejoindre</h3>
                        <ul class="liste-rejoindreFit">
                        <li><a href="#">Proposer une salle</a></li>
                        <li><a href="#">Devenir licencié</a></li>
@@ -27,14 +27,21 @@
            </div>
 
            <div class="bloc footer-Activités">
-                <h3>Activités</h3>
-                   <ul class="liste-Activités">
+               <h3>Activités</h3>
+               <ul class="liste-Activités">
                    <li><a href="#">Données physiques</a></li>
                    <li><a href="#">Données environnementales</a></li>
-                   <li><a href="#">Jeu ludique</a></li>
+                   <li><a href="#">Activité ludique</a></li>
+                </div>
+                
             </div>
-         </div>
+        </div>
     </footer>
+    <div class="general">
+        <div class="element">Mentions Légales</div>
+        <div class="element">CGU</div>
+        <div class="element">CGV</div>
+        <div class="element">Paramétrer les cookies</div>
+    </div>
+    
 </div>
-</body>
-</html>

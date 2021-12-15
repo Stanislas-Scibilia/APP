@@ -1,23 +1,14 @@
 <section>
-    <article class="connexion">
-        <a href="connexion.php"> Connexion </a>
-
-        <form action="" method="post">
-        <div class="element_connexion">Contacte ta salle pour <br> récupérer ton identifiant.</div>
-        <input class="element_connexion" type="text" name="identifiant" id="identifiant" placeholder="identifiant">
-	    <br>
-        <input class="element_connexion" type="password" name="motdepasse" id="motdepasse" placeholder="mot de passe">
-        <br> 
-	    <input class="element_connexion" type="submit" value="S'inscrire">
-        </form>
-    </article>
-
     <article class="article1">
         <div class="titre_article1">
             <b> Qui sommes-nous ? </b>
         </div>
         <div>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores quae laboriosam ab ullam eligendi dignissimos aut consequatur. Perspiciatis explicabo, dolorem rem non voluptate similique nemo voluptates ad odit accusantium et.
+        Numeric’air, une startup jeune et dynamique, vous propose désormais le service fit’analysor pour votre plus grande joie. 
+        <br> <br>
+        Cet outil accessible à tous révolutionnera chacune de vos séances sportives, avec un suivi de votre activité en direct, disponible depuis la page profil. Fitanalysor est la technologie d’avenir indispensable pour tout adepte de sport et de bien-être, et met en place statistiques et graphiques pour vous aider au mieux à gérer votre évolution.
+        <br> <br>
+        Nous resterons à votre disposition et à votre écoute via la rubrique FAQ. Pour plus de renseignements, n’hésitez pas à nous contacter ou à venir en salle découvrir nos dispositifs déjà irremplaçables (inclus avec le forfait de votre salle de sport partenaire). 
         </div>
     </article>
 </section>
@@ -25,15 +16,15 @@
 <section>
     <div class="capteur">
         <div>
-            <img src="vues/capteur_cardiaque.png" alt="capteur cardiaque" width="300px" height="300px">
+            <img src="vues/capteur_cardiaque.jpg" alt="capteur cardiaque" width="300px" height="300px">
             <h2> Capteur cardiaque </h2>
         </div>
         <div> 
-            <img src="vues/capteur_CO2.png" alt="capteur CO2" width="300px" height="300px">
+            <img src="vues/capteur_CO2.jpg" alt="capteur CO2" width="300px" height="300px">
             <h2> Capteur CO2 </h2>
         </div>
         <div>
-            <img src="vues/capteur_sonore.png" alt="capteur sonore" width="300px" height="300px">
+            <img src="vues/capteur_sonore.jpg" alt="capteur sonore" width="300px" height="300px">
             <h2> Capteur sonore </h2>
         </div>
     </div>
