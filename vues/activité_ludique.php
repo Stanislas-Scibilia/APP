@@ -16,28 +16,28 @@
         <p>
         <em>"C'est une triste chose de songer que la nature parle et que le genre humain ne l'écoute pas"</em>  
         <br>
-        <h3>Victor Hugo</h3>
+        <h3 id="auteurcitation">Victor Hugo</h3>
         </p>  
     </div>
     <div class="texteal2">
         <p>
         <em>"Les espèces qui survivent ne sont pas les espèces les plus fortes, ni les plus intelligentes, mais celles qui s'adaptent le mieux aux changements"</em>  
         <br>
-        <h3>Charles Darwin</h3>
+        <h3 id="auteurcitation">Charles Darwin</h3>
     </p>  
     </div>
     <div class="texteal1">
         <p>
         <em>"A l'échelle cosmique, l'eau est plus rare que l'or."</em>
         <br>
-        <h3>Hubert Reeves</h3> 
+        <h3 id="auteurcitation">Hubert Reeves</h3> 
         </p>  
     </div>
     <div class="texteal2">
         <p>
         <em>"Ce qui caractérise notre époque, c'est la perfection des moyens et la confusion des fins."</em>
         <br>
-        <h3>Albert Einstein</h3>
+        <h3 id="auteurcitation">Albert Einstein</h3>
         </p>  
     </div>
     <div class="videoal1">
@@ -77,10 +77,6 @@
             </form> 
         </div>   
     </div>
-    <br>
-    <br>
-    <br>
-    <br>
     <br>
     <br>
     <br>
