@@ -57,6 +57,10 @@ switch($function) {
         $_SESSION['connexion'] = false;
         break;
 
+    case 'mentionslegales':
+        $vue = 'mentionslegales';
+        break;
+
     default:
         $vue = '404';
         break;

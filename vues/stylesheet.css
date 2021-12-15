@@ -266,6 +266,11 @@ padding-right: 20px;
 	text-align : center;
 }
 
+.container-justify {
+    text-align: justify;
+    width: 100%;
+}
+
 .barre_inscription{
 	margin : 10px;
 	width : 300px;
@@ -442,4 +447,8 @@ padding-right: 20px;
 
 #h3al{
     margin-left: 10px;
+}
+
+a {
+    color: pink;
 }
