@@ -359,7 +359,9 @@ padding-right: 20px;
     font-size: 1.2rem;
     z-index: 99;
 }
-
+#auteurcitation{
+    color:rgb(207, 24, 33) ;
+}
 
 .videoal1{
     position: absolute;
@@ -444,9 +446,11 @@ padding-right: 20px;
 #h3al{
     margin-left: 10px;
 }
+
 #Codeal{
     font-size: 3rem;
     text-align: center;
+    margin-top: 210px;
 }
 
 .flexboxactivite{
