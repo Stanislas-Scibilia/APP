@@ -110,10 +110,6 @@ nav {
 .breadcrumb ul {
     display:inline-flex;
 }
-
-.breadcrumb li::before {
-    content: " -> ";
-}
     
 .breadcrumb li:first-child::before {
     content: " ";
