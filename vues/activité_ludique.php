@@ -41,7 +41,7 @@
         </p>  
     </div>
     <div class="videoal1">
-        <video id="vidal1" src="vues/vid01.mp4" controls controlsList="nodownload nofullscreen noremoteplayback" loop  muted height="300"></video>  
+        <video id="vidal1" src="vues/vidactivlud1.mp4" controls controlsList="nodownload nofullscreen noremoteplayback" loop  muted height="300"></video>  
     </div>
     <div class="videoal2">
         <video id="vidal2" src="vues/vid01.mp4" controls controlsList="nodownload nofullscreen noremoteplayback" loop muted height="300"></video>  
