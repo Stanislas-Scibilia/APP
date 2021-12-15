@@ -55,28 +55,24 @@
     <br>
     <br>
     <p id="Codeal">Code Secret</p>
-    <div class="flexboxactivite">
+    <form class="flexboxactivite" method="post">
         <div class=boxal>
-           <form>
-               <input id="boxcode" type="number" min="0" max="9">
-           </form> 
+               <input id="boxcode" name='1' type="number" min="0" max="9">
         </div>
         <div class=boxal>
-            <form>
-                <input id="boxcode" type="number" min="0" max="9">
-            </form> 
+                <input id="boxcode" name='2' type="number" min="0" max="9">
         </div>
         <div class=boxal>
-            <form>
-                <input id="boxcode" type="number" min="0" max="9">
-            </form> 
+                <input id="boxcode" name='3' type="number" min="0" max="9">
         </div>
         <div class=boxal>
-            <form>
-                <input id="boxcode" type="number" min="0" max="9">
-            </form> 
-        </div>   
-    </div>
+                <input id="boxcode" name='4' type="number" min="0" max="9">
+        </div>
+        <div class="boxal">
+            <input type="submit" value="Valider">
+        </div>
+    </form>
+    <?php if (isset($message)) {echo $message;}?>
     <br>
     <br>
     <br>
