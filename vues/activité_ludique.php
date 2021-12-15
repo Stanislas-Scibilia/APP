@@ -54,6 +54,31 @@
     </div>
     <br>
     <br>
+    <p id="Codeal">Code Secret</p>
+    <div class="flexboxactivite">
+        <div class=boxal>
+           <form>
+               <input id="boxcode" type="number" min="0" max="9">
+           </form> 
+        </div>
+        <div class=boxal>
+            <form>
+                <input id="boxcode" type="number" min="0" max="9">
+            </form> 
+        </div>
+        <div class=boxal>
+            <form>
+                <input id="boxcode" type="number" min="0" max="9">
+            </form> 
+        </div>
+        <div class=boxal>
+            <form>
+                <input id="boxcode" type="number" min="0" max="9">
+            </form> 
+        </div>   
+    </div>
+    <br>
+    <br>
     <br>
     <br>
     <br>
