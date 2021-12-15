@@ -364,18 +364,18 @@ padding-right: 20px;
     position: absolute;
     margin-top: -1290px;
     margin-left: 10px;
-    height: 290px;
+    height: 280px;
     width: 654px;
-    border: 15px solid black;
+    border: 15px solid #19061a;
     overflow: hidden;
   }
 
 #vidal1 {
     position: float;
-    margin-top: -10px;
-    height: 380px;
+    margin-top: -45px;
+    height: 450px;
     width: 680px;
-    border: 13px solid rgb(156, 39, 39);
+    border: 13px solid #19061a;
     box-sizing: border-box;
     }
 
