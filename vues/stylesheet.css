@@ -388,7 +388,7 @@ padding-right: 20px;
     margin-left: 53%;
     height: 290px;
     width: 654px;
-    border: 15px solid black;
+    border: 15px solid #19061a;
     overflow: hidden;
 }
 
@@ -397,7 +397,7 @@ padding-right: 20px;
     margin-top: -10px;
     height: 380px;
     width: 680px;
-    border: 13px solid rgb(156, 39, 39);
+    border: 13px solid #19061a;
     box-sizing: border-box;
 }
 
@@ -407,7 +407,7 @@ padding-right: 20px;
     margin-left: 10px;
     height: 290px;
     width: 654px;
-    border: 15px solid black;
+    border: 15px solid #19061a;
     overflow: hidden;
   }
 
@@ -416,7 +416,7 @@ padding-right: 20px;
     margin-top: -10px;
     height: 380px;
     width: 680px;
-    border: 13px solid rgb(156, 39, 39);
+    border: 13px solid #19061a;
     box-sizing: border-box;
     }
 
