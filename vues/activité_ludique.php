@@ -41,7 +41,7 @@
         </p>  
     </div>
     <div class="videoal1">
-        <video id="vidal1" src="vues/vidactivlud1.mp4" controls controlsList="nodownload nofullscreen noremoteplayback" loop  muted height="300"></video>  
+        <video id="vidal1" src="vues/vidact1.mp4" controls controlsList="nodownload nofullscreen noremoteplayback" loop  muted height="300"></video>  
     </div>
     <div class="videoal2">
         <video id="vidal2" src="vues/vidact2.mp4" controls controlsList="nodownload nofullscreen noremoteplayback" loop muted height="300"></video>  
@@ -50,7 +50,7 @@
         <video id="vidal3" src="vues/vidact3.mp4" controls controlsList="nodownload nofullscreen noremoteplayback" loop muted height="300"></video>  
     </div>
     <div class="videoal4">
-        <video id="vidal4" src="vues/vid01.mp4" controls controlsList="nodownload nofullscreen noremoteplayback" loop muted height="300"></video>  
+        <video id="vidal4" src="vues/vidact4.mp4" controls controlsList="nodownload nofullscreen noremoteplayback" loop muted height="300"></video>  
     </div>
     <br>
     <br>
