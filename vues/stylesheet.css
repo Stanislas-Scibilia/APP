@@ -345,16 +345,16 @@ padding-right: 20px;
 
 
 .texteal1{
-    margin-top: 260px;
+    margin-top: 400px;
     margin-left: 47%;
-    margin-right: 20px;
+    margin-right: 80px;
     font-size: 1.2rem;
     z-index: 99;
 }
 
 .texteal2{
-    margin-top: 260px;
-    margin-left: 20px;
+    margin-top: 400px;
+    margin-left: 80px;
     margin-right: 47%;
     font-size: 1.2rem;
     z-index: 99;
@@ -365,7 +365,7 @@ padding-right: 20px;
 
 .videoal1{
     position: absolute;
-    margin-top: -1290px;
+    margin-top: -1770px;
     margin-left: 10px;
     height: 280px;
     width: 654px;
@@ -384,7 +384,7 @@ padding-right: 20px;
 
 .videoal2{
     position: absolute;
-    margin-top: -930px;
+    margin-top: -1240px;
     margin-left: 53%;
     height: 290px;
     width: 654px;
@@ -403,7 +403,7 @@ padding-right: 20px;
 
 .videoal3{
     position: absolute;
-    margin-top: -545px;
+    margin-top: -775px;
     margin-left: 10px;
     height: 290px;
     width: 654px;
@@ -422,7 +422,7 @@ padding-right: 20px;
 
 .videoal4{
     position: absolute;
-    margin-top: -220px;
+    margin-top: -260px;
     margin-left: 53%;
     height: 290px;
     width: 654px;
