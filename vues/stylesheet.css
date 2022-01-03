@@ -107,6 +107,14 @@ nav {
 	text-decoration: none;
 }
 
+.nav-item a :hover{
+	color: #e91e63;
+	text-transform: uppercase;
+	letter-spacing: 1,3px;
+	font-size: 25px;
+	text-decoration: none;
+}
+
 .breadcrumb ul {
     display:inline-flex;
 }
