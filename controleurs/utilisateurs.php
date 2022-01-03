@@ -29,6 +29,9 @@ switch($function) {
     
     case 'activité_ludique':
         $vue = 'activité_ludique';
+        if (!empty($_POST) and $_POST['1']===1 and $_POST['2']===5 and $_POST['3']===5 and $_POST['4']===5) {
+            $message = 'Vous avez gagné !';
+        }
         break;
 
     case 'admin':
@@ -55,6 +58,10 @@ switch($function) {
     case 'deconnexion':
         $vue = 'accueil';
         $_SESSION['connexion'] = false;
+        break;
+
+    case 'mentionslegales':
+        $vue = 'mentionslegales';
         break;
 
     default:
