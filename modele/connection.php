@@ -1,15 +1,8 @@
 <?php
-
-    $servername = 'localhost';
-    $username = 'root';
-    $password = '';
-    $dbname = 'fit_analysor';
-
     $servername = "localhost";
     $username = "root";
-    $password = "";
+    $password = "root";
     $dbname = "fit_analysor";
-
     
     // Create connection
     $conn = new mysqli($servername, $username, $password, $dbname);
