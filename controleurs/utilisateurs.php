@@ -20,6 +20,7 @@ switch($function) {
             if ($_POST['identifiant']==='test' and $_POST['motdepasse']==='test') {
                 $_SESSION['connexion'] = 'user';
                 $message = "Vous êtes connecté en tant qu'utilisateur.";
+                $vue = 'profil';
             } elseif ($_POST['identifiant']==='admin' and $_POST['motdepasse']==='test') {
                 $_SESSION['connexion'] = 'admin';
                 $message = "Vous êtes connecté en tant qu'administrateur.";
