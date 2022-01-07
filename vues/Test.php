@@ -1,9 +1,16 @@
 <?php
 
+<<<<<<< HEAD
     $servername = 'localhost';
     $username = 'root';
     $password = '';
     $dbname = 'fit_analysor';
+=======
+    $servername = "localhost";
+    $username = "root";
+    $password = "";
+    $dbname = "fit_analysor";
+>>>>>>> 0eecb3f13168e9b70ec73e599a9cfbd77db71461
     
     // Create connection
     $conn = new mysqli($servername, $username, $password, $dbname);
@@ -23,6 +30,6 @@ if ($result->num_rows > 0) {
 } else {
   echo "0 results";
 }
+*/
 $conn->close();
 ?> 
-*/
