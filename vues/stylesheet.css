@@ -107,6 +107,14 @@ nav {
 	text-decoration: none;
 }
 
+.nav-item a :hover{
+	color: #e91e63;
+	text-transform: uppercase;
+	letter-spacing: 1,3px;
+	font-size: 25px;
+	text-decoration: none;
+}
+
 .breadcrumb ul {
     display:inline-flex;
 }
@@ -345,16 +353,16 @@ padding-right: 20px;
 
 
 .texteal1{
-    margin-top: 260px;
+    margin-top: 400px;
     margin-left: 47%;
-    margin-right: 20px;
+    margin-right: 80px;
     font-size: 1.2rem;
     z-index: 99;
 }
 
 .texteal2{
-    margin-top: 260px;
-    margin-left: 20px;
+    margin-top: 400px;
+    margin-left: 80px;
     margin-right: 47%;
     font-size: 1.2rem;
     z-index: 99;
@@ -365,7 +373,7 @@ padding-right: 20px;
 
 .videoal1{
     position: absolute;
-    margin-top: -1290px;
+    margin-top: -1770px;
     margin-left: 10px;
     height: 280px;
     width: 654px;
@@ -384,60 +392,60 @@ padding-right: 20px;
 
 .videoal2{
     position: absolute;
-    margin-top: -930px;
+    margin-top: -1240px;
     margin-left: 53%;
     height: 290px;
     width: 654px;
-    border: 15px solid black;
+    border: 15px solid #19061a;
     overflow: hidden;
 }
 
 #vidal2 {
     position: float;
-    margin-top: -10px;
-    height: 380px;
+    margin-top: -45px;
+    height: 450px;
     width: 680px;
-    border: 13px solid rgb(156, 39, 39);
+    border: 13px solid #19061a;
     box-sizing: border-box;
 }
 
 .videoal3{
     position: absolute;
-    margin-top: -545px;
+    margin-top: -775px;
     margin-left: 10px;
     height: 290px;
     width: 654px;
-    border: 15px solid black;
+    border: 15px solid #19061a;
     overflow: hidden;
   }
 
 #vidal3 {
     position: float;
-    margin-top: -10px;
-    height: 380px;
+    margin-top: -45px;
+    height: 450px;
     width: 680px;
-    border: 13px solid rgb(156, 39, 39);
+    border: 13px solid #19061a;
     box-sizing: border-box;
     }
 
 .videoal4{
     position: absolute;
-    margin-top: -220px;
+    margin-top: -260px;
     margin-left: 53%;
     height: 290px;
     width: 654px;
-    border: 15px solid black;
+    border: 15px solid #19061a;
     overflow: hidden;
 }
     
 #vidal4 {
     position: float;
-    margin-top: -10px;
-    height: 380px;
+    margin-top: -45px;
+    height: 450px;
     width: 680px;
-    border: 13px solid rgb(156, 39, 39);
+    border: 13px solid #19061a;
     box-sizing: border-box;
-}
+    }
 
 #h2al{
     margin-left: 10px;
@@ -469,7 +477,7 @@ padding-right: 20px;
 #boxcode{
     text-align: center;
     justify-content: center;
-    color: white;
+    color: rgb(13, 146, 13);
     font-size: 2.5rem;
     background-color: #19061a;
     height: 60px;
