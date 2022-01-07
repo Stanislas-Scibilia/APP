@@ -2,7 +2,7 @@
 
     $servername = "127.0.0.1";
     $username = "root";
-    $password = "naornaor";
+    $password = "";
     $dbname = "fit_analysor";
     
     // Create connection
