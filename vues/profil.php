@@ -1,7 +1,9 @@
 <div class="contenant">
 
 <h1 id="bienvenueprofil">Bienvenue Stanislas Scibilia !</h1>
-
+<?php
+var_dump(!empty($_SESSION['connexion']) and $_SESSION['connexion'] != $role);
+?>
     <div class="perf">
         <h1 id="perfh1">Vos performances</h1>
         <img src="vues/graphique-exemple.jpg" height=200 alt="">
