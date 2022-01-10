@@ -490,3 +490,16 @@ padding-right: 20px;
 a {
     color: pink;
 }
+
+#perf-ami2{
+    text-align: center;
+}
+
+#perf{
+    color: #e91e63;
+}
+
+
+#donnees-env{
+    text-align: center;    
+}
