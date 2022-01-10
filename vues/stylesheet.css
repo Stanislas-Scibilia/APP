@@ -491,15 +491,19 @@ a {
     color: pink;
 }
 
-#perf-ami2{
+
+.profilefh1{
+    color: aqua;
     text-align: center;
+    font-size: 2rem;
 }
 
-#perf{
-    color: #e91e63;
+.flexboxprofile{
+    display: flex;
+    justify-content: space-around;
 }
 
-
-#donnees-env{
-    text-align: center;    
-}
+table, th, td {
+    border: 1px solid white;
+    border-collapse: collapse;
+  }
