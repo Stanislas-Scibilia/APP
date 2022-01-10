@@ -3,7 +3,7 @@
 <h1 id="bienvenueprofil">Bienvenue Stanislas Scibilia !</h1>
 
     <div class="perf">
-        <h1 id="perf">Vos performances</h1>
+        <h1 id="perfh1">Vos performances</h1>
         <img src="vues/graphique-exemple.jpg" height=200 alt="">
         <table style="width:40%">
   <tr>
@@ -66,7 +66,7 @@
     </div>
     
     <div class="donnees-env">
-        <h1 id="donnees-env">Données environnementales</h1>
+        <h1 id="donnees-envh1">Données environnementales</h1>
         <img src="vues/graphique-exemple.jpg" height=200 alt="">
         <table style="width:40%">
   <tr>
@@ -129,7 +129,7 @@
     </div>
 
     <div class="perf-ami">
-        <h1 id="perf-ami">Performance de vos amis</h1>
+        <h1 id="perf-amih1">Performances de vos amis</h1>
         <img src="vues/graphique-exemple.jpg" height=200 alt="">
         <table style="width:40%">
   <tr>
