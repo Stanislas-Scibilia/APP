@@ -39,7 +39,7 @@
     </footer>
     <div class="general">
         <div class="element"> <a href="/?fonction=mentionslegales">Mentions Légales</a></div>
-        <div class="element">CGU</div>
+        <div class="element"> <a href="/?fonction=CGU">CGU</a></div>
         <div class="element">CGV</div>
         <div class="element">Paramétrer les cookies</div>
     </div>

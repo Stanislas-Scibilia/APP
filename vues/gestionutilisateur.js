@@ -3,13 +3,13 @@ function chercher_utilisateur() {
 	input=input.toLowercas();
 	let x = document.getElementByClassName('utilisateur');
 	
-	for (i = 0; i < x.length; i++){
+	for (i = 0; i < x.length; i++) {
 		if (!x[i].innerHTML.toLowerCase().includes(input)) {
 			x[i].style.display="none";
 		}
 
 		else {
-			x[i].style.display="liste-utilisateur"
+			x[i].style.display="liste-item"
 
 		}
 
