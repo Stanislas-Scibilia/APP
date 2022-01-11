@@ -1,7 +1,7 @@
 <div class="contenant">
 
 <h1 id="bienvenueprofil">Bienvenue Stanislas Scibilia !</h1>
-<div class="perf">
+<div id="perf">
       <div class="profilefh1">
         <p>Vos performances</p></div>
         <div class="flexboxprofile">
