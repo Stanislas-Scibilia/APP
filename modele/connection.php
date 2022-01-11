@@ -1,7 +1,7 @@
 <?php
     $servername = "localhost";
     $username = "root";
-    $password = "";
+    $password = "root";
     $dbname = "fit_analysor";
     
     // Create connection
@@ -10,17 +10,15 @@
     if ($conn->connect_error) {
       die("Connection failed: " . $conn->connect_error);
     }
+/*
+    $sql = "UPDATE MyGuests SET lastname='Doe' WHERE id=2";
 
-    $sql = "SELECT Nom, Prénom FROM utilisateurs";
-        $result = $conn->query($sql);
+if ($conn->query($sql) === TRUE) {
+  echo "Record updated successfully";
+} else {
+  echo "Error updating record: " . $conn->error;
+}
 
-        if ($result->num_rows > 0) {
-
-          while($row = $result->fetch_assoc()) {
-            echo "Nom : " . $row["Nom"]. " ; Prénom : " . $row["Prénom"]. "<br>";
-          }
-        } else {
-          echo "0 results";
-        }
-        $conn->close();
+$conn->close();
+*/
 ?> 

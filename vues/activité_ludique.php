@@ -10,7 +10,7 @@
     Bienvenue sur l'activite ludique de Fit'Analysor
 
     </p>
-    <p id="h3al">Tentez votre chance en jouant au jeu ludique. Le principe est simple, Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta omnis distinctio laboriosam assumenda, reprehenderit cumque debitis iusto laudantium fugit deserunt alias quasi dolor, a, nesciunt voluptates inventore dolores. Inventore quasi, non totam recusandae sit illo ex odio! Dolore, quasi quo?  
+    <p id="h3al">Principe du jeu: mettre pause au bon moment pour trouver le chiffre écrit en vert sur chaque activité. Chaque chiffre constitue une partie du Code Secret
     </p>
     <div class="texteal1">
         <p>
@@ -72,7 +72,7 @@
             <input type="submit" value="Valider">
         </div>
     </form>
-    <?php if (isset($message)) {echo $message;} else {echo 'ofgkdfghd';}?>
+    <?php if (isset($message)) {echo $message;}?>
     <br>
     <br>
     <br>
