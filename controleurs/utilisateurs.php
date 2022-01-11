@@ -45,7 +45,11 @@ switch($function) {
     case 'gen.id':
         verification_session('admin');
         $vue = 'gen.id';
-        $uuid = uniqid("", true);
+        
+        if (!empty($_POST) and $_POST['compte'] === 'creer') {
+            $uuid = uniqid("", true);
+            //ajoutIdBdd();
+        }
         break;
     
     case 'inscription':
@@ -69,7 +73,15 @@ switch($function) {
     case 'mentionslegales':
         $vue = 'mentionslegales';
         break;
-
+    
+    case 'gestion':
+        $vue = 'gestionutilisateur';
+        break;
+    
+    case 'CGU':
+        $vue = 'CGU'; 
+        break;
+        
     default:
         $vue = '404';
         break;
