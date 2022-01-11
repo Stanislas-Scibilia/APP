@@ -72,7 +72,7 @@
             <input type="submit" value="Valider">
         </div>
     </form>
-    <?php if (isset($message)) {echo $message;} else {echo 'ofgkdfghd';}?>
+    <?php if (isset($message)) {echo $message;}?>
     <br>
     <br>
     <br>
