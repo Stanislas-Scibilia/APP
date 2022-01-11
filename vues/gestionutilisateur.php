@@ -7,5 +7,5 @@
 		<li class ="utilisateur"> Utilisateur 2 </li>
 		<li class ="utilisateur"> Utilisateur 3 </li>
 	</ol>
-	<script src="vues/gestionutilisateur.js"></script>
 </body>
+<script src="vues/gestionutilisateur.js"></script>
