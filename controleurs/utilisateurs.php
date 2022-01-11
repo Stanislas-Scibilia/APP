@@ -1,7 +1,6 @@
 <?php
 
 session_start();
-include('controleurs/fonctions.php');
 
 if (isset($_GET['fonction']) && !empty($_GET['fonction'])) {
     $function = $_GET['fonction'];
@@ -37,12 +36,10 @@ switch($function) {
         break;
 
     case 'admin':
-        verification_session('admin');
         $vue = 'admin';
         break;
     
     case 'gen.id':
-        verification_session('admin');
         $vue = 'gen.id';
         $uuid = uniqid("", true);
         break;
@@ -52,7 +49,6 @@ switch($function) {
         break;
     
     case 'profil':
-        verification_session('user');
         $vue = 'profil';
         break;
     
@@ -68,7 +64,7 @@ switch($function) {
     case 'mentionslegales':
         $vue = 'mentionslegales';
         break;
-    
+
     default:
         $vue = '404';
         break;
