@@ -68,7 +68,11 @@ switch($function) {
     case 'mentionslegales':
         $vue = 'mentionslegales';
         break;
-
+    
+    case 'gestion':
+        $vue = 'gestionutilisateur';
+        break;
+        
     default:
         $vue = '404';
         break;
