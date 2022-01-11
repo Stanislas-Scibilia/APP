@@ -1,7 +1,7 @@
 <div class="container">
     <h1>Inscription</h1>
     
-    <form action="" method="post">
+    <form action="<?php echo $_SERVER['PHP_SELF'];?>" method="post">
            
         <input class="barre_inscription" type="text" name="identifiant" id="identifiant" placeholder="Identifiant">
         <br>
@@ -20,7 +20,7 @@
             <option value="Autre">
         </datalist>
         <br>
-        <input class="barre_inscription" type="email" name="mail" id="mail" placeholder="email@example.org">
+        <input class="barre_inscription" type="email" name="email" id="email" placeholder="email@example.org">
         <br>
         <input class="barre_inscription" type="text" name="adresse" id="adresse" placeholder="Numéro & nom de rue">
         <br>
@@ -39,4 +39,20 @@
         <br>
         <input type="submit" value="S'inscrire">
     </form>
-</div> 
+</div>
+
+<?php
+$id_Utilisateur = $_POST["identifiant"];
+$Nom = $_POST["nom"];
+$Prénom = $_POST["prenom"];
+$Adresse_email = $_POST["email"];
+$Mot_de_passe = $_POST["motdepasse"];
+$Type = "Client";
+$Genre = $_POST["genre"];
+$Date_de_naissance = $_POST["datenaissance"];
+$Adresse = $_POST["adresse"];
+$Ville = $_POST["ville"];
+$Code_postal = $_POST["codepostal"];
+
+updateUtilisateurs($conn, $id_Utilisateur, $Nom, $Prénom, $Adresse_email, $Mot_de_passe, $Type, $Genre, $Date_de_naissance, $Adresse, $Ville, $Code_postal);
+?>

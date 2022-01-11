@@ -1,8 +1,10 @@
 <div class="container">
     <p>Pour générer un identifiant pour un nouveau client, cliquez sur le bouton suivant.</p>
+
     <form method="post">
-        <button type="submit" name="gen" value="oui">Générer un nouveal identifiant</button>
+        <button type="submit" name="compte" value="creer">Générer un  identifiant et créer un compte</button>
     </form>
-    
-    <p><?=$uuid?></p>
+
+    <p><?php if (isset($uuid)) {echo $uuid;}?></p>
+
 </div>
