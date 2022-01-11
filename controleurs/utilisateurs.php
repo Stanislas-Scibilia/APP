@@ -1,6 +1,7 @@
 <?php
 
 session_start();
+include('controleurs/fonctions.php');
 
 if (isset($_GET['fonction']) && !empty($_GET['fonction'])) {
     $function = $_GET['fonction'];
@@ -30,16 +31,18 @@ switch($function) {
     
     case 'activité_ludique':
         $vue = 'activité_ludique';
-        if (!empty($_POST) and $_POST['1']===1 and $_POST['2']===5 and $_POST['3']===5 and $_POST['4']===5) {
+        if (!empty($_POST) and $_POST['1']===1 and $_POST['2']===4 and $_POST['3']===5 and $_POST['4']===5) {
             $message = 'Vous avez gagné !';
         }
         break;
 
     case 'admin':
+        verification_session('admin');
         $vue = 'admin';
         break;
     
     case 'gen.id':
+        verification_session('admin');
         $vue = 'gen.id';
         $uuid = uniqid("", true);
         break;
@@ -49,6 +52,7 @@ switch($function) {
         break;
     
     case 'profil':
+        verification_session('user');
         $vue = 'profil';
         break;
     

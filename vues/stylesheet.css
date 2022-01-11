@@ -296,6 +296,21 @@ padding-right: 20px;
     float: left;
 }
 
+#barrerecherche{
+    margin-left: 15%;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+#list-utilisateur{
+    font-size: 1,5em;
+    margin-left: 90px;
+}
+
+.utilisateur{
+    display: list-utilisateur;
+}
+
 @keyframes glisse {
     0% {
         transform: translateX(0);
