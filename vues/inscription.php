@@ -3,6 +3,8 @@
     
     <form action="" method="post">
            
+        <input class="barre_inscription" type="text" name="identifiant" id="identifiant" placeholder="Identifiant">
+        <br>
         <input class="barre_inscription" type="text" name="prenom" id="prenom" placeholder="Prénom">
         <br>
         <input class="barre_inscription" type="text" name="nom" id="nom" placeholder="Nom">
