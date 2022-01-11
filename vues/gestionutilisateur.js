@@ -9,7 +9,7 @@ function chercher_utilisateur() {
 		}
 
 		else {
-			x[i].style.display="liste-utilisateur"
+			x[i].style.display="liste-item"
 
 		}
 
