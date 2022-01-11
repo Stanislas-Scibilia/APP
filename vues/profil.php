@@ -78,7 +78,7 @@
         </div>
       </div>
     <br>
-    <div class="donnees-env">
+    <div id="donnees-env">
       <div class="profilefh1">
         <p>Données Environnementales</p></div>
         <div class="flexboxprofile">
@@ -155,7 +155,7 @@
         </div>
       </div>
     <br>
-      <div class="perf-ami">
+      <div id="perf-ami">
       <div class="profilefh1">
         <p>Performances de vos amis</p></div>
         <div class="flexboxprofile">
