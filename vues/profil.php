@@ -6,7 +6,8 @@
         <p>Vos performances</p></div>
         <div class="flexboxprofile">
           <div class="fondprofile">
-          <table style="width:40%">
+          <div class="tableprofile1">
+          <table>
           <tr>
             <th>a</th>
             <th>b</th>
@@ -64,10 +65,14 @@
           </tr>
           </table>
           </div>
+          </div>
           <div class="fondprofile">
+          <div class="tableprofile2">
           <img src="vues/graphique-exemple.jpg" height=200 alt="">
+          </div>
           </div> 
         </div>
+        <br>
         <div class="texteprofile">
         <p>performance Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio, dicta nemo cum vitae harum deleniti quo est, perspiciatis ad sapiente voluptate in vero dolores. Nobis quas itaque facere ullam officiis? </p>
         </div>
@@ -75,10 +80,11 @@
     <br>
     <div class="donnees-env">
       <div class="profilefh1">
-        <p>Vos performances</p></div>
+        <p>Données Environnementales</p></div>
         <div class="flexboxprofile">
           <div class="fondprofile">
-          <table style="width:40%">
+          <div class="tableprofile1">  
+          <table>
           <tr>
             <th>a</th>
             <th>b</th>
@@ -136,10 +142,14 @@
           </tr>
           </table>
           </div>
+          </div>
           <div class="fondprofile">
+          <div class="tableprofile2">
           <img src="vues/graphique-exemple.jpg" height=200 alt="">
+          </div>
           </div> 
         </div>
+        <br>
         <div class="texteprofile">
         <p>performance Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio, dicta nemo cum vitae harum deleniti quo est, perspiciatis ad sapiente voluptate in vero dolores. Nobis quas itaque facere ullam officiis? </p>
         </div>
@@ -147,10 +157,11 @@
     <br>
       <div class="perf-ami">
       <div class="profilefh1">
-        <p>Vos performances</p></div>
+        <p>Performances de vos amis</p></div>
         <div class="flexboxprofile">
           <div class="fondprofile">
-          <table style="width:40%">
+          <div class="tableprofile1">
+          <table>
           <tr>
             <th>a</th>
             <th>b</th>
@@ -208,10 +219,14 @@
           </tr>
           </table>
           </div>
+          </div>
           <div class="fondprofile">
+          <div class="tableprofile2">
           <img src="vues/graphique-exemple.jpg" height=200 alt="">
-          </div> 
+          </div>
+          </div>
         </div>
+        <br>
         <div class="texteprofile">
         <p>performance Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio, dicta nemo cum vitae harum deleniti quo est, perspiciatis ad sapiente voluptate in vero dolores. Nobis quas itaque facere ullam officiis? </p>
         </div>
