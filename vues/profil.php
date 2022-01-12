@@ -1,6 +1,3 @@
-<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.0/chart.min.js"></script>
-<srcipt src="graphique.js"></script>
-
 <div class="contenant">
 
 <h1 id="bienvenueprofil">Bienvenue Stanislas Scibilia !</h1>
@@ -71,7 +68,10 @@
           </div>
           <div class="fondprofile">
           <div class="tableprofile2">
-          <img src="vues/graphique-exemple.jpg" height=200 alt="">
+            <canvas id="graphprophile"></canvas>
+
+              <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js"></script>
+              <script src="vues/graphiqueprofile.js"></script>
           </div>
           </div> 
         </div>
@@ -148,7 +148,10 @@
           </div>
           <div class="fondprofile">
           <div class="tableprofile2">
-          <img src="vues/graphique-exemple.jpg" height=200 alt="">
+          <canvas id="graphenv"></canvas>
+
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js"></script>
+          <script src="vues/graphiqueenv.js"></script>
           </div>
           </div> 
         </div>
@@ -225,7 +228,10 @@
           </div>
           <div class="fondprofile">
           <div class="tableprofile2">
-          <img src="vues/graphique-exemple.jpg" height=200 alt="">
+          <canvas id="graphami"></canvas>
+
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js"></script>
+          <script src="vues/graphiqueami.js"></script>
           </div>
           </div>
         </div>
@@ -233,4 +239,5 @@
         <div class="texteprofile">
         <p>performance Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio, dicta nemo cum vitae harum deleniti quo est, perspiciatis ad sapiente voluptate in vero dolores. Nobis quas itaque facere ullam officiis? </p>
         </div>
+      </div>
       </div>

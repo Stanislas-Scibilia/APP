@@ -529,8 +529,8 @@ table, th, td {
 
 .fondprofile{
     background-color: rgba(0, 255, 255, 0.253);
-    height: 400px;
-    width: 400px;
+    height: 500px;
+    width: 600px;
     border-radius: 14px;
 }
 
@@ -550,3 +550,4 @@ table, th, td {
     margin-top: 25%;
     margin-left: 5%;
 }
+
