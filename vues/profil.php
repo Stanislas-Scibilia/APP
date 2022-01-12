@@ -1,6 +1,3 @@
-<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.0/chart.min.js"></script>
-<srcipt src="graphique.js"></script>
-
 <div class="contenant">
 
 <h1 id="bienvenueprofil">Bienvenue Stanislas Scibilia !</h1>
@@ -232,5 +229,10 @@
         <br>
         <div class="texteprofile">
         <p>performance Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio, dicta nemo cum vitae harum deleniti quo est, perspiciatis ad sapiente voluptate in vero dolores. Nobis quas itaque facere ullam officiis? </p>
+        </div>
+        <div>
+          <canvas id="graph"></canvas>
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.0/chart.min.js"></script>
+          <srcipt src="vues/graphique.js"></script>
         </div>
       </div>
