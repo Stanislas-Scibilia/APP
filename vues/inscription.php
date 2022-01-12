@@ -58,5 +58,13 @@ $Adresse = $_POST["adresse"];
 $Ville = $_POST["ville"];
 $Code_postal = $_POST["codepostal"];
 
+<<<<<<< HEAD
 Genre = '$_POST[genre]'
 -->
+=======
+$reponse = $conn->prepare("update utilisateurs set Nom = ?, Prénom = ?, Adresse email = ?, Mot de passe = ?, Type = ?, Genre = ?, Date de naissance = ?, Adresse = ?, Ville = ?, Code postal = ? where id = ?");
+$reponse->execute(array($_GET["Nom"],$_GET["Prénom"], $_GET["Adresse_mail"],$_GET["Mot_de_passe"], $_GET["Type"], $_GET["Genre"], $_GET["Date_de_naissance"], $_GET["Adresse"], $_GET["Ville"], $_GET["Code_postal"] ));
+return $reponse;
+
+?>
+>>>>>>> 1c02dc5f4a9d333b7c659f569caa3821e39880c5
