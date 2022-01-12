@@ -1,3 +1,6 @@
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.0/chart.min.js"></script>
+<srcipt src="graphique.js"></script>
+
 <div class="contenant">
 
 <h1 id="bienvenueprofil">Bienvenue Stanislas Scibilia !</h1>

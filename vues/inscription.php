@@ -1,7 +1,11 @@
 <div class="container">
     <h1>Inscription</h1>
     
+<<<<<<< Updated upstream
     <form action="<?php echo $_SERVER['PHP_SELF'];?>" method="post">
+=======
+    <form action="vues/insert.php" method="post">
+>>>>>>> Stashed changes
            
         <input class="barre_inscription" type="text" name="identifiant" id="identifiant" placeholder="Identifiant">
         <br>
