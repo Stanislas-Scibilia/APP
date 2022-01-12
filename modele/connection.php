@@ -2,7 +2,7 @@
     $servername = "localhost";
     $username = "root";
     $password = "";
-    $dbname = "fit_analysor";
+    $dbname = "Fit_analysor";
     
     // Create connection
     $conn = new mysqli($servername, $username, $password, $dbname);
@@ -21,4 +21,4 @@ if ($conn->query($sql) === TRUE) {
 
 $conn->close();
 */
-?> 
+?>

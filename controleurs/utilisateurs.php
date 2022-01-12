@@ -3,6 +3,7 @@
 session_start();
 include('controleurs/fonctions.php');
 //include("modele/requetes_inscription.php");
+include('modele/fonctions.php');
 
 if (isset($_GET['fonction']) && !empty($_GET['fonction'])) {
     $function = $_GET['fonction'];
@@ -47,8 +48,7 @@ switch($function) {
         $vue = 'gen.id';
         
         if (!empty($_POST) and $_POST['compte'] === 'creer') {
-            $uuid = uniqid("", true);
-            //ajoutIdBdd();
+            creerUser();
         }
         break;
     
@@ -75,6 +75,7 @@ switch($function) {
         break;
     
     case 'gestion':
+        verification_session('admin');
         $vue = 'gestionutilisateur';
         break;
     
