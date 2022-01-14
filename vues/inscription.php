@@ -15,14 +15,11 @@
         <br>
         <label for="genre">Genre</label>
         <br>
-        <input type="radio" name="genre" values="homme">
-        <label for="homme" style="font-size : 10px;">Homme</label>
-        <br>
-        <input type="radio" name="genre" values="femme">
-        <label for="femme" style="font-size : 10px;">Femme</label>
-        <br>
-        <input type="radio" name="genre" values="autre">
-        <label for="autre" style="font-size : 10px;">Autre</label>
+        <select name="genre">
+        <option value="homme"> Homme </option>
+        <option value="femme"> Femme </option>
+        <option value="autre"> Autre </option>
+        </select>
         <br>
         <input class="barre_inscription" type="email" name="email" id="email" placeholder="email@example.org">
         <br>
@@ -43,6 +40,7 @@
         <br>
         <input type="submit" value="S'inscrire">
     </form>
+    <?php echo $erreur ?>
 </div>
 <!--
 $id_Utilisateur = $_POST["identifiant"];
