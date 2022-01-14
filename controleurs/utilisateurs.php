@@ -92,6 +92,10 @@ switch($function) {
     case 'CGU':
         $vue = 'CGU'; 
         break;
+    
+    case 'compte':
+        $vue = 'compte';
+        break;
         
     default:
         $vue = '404';

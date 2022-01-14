@@ -510,9 +510,10 @@ a {
 }
 
 .profilefh1 {
-  color: aqua;
+  color: #00aaff5e;
   text-align: center;
-  font-size: 2rem;
+  font-family: "Open Sans", bold;
+  font-size: 2.5rem;
 }
 
 .flexboxprofile {
@@ -552,3 +553,5 @@ td {
   margin-top: 25%;
   margin-left: 5%;
 }
+
+/* Page Mon Compte */
