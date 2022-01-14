@@ -530,7 +530,7 @@ td {
 }
 
 .fondprofile {
-  background-color: #00aaff5e;
+  background-color: rgba(255, 255, 255, 0.74);
   height: 500px;
   width: 600px;
   border-radius: 14px;
