@@ -10,9 +10,10 @@
     if ($conn->connect_error) {
       die("Connection failed: " . $conn->connect_error);
     }
-/*
-    $sql = "UPDATE MyGuests SET lastname='Doe' WHERE id=2";
 
+<<<<<<< HEAD
+?> 
+=======
 if ($conn->query($sql) === TRUE) {
   echo "Record updated successfully";
 } else {
@@ -22,3 +23,4 @@ if ($conn->query($sql) === TRUE) {
 $conn->close();
 */
 ?>
+>>>>>>> 1c02dc5f4a9d333b7c659f569caa3821e39880c5

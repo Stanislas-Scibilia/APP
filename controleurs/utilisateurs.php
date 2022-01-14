@@ -2,7 +2,6 @@
 
 session_start();
 include('controleurs/fonctions.php');
-//include("modele/requetes_inscription.php");
 include('modele/fonctions.php');
 
 if (isset($_GET['fonction']) && !empty($_GET['fonction'])) {
@@ -53,6 +52,14 @@ switch($function) {
         break;
     
     case 'inscription':
+        include("modele/connection.php");
+        $sql = "UPDATE utilisateurs SET Nom = '$_POST[nom]', Prenom = '$_POST[prenom]', Adresse_email = '$_POST[email]', Mot_de_passe = '$_POST[motdepasse]' , Type = 'Client', Genre = '$_POST[genre]', Date_de_naissance = '$_POST[datenaissance]', Adresse = '$_POST[adresse]', Ville = '$_POST[ville]', Code_postal = '$_POST[codepostal]' WHERE id_Utilisateur = '$_POST[identifiant]' ";
+        if ($conn->query($sql) === TRUE) {
+        echo "Record updated successfully";
+        } else {
+        echo "Error updating record: " . $conn->error;
+        }
+        $conn->close();
         $vue = 'inscription';
         break;
     
