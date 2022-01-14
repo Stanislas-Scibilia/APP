@@ -1,6 +1,9 @@
 <div class="contenant">
-
-<h1 id="bienvenueprofil">Bienvenue Stanislas Scibilia !</h1>
+<div class="imageal1">
+        <img id="imageduhaut" src="vues/profilgraffiti.PNG"></img>
+    </div>
+<h1 id="bienvenueprofil">&nbsp; Bienvenue Stanislas Scibilia !</h1>
+<br>
 <div id="perf">
       <div class="profilefh1">
         <p>Vos performances</p></div>
@@ -152,6 +155,79 @@
 
           <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js"></script>
           <script src="vues/graphiqueenv.js"></script>
+          </div>
+          </div> 
+        </div>
+        <br>
+        <br>
+        <div class="flexboxprofile">
+          <div class="fondprofile">
+          <div class="tableprofile1">  
+          <table>
+          <tr>
+            <th>a</th>
+            <th>b</th>
+            <th>c</th>
+            <th>d</th>
+            <th>e</th>
+            <th>f</th>
+            <th>g</th>
+            <th>h</th>
+            <th>i</th>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>1</td>
+            <td>1</td>
+            <td>1</td>
+            <td>1</td>
+            <td>1</td>
+            <td>1</td>
+            <td>1</td>
+            <td>1</td>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>1</td>
+            <td>1</td>
+            <td>1</td>
+            <td>1</td>
+            <td>1</td>
+            <td>1</td>
+            <td>1</td>
+            <td>1</td>
+          </tr>
+            <tr>
+            <td>1</td>
+            <td>1</td>
+            <td>1</td>
+            <td>1</td>
+            <td>1</td>
+            <td>1</td>
+            <td>1</td>
+            <td>1</td>
+            <td>1</td>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>1</td>
+            <td>1</td>
+            <td>1</td>
+            <td>1</td>
+            <td>1</td>
+            <td>1</td>
+            <td>1</td>
+            <td>1</td>
+          </tr>
+          </table>
+          </div>
+          </div>
+          <div class="fondprofile">
+          <div class="tableprofile2">
+          <canvas id="graphenv2"></canvas>
+
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js"></script>
+          <script src="vues/graphiqueenv2.js"></script>
           </div>
           </div> 
         </div>
