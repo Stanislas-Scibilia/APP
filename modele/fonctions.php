@@ -1,7 +1,7 @@
 <?php
 
 function creerUser() {
-    include('modele/connection.php');
+    include('modele/connexionBDD.php');
     $sql = "INSERT INTO utilisateurs (id_Utilisateur) VALUES (10)";
 
     if ($conn->query($sql) === TRUE) {
