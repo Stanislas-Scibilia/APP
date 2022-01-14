@@ -1,6 +1,6 @@
 <div class="container">
     <h1>Inscription</h1>
-
+    <?php echo $erreur ?>
     <form action="" method="post">
            
         <input class="barre_inscription" type="text" name="identifiant" id="identifiant" placeholder="Identifiant">
@@ -40,7 +40,7 @@
         <br>
         <input type="submit" value="S'inscrire">
     </form>
-    <?php echo $erreur ?>
+    
 </div>
 <!--
 $id_Utilisateur = $_POST["identifiant"];
