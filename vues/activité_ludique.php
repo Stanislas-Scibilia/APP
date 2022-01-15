@@ -7,10 +7,10 @@
     <br>
     <br>
     <p id="h2al">
-    Bienvenue sur l'activite ludique de Fit'Analysor
-
-    </p>
-    <p id="h3al">Principe du jeu: mettre pause au bon moment pour trouver le chiffre écrit en vert sur chaque activité. Chaque chiffre constitue une partie du Code Secret
+    Bienvenue sur l'activité ludique de Fit'Analysor.
+    <br>
+    <br>
+    Principe du jeu: mettre pause au bon moment pour trouver le chiffre écrit en vert sur chaque activité. Chaque chiffre constitue une partie du Code Secret.
     </p>
     <div class="texteal1">
         <p>
@@ -19,12 +19,18 @@
         <h3 id="auteurcitation">Victor Hugo</h3>
         </p>  
     </div>
+    <div class="videoal1">
+        <video id="vidal1" src="vues/vidact1.mp4" controls controlsList="nodownload nofullscreen noremoteplayback" loop  muted height="300"></video>  
+    </div>
     <div class="texteal2">
         <p>
         <em>"Les espèces qui survivent ne sont pas les espèces les plus fortes, ni les plus intelligentes, mais celles qui s'adaptent le mieux aux changements"</em>  
         <br>
         <h3 id="auteurcitation">Charles Darwin</h3>
     </p>  
+    </div>
+    <div class="videoal2">
+        <video id="vidal1" src="vues/vidact2.mp4" controls controlsList="nodownload nofullscreen noremoteplayback" loop muted height="300"></video>  
     </div>
     <div class="texteal1">
         <p>
@@ -33,6 +39,9 @@
         <h3 id="auteurcitation">Hubert Reeves</h3> 
         </p>  
     </div>
+    <div class="videoal1">
+        <video id="vidal1" src="vues/vidact3.mp4" controls controlsList="nodownload nofullscreen noremoteplayback" loop muted height="300"></video>  
+    </div>
     <div class="texteal2">
         <p>
         <em>"Ce qui caractérise notre époque, c'est la perfection des moyens et la confusion des fins."</em>
@@ -40,18 +49,12 @@
         <h3 id="auteurcitation">Albert Einstein</h3>
         </p>  
     </div>
-    <div class="videoal1">
-        <video id="vidal1" src="vues/vidact1.mp4" controls controlsList="nodownload nofullscreen noremoteplayback" loop  muted height="300"></video>  
-    </div>
     <div class="videoal2">
-        <video id="vidal2" src="vues/vidact2.mp4" controls controlsList="nodownload nofullscreen noremoteplayback" loop muted height="300"></video>  
+        <video id="vidal1" src="vues/vidact4.mp4" controls controlsList="nodownload nofullscreen noremoteplayback" loop muted height="300"></video>  
     </div>
-    <div class="videoal3">
-        <video id="vidal3" src="vues/vidact3.mp4" controls controlsList="nodownload nofullscreen noremoteplayback" loop muted height="300"></video>  
-    </div>
-    <div class="videoal4">
-        <video id="vidal4" src="vues/vidact4.mp4" controls controlsList="nodownload nofullscreen noremoteplayback" loop muted height="300"></video>  
-    </div>
+    <br>
+    <br>
+    <br>
     <br>
     <br>
     <p id="Codeal">Code Secret</p>
