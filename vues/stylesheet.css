@@ -336,6 +336,8 @@ footer {
   }
 }
 
+/***************Activité Ludique*****************/
+
 .imageal1 {
   display: block;
   margin-top: -2px;
@@ -392,7 +394,7 @@ footer {
 
 .videoal1 {
   position: absolute;
-  margin-top: -1770px;
+  margin-top: -250px;
   margin-left: 10px;
   height: 280px;
   width: 654px;
@@ -411,44 +413,6 @@ footer {
 
 .videoal2 {
   position: absolute;
-  margin-top: -1240px;
-  margin-left: 53%;
-  height: 290px;
-  width: 654px;
-  border: 15px solid #19061a;
-  overflow: hidden;
-}
-
-#vidal2 {
-  position: float;
-  margin-top: -45px;
-  height: 450px;
-  width: 680px;
-  border: 13px solid #19061a;
-  box-sizing: border-box;
-}
-
-.videoal3 {
-  position: absolute;
-  margin-top: -775px;
-  margin-left: 10px;
-  height: 290px;
-  width: 654px;
-  border: 15px solid #19061a;
-  overflow: hidden;
-}
-
-#vidal3 {
-  position: float;
-  margin-top: -45px;
-  height: 450px;
-  width: 680px;
-  border: 13px solid #19061a;
-  box-sizing: border-box;
-}
-
-.videoal4 {
-  position: absolute;
   margin-top: -260px;
   margin-left: 53%;
   height: 290px;
@@ -457,21 +421,9 @@ footer {
   overflow: hidden;
 }
 
-#vidal4 {
-  position: float;
-  margin-top: -45px;
-  height: 450px;
-  width: 680px;
-  border: 13px solid #19061a;
-  box-sizing: border-box;
-}
-
 #h2al {
   margin-left: 10px;
-}
-
-#h3al {
-  margin-left: 10px;
+  font-size: 1.8rem;
 }
 
 #Codeal {
@@ -508,6 +460,8 @@ footer {
 a {
   color: pink;
 }
+
+/**********************Page Profil **********************/
 
 .profilefh1 {
   color: #00aaff5e;
@@ -555,3 +509,46 @@ td {
 }
 
 /* Page Mon Compte */
+
+/*********Responsive**************/
+@media screen and (max-width: 1000px) {
+  .texteal1 {
+    margin-left: 2%;
+    margin-right: 2%;
+    text-align: center;
+    margin-top: 400px;
+    font-size: 1rem;
+    z-index: 99;
+  }
+
+  .texteal2 {
+    margin-left: 2%;
+    margin-right: 2%;
+    text-align: center;
+    margin-top: 400px;
+    font-size: 1rem;
+    z-index: 99;
+  }
+
+  .videoal1 {
+    position: float;
+    margin-top: 0px;
+    margin-left: 0px;
+    height: 280px;
+    width: 654px;
+    border: 15px solid #19061a;
+    overflow: hidden;
+  }
+  .videoal2 {
+    position: float;
+    margin-top: 0px;
+    margin-left: 0px;
+    height: 280px;
+    width: 654px;
+    border: 15px solid #19061a;
+    overflow: hidden;
+  }
+  .flexboxactivite {
+    margin-top: 0px;
+  }
+}
