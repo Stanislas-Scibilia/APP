@@ -1,6 +1,6 @@
 <div class="contenant">
 <div class="imageal1">
-        <img id="imageduhaut" src="vues/profilgraffiti.PNG"></img>
+        <img id="imageduhaut" src="vues/Capturegraffiti.PNG"></img>
     </div>
 <h1 id="bienvenueprofil">&nbsp; Bienvenue Stanislas Scibilia !</h1>
 <br>
