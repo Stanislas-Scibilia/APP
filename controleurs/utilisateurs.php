@@ -70,6 +70,7 @@ switch($function) {
         verification_session('user');
         $vue = 'profil';
         break;
+
     
     case 'faq':
         $vue = 'FAQ';
