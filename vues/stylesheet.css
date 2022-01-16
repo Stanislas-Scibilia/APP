@@ -464,7 +464,7 @@ a {
 /**********************Page Profil **********************/
 
 .profilefh1 {
-  color: #00aaff5e;
+  color: rgba(0, 255, 255);
   text-align: center;
   font-family: "Open Sans", bold;
   font-size: 2.5rem;
@@ -485,7 +485,6 @@ td {
 }
 
 .fondprofile {
-  background-color: rgba(255, 255, 255, 0.74);
   height: 500px;
   width: 600px;
   border-radius: 14px;
@@ -506,6 +505,22 @@ td {
 .tableprofile2 {
   margin-top: 25%;
   margin-left: 5%;
+}
+
+.bodyprofile {
+  font-family: Arial;
+  margin: 80px 100px 10px 100px;
+  padding: 0;
+  color: white;
+  text-align: center;
+  background: #555652;
+}
+
+.containerprofile {
+  color: #e8e9eb;
+  background: #222;
+  border: #555652 1px solid;
+  padding: 10px;
 }
 
 /* Page Mon Compte */
