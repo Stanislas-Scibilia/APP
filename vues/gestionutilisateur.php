@@ -38,9 +38,5 @@
 		echo "</table>";
 		?>
 
-	<form method="GET">
-		<input type="search" name="q" placeholder="Recherche..."/> 
-		<input type="submit" value="Valider">
-	</form>
 </body>
 <script src="vues/gestionutilisateur.js"></script>
