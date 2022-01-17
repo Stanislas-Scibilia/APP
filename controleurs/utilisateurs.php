@@ -72,28 +72,23 @@ switch($function) {
     case 'profil':
         verification_session('user');
         include ('modele/connexionBDD.php');
-        $vue = 'profil';
-
-        $host = 'localhost';
-        $user = 'root';
-        $pass = '';
-        $db = 'fit_analysor';
-        $mysqli = new mysqli($host,$user,$pass,$db) or die($mysqli->error);
+       
 
         $data1 = '';
 
 
         $sql = "SELECT * FROM mesures WHERE id_Capteur=1 ";
-        $result = mysqli_query($mysqli, $sql);
+        $result = $conn->query($sql);
 
 
-        while ($row = mysqli_fetch_array($result)) {
+        while ($row = $result->fetch_array()) {
 
             $data1 = $data1 . '"'. $row['Données'].'",';
         }
 
         $data1 = trim($data1,",");
-
+        $conn->close();
+        $vue = 'profil';
         break;
 
     
