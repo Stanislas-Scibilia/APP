@@ -33,8 +33,16 @@
 
 		echo "</table>";
 		?>
+		<?php
+		$articles =$sqldata->query('SELECT * FROM articles');
+
+		if(isset($_GET['q'] AND !empty($_GET['q'])){
+			$q = htmlspecialchars($_GET['q']);
+			$artciles = $sqldata->query('SELECT * FROM articles WHERE * LIKE "%".$q."%" );
+		}
+
 	<form method="GET">
-		<input type="search" placeholder="Recherche..."/> 
+		<input type="search" name="q" placeholder="Recherche..."/> 
 		<input type="submit" value="Valider">
 	</form>
 </body>
