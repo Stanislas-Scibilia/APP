@@ -22,10 +22,13 @@ switch($function) {
             if ($_POST['identifiant']==='test' and $_POST['motdepasse']==='test') {
                 $_SESSION['connexion'] = 'user';
                 $message = "Vous êtes connecté en tant qu'utilisateur.";
-                $vue = 'profil';
+                header("Location: /?fonction=profil");
+                exit();
             } elseif ($_POST['identifiant']==='admin' and $_POST['motdepasse']==='test') {
                 $_SESSION['connexion'] = 'admin';
                 $message = "Vous êtes connecté en tant qu'administrateur.";
+                header("Location: /?fonction=profil");
+                exit();
             }
         }
         break;
@@ -69,6 +72,30 @@ switch($function) {
     case 'profil':
         verification_session('user');
         $vue = 'profil';
+
+        $host = 'localhost';
+        $user = 'root';
+        $pass = '';
+        $db = 'db';
+        $mysqli = new mysqli($host,$user,$pass,$db) or die($mysqli->error);
+
+        $data1 = '';
+        $data2 = '';
+
+
+        $sql = "SELECT * FROM datasets ";
+        $result = mysqli_query($mysqli, $sql);
+
+
+        while ($row = mysqli_fetch_array($result)) {
+
+            $data1 = $data1 . '"'. $row['data1'].'",';
+            $data2 = $data2 . '"'. $row['data2'] .'",';
+        }
+
+        $data1 = trim($data1,",");
+        $data2 = trim($data2,",");
+
         break;
 
     
@@ -87,6 +114,12 @@ switch($function) {
     
     case 'gestion':
         verification_session('admin');
+		include ("modele/connexionBDD.php");
+		$sqlget = "SELECT * FROM utilisateurs";
+		$sqldata = $conn->query($sqlget);
+		
+		
+		$conn->close();
         $vue = 'gestionutilisateur';
         break;
     
