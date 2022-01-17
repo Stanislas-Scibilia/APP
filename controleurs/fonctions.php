@@ -6,3 +6,8 @@ function verification_session($role) {
         header('Location: ' . $url);
     }
 }
+function test($data) {
+    $data = htmlspecialchars($data);
+    return $data;
+}
+?>
