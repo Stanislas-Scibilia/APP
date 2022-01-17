@@ -35,8 +35,7 @@
 		?>
 		<?php
 		$articles =$sqldata->query('SELECT * FROM articles');
-
-		if(isset($_GET['q'] AND !empty($_GET['q'])){
+			if(isset($_GET['q'] AND !empty($_GET['q'])){
 			$q = htmlspecialchars($_GET['q']);
 			$artciles = $sqldata->query('SELECT * FROM articles WHERE * LIKE "%".$q."%" );
 		}
