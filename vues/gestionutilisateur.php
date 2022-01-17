@@ -37,7 +37,7 @@
 		$articles =$sqldata->query('SELECT * FROM articles');
 			if(isset($_GET['q']) AND !empty($_GET['q'])){
 			$q = htmlspecialchars($_GET['q']);
-			$artciles = $sqldata->query('SELECT Prenom FROM articles WHERE Prenom LIKE "%".$q."%" );
+			$artciles = $sqldata->query('SELECT id_Utilisateur FROM articles WHERE id_Utilisateur LIKE "%".$q."%" );
 		}
 
 	<form method="GET">
