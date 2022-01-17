@@ -27,7 +27,7 @@
         <br>
         <input class="barre_inscription" type="text" name="codepostal" id="codepostal" placeholder="Code postal">
         <br>
-        <input class="barre_inscription" type="text" name="ville" id="ville" placeholder="Ville">
+        <input class="barre_inscription" type="text" name="ville" id="ville" placeholder="Ville" maxlength="50" >
         <br>
         <input class="barre_inscription" type="password" name="motdepasse" id="motdepasse" placeholder="Mot de passe">
         <br>
