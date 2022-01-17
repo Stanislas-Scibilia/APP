@@ -68,6 +68,7 @@ switch($function) {
     
     case 'profil':
         verification_session('user');
+        include ('modele/connexionBDD.php');
         $vue = 'profil';
         break;
 
