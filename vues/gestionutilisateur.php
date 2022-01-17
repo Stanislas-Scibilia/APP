@@ -1,6 +1,9 @@
 <body>
+	<form method="GET">
+		<input type="search" name="q" placeholder="Recherche..."/> 
+		<input type="submit" value="Valider">
+	</form>
 
-	<input id="barrerecherche" onkeyup="chercher_utilisateur()" type="text" name="recherche" placeholder="Rechercher utilisateurs.."> 
 	
 		<?php
 	echo "<table>";
