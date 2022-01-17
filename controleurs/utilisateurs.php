@@ -74,11 +74,11 @@ switch($function) {
         include ('modele/connexionBDD.php');
         $vue = 'profil';
 
-        $host = 'localhost';
+        /*$host = 'localhost';
         $user = 'root';
         $pass = '';
         $db = 'db';
-        $mysqli = new mysqli($host,$user,$pass,$db) or die($mysqli->error);
+        $mysqli = new mysqli($host,$user,$pass,$db) or die($mysqli->error);*/
 
         $data1 = '';
         $data2 = '';
