@@ -72,18 +72,6 @@ switch($function) {
     case 'profil':
         verification_session('user');
         include ('modele/connexionBDD.php');
-<<<<<<< HEAD
-        $vue = 'profil';
-
-        /*$host = 'localhost';
-        $user = 'root';
-        $pass = '';
-        $db = 'db';
-        $mysqli = new mysqli($host,$user,$pass,$db) or die($mysqli->error);*/
-=======
-       
->>>>>>> c3aaf58f6eb4b251faf75bb305cfbc9434ff5013
-
         $data1 = '';
 
 
