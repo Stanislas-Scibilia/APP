@@ -1,5 +1,4 @@
-<?php
-    /* Database connection settings */
+<!------------?php
     $host = 'localhost';
     $user = 'root';
     $pass = '';
@@ -9,11 +8,11 @@
     $data1 = '';
     $data2 = '';
 
-    //query to get data from the table
+
     $sql = "SELECT * FROM datasets ";
     $result = mysqli_query($mysqli, $sql);
 
-    //loop through the returned data
+
     while ($row = mysqli_fetch_array($result)) {
 
         $data1 = $data1 . '"'. $row['data1'].'",';
@@ -22,7 +21,7 @@
 
     $data1 = trim($data1,",");
     $data2 = trim($data2,",");
-?>
+?>----->
 
 <div class="contenant">
 <div class="imageal1">
@@ -348,7 +347,7 @@
       <br>
       <div class="bodyprofile">
       <div class="containerprofile">
-      <h1>Ouais le graphique stp</h1>
+      <h1> le graphique </h1>
         <canvas id="chart" style="width: 100%; height: 65vh; background: #222; border: 1px solid #555652; margin-top: 10px;"></canvas>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js"></script>
         <script>
