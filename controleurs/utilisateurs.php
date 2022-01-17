@@ -87,6 +87,25 @@ switch($function) {
     
     case 'gestion':
         verification_session('admin');
+		include ("modele/connexionBDD.php");
+		$sqlget = "SELECT * FROM utilisateurs";
+		$sqldata = $conn->query($sqlget);
+		
+		echo "<table>";
+		echo "<tr><th>identifiant</th><th>Prénom</th><th>Nom</th>";
+		
+		while($row = $sqldata->fetch_assoc()) {
+			echo "<tr><td>";
+			echo $row['id_Utilisateur'];
+			echo "</td><td>";
+			echo $row['Prenom'];
+			echo "</td><td>";
+			echo $row['Nom'];
+			echo "</td></tr>";
+		}
+
+		echo "</table>";
+		$conn->close();
         $vue = 'gestionutilisateur';
         break;
     
