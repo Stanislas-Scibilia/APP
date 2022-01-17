@@ -18,6 +18,3 @@ function chercher_utilisateur() {
 }
 		
 
-
-
-
