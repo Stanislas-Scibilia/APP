@@ -1,4 +1,8 @@
 <body>
+	<form method="GET">
+		<input type="search" name="q" placeholder="Recherche..."/> 
+		<input type="submit" value="Valider">
+	</form>
 
 	
 		<?php
@@ -33,12 +37,6 @@
 
 		echo "</table>";
 		?>
-		<?php
-		$articles =$sqldata->query('SELECT * FROM articles');
-			if(isset($_GET['q']) AND !empty($_GET['q'])){
-			$q = htmlspecialchars($_GET['q']);
-			$artciles = $sqldata->query('SELECT id_Utilisateur FROM articles WHERE id_Utilisateur LIKE "%".$q."%" );
-		}
 
 	<form method="GET">
 		<input type="search" name="q" placeholder="Recherche..."/> 
