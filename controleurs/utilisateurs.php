@@ -71,6 +71,7 @@ switch($function) {
     
     case 'profil':
         verification_session('user');
+        include ('modele/connexionBDD.php');
         $vue = 'profil';
 
         $host = 'localhost';
@@ -114,8 +115,6 @@ switch($function) {
 		include ("modele/connexionBDD.php");
 		$sqlget = "SELECT * FROM utilisateurs";
 		$sqldata = $conn->query($sqlget);
-		
-		
 		$conn->close();
         $vue = 'gestionutilisateur';
         break;
