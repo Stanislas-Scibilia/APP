@@ -1,7 +1,6 @@
 <body>
 
 	<input id="barrerecherche" onkeyup="chercher_utilisateur()" type="text" name="recherche" placeholder="Rechercher utilisateurs.."> 
-
 	
 		<?php
 	echo "<table>";
