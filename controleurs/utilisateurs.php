@@ -72,6 +72,7 @@ switch($function) {
     case 'profil':
         verification_session('user');
         include ('modele/connexionBDD.php');
+<<<<<<< HEAD
         $vue = 'profil';
 
         /*$host = 'localhost';
@@ -79,24 +80,25 @@ switch($function) {
         $pass = '';
         $db = 'db';
         $mysqli = new mysqli($host,$user,$pass,$db) or die($mysqli->error);*/
+=======
+       
+>>>>>>> c3aaf58f6eb4b251faf75bb305cfbc9434ff5013
 
         $data1 = '';
-        $data2 = '';
 
 
-        $sql = "SELECT * FROM datasets ";
-        $result = mysqli_query($mysqli, $sql);
+        $sql = "SELECT * FROM mesures WHERE id_Capteur=1 ";
+        $result = $conn->query($sql);
 
 
-        while ($row = mysqli_fetch_array($result)) {
+        while ($row = $result->fetch_array()) {
 
-            $data1 = $data1 . '"'. $row['data1'].'",';
-            $data2 = $data2 . '"'. $row['data2'] .'",';
+            $data1 = $data1 . '"'. $row['Données'].'",';
         }
 
         $data1 = trim($data1,",");
-        $data2 = trim($data2,",");
-
+        $conn->close();
+        $vue = 'profil';
         break;
 
     
