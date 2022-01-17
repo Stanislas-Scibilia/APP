@@ -90,8 +90,6 @@ switch($function) {
 		include ("modele/connexionBDD.php");
 		$sqlget = "SELECT * FROM utilisateurs";
 		$sqldata = $conn->query($sqlget);
-		
-		
 		$conn->close();
         $vue = 'gestionutilisateur';
         break;
