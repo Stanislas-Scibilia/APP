@@ -76,25 +76,22 @@ switch($function) {
         $host = 'localhost';
         $user = 'root';
         $pass = '';
-        $db = 'db';
+        $db = 'fit_analysor';
         $mysqli = new mysqli($host,$user,$pass,$db) or die($mysqli->error);
 
         $data1 = '';
-        $data2 = '';
 
 
-        $sql = "SELECT * FROM datasets ";
+        $sql = "SELECT * FROM mesures WHERE id_Capteur=1 ";
         $result = mysqli_query($mysqli, $sql);
 
 
         while ($row = mysqli_fetch_array($result)) {
 
-            $data1 = $data1 . '"'. $row['data1'].'",';
-            $data2 = $data2 . '"'. $row['data2'] .'",';
+            $data1 = $data1 . '"'. $row['Données'].'",';
         }
 
         $data1 = trim($data1,",");
-        $data2 = trim($data2,",");
 
         break;
 
