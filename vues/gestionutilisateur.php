@@ -1,37 +1,48 @@
-<?php
-$bdd = new PDO('mysql:host=localhost;dbname=Fit_analysor;', 'root');
-$allusers = $bdd->query('SELECT * FROM utilisateurs ORDER BY id_Utilisateur DESC');
-if(isset($_GET['s']) AND !empty($_GET['s'])){
-	$recherche = htmlspecialchars($_GET['s']);
-	$allusers = $bdd->query('SELECT Nom, Prénom, id_Utilisateur,Genre,Adresse email, Mot de passe FROM utilisateurs WHERE Nom LIKE"%'.$recherche.'%" ORDER BY id DESC');
-}
-?>
-<body>
 
+<<<<<<< HEAD
 	<form method="GET">
 		<input type="search" name="s" placeholder="Rechercher un utilisateur" autocomplete="off">
 		<input type="submit" name="envoyer">
 	</form>
 	
 	<section class="afficher_utilisateur">
+=======
+    <form action="" method="POST">
+        <input type="search" name="s" placeholder="Rechercher un utilisateur" autocomplete="off">
+        <input type="submit" name="envoyer">
+    </form>
+    
+    <section class="afficher_utilisateur">
+>>>>>>> 7fadb65320d8c0a926e45ad2e1e5550fe1d68fd8
 
-		<?php
-			if($allusers->rowCount() > 0){
-				while($user = $allusers->fetch()){
-					?>
-					<p><?= $user['Nom']; ?> <br/><?= $user['Prénom'] ?> <br/> <?= $user['id_Utilisateur'] ?> <br/><?= $user['Genre'] ?> <br/> <?= $user['Adresse email'] ?> <br/> <?= $user['Mot de passe'] ?></p>
-					<?php  
-				}
+ 
 
-			}else{
-				?>
-				<p>Aucun utilisateur trouvé</p>
-				<?php
-			}
+        <?php
+            if($allusers->num_rows > 0){
+                while($user = $allusers->fetch_assoc()){
+                    ?>
+                    <p><?= $user['Nom']; ?> <br/><?= $user['Prenom'] ?> <br/> <?= $user['id_Utilisateur'] ?> <br/><?= $user['Genre'] ?> <br/> <?= $user['Adresse_email'] ?> <br/> <?= $user['Mot_de_passe'] ?></p>
+                    <?php  
+                }
 
+<<<<<<< HEAD
 		?>
 	</section>
 </body>
+=======
+ 
+
+            }else{
+                ?>
+                <p>Aucun utilisateur trouvé</p>
+                <?php
+            }
+
+ 
+
+        ?>
+    </section>
+>>>>>>> 7fadb65320d8c0a926e45ad2e1e5550fe1d68fd8
 
 	<input type="text" id="recherche" onkeyup="chercher_utilisateur()" placeholder="Rechercher un utilisateur..."> 
 	<?php
