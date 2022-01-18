@@ -4,11 +4,22 @@
 		<input type="submit" value="Valider">
 	</form>
 
-	
-		<?php
-	echo "<table>";
-		echo "<tr><th>identifiant</th><th>Prénom</th><th>Nom</th><th>Adresse e-mail</th><th>Mot de passe</th><th>Type</th><th>Genre</th><th>Date de naissance</th><th>Adresse</th><th>Ville</th><th>Code postal</th>";
+	<input type="text" id="recherche" onkeyup="chercher_utilisateur()" placeholder="Rechercher un utilisateur..."> 
+	<?php
+	echo "<table class='utilisateurs'>";
+		echo "<tr><th>identifiant</th>
+		<th>Prénom</th>
+		<th>Nom</th>
+		<th>Adresse e-mail</th>
+		<th>Mot de passe</th>
+		<th>Type</th>
+		<th>Genre</th>
+		<th>Date de naissance</th>
+		<th>Adresse</th>
+		<th>Ville</th>
+		<th>Code postal</th></tr>";
 		
+	
 		while($row = $sqldata->fetch_assoc()) {
 			echo "<tr><td>";
 			echo $row['id_Utilisateur'];
@@ -34,9 +45,8 @@
 			echo $row['Code_postal'];
 			echo "</td></tr>";
 		}
-
-		echo "</table>";
-		?>
-
+	echo "</table>";
+	?>
+	</div>
 </body>
 <script src="vues/gestionutilisateur.js"></script>
