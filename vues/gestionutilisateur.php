@@ -1,21 +1,12 @@
 
-<<<<<<< HEAD
-	<form method="GET">
-		<input type="search" name="s" placeholder="Rechercher un utilisateur" autocomplete="off">
-		<input type="submit" name="envoyer">
-	</form>
-	
-	<section class="afficher_utilisateur">
-=======
     <form action="" method="POST">
         <input type="search" name="s" placeholder="Rechercher un utilisateur" autocomplete="off">
         <input type="submit" name="envoyer">
     </form>
-    
-    <section class="afficher_utilisateur">
->>>>>>> 7fadb65320d8c0a926e45ad2e1e5550fe1d68fd8
 
- 
+    <section class="afficher_utilisateur">
+
+
 
         <?php
             if($allusers->num_rows > 0){
@@ -25,12 +16,7 @@
                     <?php  
                 }
 
-<<<<<<< HEAD
-		?>
-	</section>
-</body>
-=======
- 
+
 
             }else{
                 ?>
@@ -38,11 +24,10 @@
                 <?php
             }
 
- 
+
 
         ?>
     </section>
->>>>>>> 7fadb65320d8c0a926e45ad2e1e5550fe1d68fd8
 
 	<input type="text" id="recherche" onkeyup="chercher_utilisateur()" placeholder="Rechercher un utilisateur..."> 
 	<?php
