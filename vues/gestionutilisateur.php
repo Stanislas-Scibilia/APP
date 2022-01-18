@@ -1,8 +1,33 @@
-<body>
-	<form method="GET">
-		<input type="search" name="q" placeholder="Recherche..."/> 
-		<input type="submit" value="Valider">
-	</form>
+
+    <form action="" method="POST">
+        <input type="search" name="s" placeholder="Rechercher un utilisateur" autocomplete="off">
+        <input type="submit" name="envoyer">
+    </form>
+    
+    <section class="afficher_utilisateur">
+
+ 
+
+        <?php
+            if($allusers->num_rows > 0){
+                while($user = $allusers->fetch_assoc()){
+                    ?>
+                    <p><?= $user['Nom']; ?> <br/><?= $user['Prenom'] ?> <br/> <?= $user['id_Utilisateur'] ?> <br/><?= $user['Genre'] ?> <br/> <?= $user['Adresse_email'] ?> <br/> <?= $user['Mot_de_passe'] ?></p>
+                    <?php  
+                }
+
+ 
+
+            }else{
+                ?>
+                <p>Aucun utilisateur trouvé</p>
+                <?php
+            }
+
+ 
+
+        ?>
+    </section>
 
 	<input type="text" id="recherche" onkeyup="chercher_utilisateur()" placeholder="Rechercher un utilisateur..."> 
 	<?php
