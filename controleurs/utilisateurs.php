@@ -75,15 +75,15 @@ switch($function) {
 
         $host = 'localhost';
         $user = 'root';
-        $pass = '';
-        $db = 'db';
+        $pass = 'azerty';
+        $db = 'fit_analysor';
         $mysqli = new mysqli($host,$user,$pass,$db) or die($mysqli->error);
 
         $data1 = '';
         $data2 = '';
 
 
-        $sql = "SELECT * FROM datasets ";
+        $sql = "SELECT * FROM mesures WHERE id_Capteur=1";
         $result = mysqli_query($mysqli, $sql);
 
 
