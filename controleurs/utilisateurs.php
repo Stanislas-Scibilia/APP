@@ -84,17 +84,28 @@ switch($function) {
     
     case 'profil':
         verification_session('user');
-        include ('modele/connexionBDD.php');
-        /*Premier Graphique profil*/
+        $vue = 'profil';
+
+        $host = 'localhost';
+        $user = 'root';
+        $pass = 'azerty';
+        $db = 'fit_analysor';
+        $mysqli = new mysqli($host,$user,$pass,$db) or die($mysqli->error);
+
         $data1 = '';
-        
-        $sql = "SELECT * FROM mesures WHERE id_Capteur=1 ";
-        $result = $conn->query($sql);
-            
-        while ($row = $result->fetch_array()) {
-        
-            $data1 = $data1 . '"'. $row['Données'].'",';
-        };
+        $data2 = '';
+
+
+        $sql = "SELECT * FROM mesures WHERE id_Capteur=1";
+        $result = mysqli_query($mysqli, $sql);
+
+
+        while ($row = mysqli_fetch_array($result)) {
+
+            $data1 = $data1 . '"'. $row['data1'].'",';
+            $data2 = $data2 . '"'. $row['data2'] .'",';
+        }
+
         $data1 = trim($data1,",");
 
         $data2 = '';
