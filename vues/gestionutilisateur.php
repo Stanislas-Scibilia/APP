@@ -31,7 +31,7 @@
 
 	<input type="text" id="recherche" onkeyup="chercher_utilisateur()" placeholder="Rechercher un utilisateur..."> 
 	<?php
-	echo "<table class='utilisateurs'>";
+	echo "<table id ='utilisateurs' class='utilisateurs'>";
 		echo "<tr><th>identifiant</th>
 		<th>Prénom</th>
 		<th>Nom</th>
