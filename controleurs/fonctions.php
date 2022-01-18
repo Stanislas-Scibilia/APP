@@ -7,8 +7,12 @@ function verification_session($role) {
     }
 }
 //Permet d'appliquer htmlspecialchars à une donnée
-function test($data) {
+function HTML_chars($data) {
     $data = htmlspecialchars($data);
+    return $data;
+}
+function HTML_chars_decode($data) {
+    $data = htmlspecialchars_decode($data);
     return $data;
 }
 ?>
