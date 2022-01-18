@@ -1,7 +1,7 @@
 <?php
     $servername = "localhost";
     $username = "root";
-    $password = "";
+    $password = "root";
     $dbname = "fit_analysor";
     
     $conn = new mysqli($servername, $username, $password, $dbname);
