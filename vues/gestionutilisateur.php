@@ -12,7 +12,6 @@ if(isset($_GET['s']) AND !empty($_GET['s'])){
 		<input type="search" name="s" placeholder="Rechercher un utilisateur" autocomplete="off">
 		<input type="submit" name="envoyer">
 	</form>
-<<<<<<< HEAD
 	
 	<section class="afficher_utilisateur">
 
@@ -33,7 +32,6 @@ if(isset($_GET['s']) AND !empty($_GET['s'])){
 		?>
 	</section>
 </body>
-=======
 
 	<input type="text" id="recherche" onkeyup="chercher_utilisateur()" placeholder="Rechercher un utilisateur..."> 
 	<?php
@@ -81,4 +79,3 @@ if(isset($_GET['s']) AND !empty($_GET['s'])){
 	</div>
 </body>
 <script src="vues/gestionutilisateur.js"></script>
->>>>>>> 1e4b10edebb37a419657934a370ec646d272f736

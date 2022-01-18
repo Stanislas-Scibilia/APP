@@ -68,6 +68,15 @@ switch($function) {
             $_POST["motdepasse2"] ="";
         }
         $erreur="";
+        $_POST["identifiant"] = HTML_chars($_POST["identifiant"]);
+        $_POST["prenom"] = HTML_chars($_POST["prenom"]);
+        $_POST["nom"] = HTML_chars($_POST["nom"]);
+        $_POST["datenaissance"] = HTML_chars($_POST["datenaissance"]);
+        $_POST["email"] = teHTML_charsst($_POST["email"]);
+        $_POST["adresse"] = HTML_chars($_POST["adresse"]);
+        $_POST["codepostal"] = HTML_chars($_POST["codepostal"]);
+        $_POST["ville"] = HTML_chars($_POST["ville"]);
+        $_POST["motdepasse"] = HTML_chars($_POST["motdepasse"]);
         //Vérifie si tous les champs sont remplis et si les 2 mots de passe sont identiques
         if ($_POST["motdepasse"] == $_POST["motdepasse2"] && $_POST["nom"] != "" && $_POST["prenom"] != "" && $_POST["email"] != "" && $_POST["motdepasse"] != "" && $_POST["genre"] != "" && $_POST["datenaissance"] != "" && $_POST["adresse"] != "" && $_POST["ville"] != "" && $_POST["codepostal"] != "" && isset($_POST["CGU"])){
             $sql = "UPDATE utilisateurs SET Nom = '$_POST[nom]', Prenom = '$_POST[prenom]', Adresse_email = '$_POST[email]', Mot_de_passe = '$_POST[motdepasse]' , Type = 'Client', Genre = '$_POST[genre]', Date_de_naissance = '$_POST[datenaissance]', Adresse = '$_POST[adresse]', Ville = '$_POST[ville]', Code_postal = '$_POST[codepostal]' WHERE id_Utilisateur = '$_POST[identifiant]' ";
