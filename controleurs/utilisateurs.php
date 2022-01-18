@@ -85,19 +85,40 @@ switch($function) {
     case 'profil':
         verification_session('user');
         include ('modele/connexionBDD.php');
+        /*Premier Graphique profil*/
         $data1 = '';
-
-
+        
         $sql = "SELECT * FROM mesures WHERE id_Capteur=1 ";
         $result = $conn->query($sql);
-
-
+            
         while ($row = $result->fetch_array()) {
-
+        
             $data1 = $data1 . '"'. $row['Données'].'",';
-        }
-
+        };
         $data1 = trim($data1,",");
+
+        $data2 = '';
+        
+        $sql = "SELECT * FROM mesures WHERE id_Capteur=2 ";
+        $result = $conn->query($sql);
+            
+        while ($row = $result->fetch_array()) {
+        
+            $data2 = $data2 . '"'. $row['Données'].'",';
+        };
+        $data2 = trim($data2,",");
+
+        $data3 = '';
+        
+        $sql = "SELECT * FROM mesures WHERE id_Capteur=3 ";
+        $result = $conn->query($sql);
+            
+        while ($row = $result->fetch_array()) {
+        
+            $data3 = $data3 . '"'. $row['Données'].'",';
+        };
+        $data3 = trim($data3,",");
+
         $conn->close();
         $vue = 'profil';
         break;
