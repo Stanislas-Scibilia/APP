@@ -13,6 +13,7 @@ if(isset($_GET['s']) AND !empty($_GET['s'])){
 		<input type="submit" name="envoyer">
 	</form>
 <<<<<<< HEAD
+<<<<<<< HEAD
 	
 	<section class="afficher_utilisateur">
 
@@ -34,6 +35,8 @@ if(isset($_GET['s']) AND !empty($_GET['s'])){
 	</section>
 </body>
 =======
+=======
+>>>>>>> 3c4e8ca22875b89e3b2bf5d24d57162f02db9b80
 
 	<input type="text" id="recherche" onkeyup="chercher_utilisateur()" placeholder="Rechercher un utilisateur..."> 
 	<?php
@@ -81,4 +84,3 @@ if(isset($_GET['s']) AND !empty($_GET['s'])){
 	</div>
 </body>
 <script src="vues/gestionutilisateur.js"></script>
->>>>>>> 1e4b10edebb37a419657934a370ec646d272f736
