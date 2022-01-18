@@ -84,8 +84,8 @@ switch($function) {
     
     case 'profil':
         verification_session('user');
-        include ('modele/connexionBDD.php');
-        /*Premier Graphique profil*/
+        include("modele/connexionBDD.php");
+
         $data1 = '';
         
         $sql = "SELECT * FROM mesures WHERE id_Capteur=1 ";
@@ -97,6 +97,7 @@ switch($function) {
         };
         $data1 = trim($data1,",");
 
+
         $data2 = '';
         
         $sql = "SELECT * FROM mesures WHERE id_Capteur=2 ";
@@ -107,6 +108,7 @@ switch($function) {
             $data2 = $data2 . '"'. $row['Données'].'",';
         };
         $data2 = trim($data2,",");
+
 
         $data3 = '';
         
