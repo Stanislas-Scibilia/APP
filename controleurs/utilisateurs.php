@@ -84,8 +84,8 @@ switch($function) {
     
     case 'profil':
         verification_session('user');
-        include ('modele/connexionBDD.php');
-        /*Premier Graphique profil*/
+        include("modele/connexionBDD.php");
+
         $data1 = '';
         
         $sql = "SELECT * FROM mesures WHERE id_Capteur=1 ";
@@ -97,6 +97,7 @@ switch($function) {
         };
         $data1 = trim($data1,",");
 
+
         $data2 = '';
         
         $sql = "SELECT * FROM mesures WHERE id_Capteur=2 ";
@@ -107,6 +108,7 @@ switch($function) {
             $data2 = $data2 . '"'. $row['Données'].'",';
         };
         $data2 = trim($data2,",");
+
 
         $data3 = '';
         
@@ -139,10 +141,13 @@ switch($function) {
     
     case 'gestion':
         verification_session('admin');
-		include ("modele/connexionBDD.php");
-		$sqlget = "SELECT * FROM utilisateurs";
-		$sqldata = $conn->query($sqlget);
-		$conn->close();
+		include('modele/connexionBDD.php');
+        $sql = 'SELECT * FROM utilisateurs ORDER BY id_Utilisateur DESC';
+        $allusers = $conn->query($sql);
+        if(isset($_POST['s']) AND !empty($_POST['s'])){
+            $recherche = htmlspecialchars($_POST['s']);
+            $allusers = $conn->query('SELECT Nom, Prenom, id_Utilisateur,Genre,Adresse_email, Mot_de_passe FROM utilisateurs WHERE Nom LIKE"%'.$recherche.'%" ORDER BY id_Utilisateur DESC');
+        }
         $vue = 'gestionutilisateur';
         break;
     
