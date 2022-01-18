@@ -1,42 +1,34 @@
+<?php
+$bdd = new PDO('mysql:host=localhost;dbname=Fit_analysor;', 'root');
+$allusers = $bdd->query('SELECT * FROM utilisateurs ORDER BY id_Utilisateur DESC');
+if(isset($_GET['s']) AND !empty($_GET['s'])){
+	$recherche = htmlspecialchars($_GET['s']);
+	$allusers = $bdd->query('SELECT Nom, Prénom, id_Utilisateur,Genre,Adresse email, Mot de passe FROM utilisateurs WHERE Nom LIKE"%'.$recherche.'%" ORDER BY id DESC');
+}
+?>
 <body>
+
 	<form method="GET">
-		<input type="search" name="q" placeholder="Recherche..."/> 
-		<input type="submit" value="Valider">
+		<input type="search" name="s" placeholder="Rechercher un utilisateur" autocomplete="off">
+		<input type="submit" name="envoyer">
 	</form>
-
 	
+	<section class="afficher_utilisateur">
+
 		<?php
-	echo "<table>";
-		echo "<tr><th>identifiant</th><th>Prénom</th><th>Nom</th><th>Adresse e-mail</th><th>Mot de passe</th><th>Type</th><th>Genre</th><th>Date de naissance</th><th>Adresse</th><th>Ville</th><th>Code postal</th>";
-		
-		while($row = $sqldata->fetch_assoc()) {
-			echo "<tr><td>";
-			echo $row['id_Utilisateur'];
-			echo "</td><td>";
-			echo $row['Prenom'];
-			echo "</td><td>";
-			echo $row['Nom'];
-            echo "</td><td>";
-			echo $row['Adresse_email'];
-            echo "</td><td>";
-			echo $row['Mot_de_passe'];
-            echo "</td><td>";
-			echo $row['Type'];
-            echo "</td><td>";
-			echo $row['Genre'];
-            echo "</td><td>";
-			echo $row['Date_de_naissance'];
-            echo "</td><td>";
-			echo $row['Adresse'];
-            echo "</td><td>";
-			echo $row['Ville'];
-            echo "</td><td>";
-			echo $row['Code_postal'];
-			echo "</td></tr>";
-		}
+			if($allusers->rowCount() > 0){
+				while($user = $allusers->fetch()){
+					?>
+					<p><?= $user['Nom']; ?> <br/><?= $user['Prénom'] ?> <br/> <?= $user['id_Utilisateur'] ?> <br/><?= $user['Genre'] ?> <br/> <?= $user['Adresse email'] ?> <br/> <?= $user['Mot de passe'] ?></p>
+					<?php  
+				}
 
-		echo "</table>";
+			}else{
+				?>
+				<p>Aucun utilisateur trouvé</p>
+				<?php
+			}
+
 		?>
-
+	</section>
 </body>
-<script src="vues/gestionutilisateur.js"></script>
