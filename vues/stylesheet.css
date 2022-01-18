@@ -463,16 +463,10 @@ a {
 
 /**********************Page Profil **********************/
 
-.profilefh1 {
+.profilh1 {
   color: rgba(0, 255, 255);
   text-align: center;
-  font-family: "Open Sans", bold;
   font-size: 2.5rem;
-}
-
-.flexboxprofile {
-  display: flex;
-  justify-content: space-around;
 }
 
 table,
@@ -482,29 +476,6 @@ td {
   border-collapse: collapse;
   height: 50px;
   width: 300px;
-}
-
-.fondprofile {
-  height: 500px;
-  width: 600px;
-  border-radius: 14px;
-}
-
-.texteprofile {
-  background-color: #32244c;
-  margin-left: 5%;
-  margin-right: 5%;
-  border-radius: 14px;
-}
-
-.tableprofile1 {
-  margin-top: 20%;
-  margin-left: 10%;
-}
-
-.tableprofile2 {
-  margin-top: 25%;
-  margin-left: 5%;
 }
 
 .bodyprofile {
@@ -567,3 +538,31 @@ td {
     margin-top: 0px;
   }
 }
+
+/* Page Mon Compte */
+
+#recherche {
+  background-position: 10px 12px;
+  width: 100%; 
+  font-size: 16px; 
+  padding: 12px 20px 12px 40px;
+  border: 1px solid #ddd; 
+  margin-bottom: 12px; 
+}
+
+.utilisateurs {
+  border-collapse: collapse; 
+  width: 100%; 
+  border: 1px solid #ddd; 
+  font-size: 18px;
+}
+
+.utilisateurs th, .utilisateurs td {
+  text-align: left; 
+  padding: 12px; 
+}
+
+.utilisateurs tr {
+  border-bottom: 1px solid #ddd; 
+}
+

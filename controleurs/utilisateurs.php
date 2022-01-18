@@ -55,8 +55,20 @@ switch($function) {
         break;
     
     case 'inscription':
-        include("modele/connexionBDD.php");
+        //connexion à la BDD
+        include("modele/connexionBDD.php"); 
+        ////vérifie si les variables $_POST[] sont initialisées
+        if (!isset($_POST["nom"])) {
+            $_POST["nom"] ="";
+        }
+        if (!isset($_POST["motdepasse"])) {
+            $_POST["motdepasse"] ="";
+        }
+        if (!isset($_POST["motdepasse2"])) {
+            $_POST["motdepasse2"] ="";
+        }
         $erreur="";
+        //Vérifie si tous les champs sont remplis et si les 2 mots de passe sont identiques
         if ($_POST["motdepasse"] == $_POST["motdepasse2"] && $_POST["nom"] != "" && $_POST["prenom"] != "" && $_POST["email"] != "" && $_POST["motdepasse"] != "" && $_POST["genre"] != "" && $_POST["datenaissance"] != "" && $_POST["adresse"] != "" && $_POST["ville"] != "" && $_POST["codepostal"] != "" && isset($_POST["CGU"])){
             $sql = "UPDATE utilisateurs SET Nom = '$_POST[nom]', Prenom = '$_POST[prenom]', Adresse_email = '$_POST[email]', Mot_de_passe = '$_POST[motdepasse]' , Type = 'Client', Genre = '$_POST[genre]', Date_de_naissance = '$_POST[datenaissance]', Adresse = '$_POST[adresse]', Ville = '$_POST[ville]', Code_postal = '$_POST[codepostal]' WHERE id_Utilisateur = '$_POST[identifiant]' ";
                 if ($conn->query($sql) !== TRUE) {
@@ -64,6 +76,7 @@ switch($function) {
                 }
             $conn->close();
         } else {
+            //envoie un message d'erreur dans le cas contraire
             $erreur="Réessayez";
         }
         $vue = 'inscription';
@@ -72,21 +85,40 @@ switch($function) {
     case 'profil':
         verification_session('user');
         include ('modele/connexionBDD.php');
-       
-
+        /*Premier Graphique profil*/
         $data1 = '';
-
-
+        
         $sql = "SELECT * FROM mesures WHERE id_Capteur=1 ";
         $result = $conn->query($sql);
-
-
+            
         while ($row = $result->fetch_array()) {
-
+        
             $data1 = $data1 . '"'. $row['Données'].'",';
-        }
-
+        };
         $data1 = trim($data1,",");
+
+        $data2 = '';
+        
+        $sql = "SELECT * FROM mesures WHERE id_Capteur=2 ";
+        $result = $conn->query($sql);
+            
+        while ($row = $result->fetch_array()) {
+        
+            $data2 = $data2 . '"'. $row['Données'].'",';
+        };
+        $data2 = trim($data2,",");
+
+        $data3 = '';
+        
+        $sql = "SELECT * FROM mesures WHERE id_Capteur=3 ";
+        $result = $conn->query($sql);
+            
+        while ($row = $result->fetch_array()) {
+        
+            $data3 = $data3 . '"'. $row['Données'].'",';
+        };
+        $data3 = trim($data3,",");
+
         $conn->close();
         $vue = 'profil';
         break;
