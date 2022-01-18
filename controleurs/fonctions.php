@@ -6,6 +6,7 @@ function verification_session($role) {
         header('Location: ' . $url);
     }
 }
+//Permet d'appliquer htmlspecialchars à une donnée
 function test($data) {
     $data = htmlspecialchars($data);
     return $data;
