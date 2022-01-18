@@ -1,4 +1,4 @@
-<input type="text" id="recherche" onkeyup="chercher_utilisateur()" placeholder="Rechercher un utilisateur..."> 
+	<input type="text" id="recherche" onkeyup="chercher_utilisateur()" placeholder="Rechercher un utilisateur..."> 
 	<?php
 	echo "<table id ='utilisateurs' class='utilisateurs'>";
 		echo "<tr><th>identifiant</th>
@@ -41,6 +41,4 @@
 		}
 	echo "</table>";
 	?>
-	</div>
-</body>
 <script src="vues/gestionutilisateur.js"></script>
