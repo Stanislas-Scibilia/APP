@@ -1,23 +1,19 @@
-function chercher_utilisateur() {
-	let input = document.getElementById('barrerecherche').value
-	input=input.toLowercas();
-	let x = document.getElementByClassName('utilisateur');
-	
-	for (i = 0; i < x.length; i++) {
-		if (!x[i].innerHTML.toLowerCase().includes(input)) {
-			x[i].style.display="none";
-		}
+function chercher_utilisateur(str) {
 
-		else {
-			x[i].style.display="liste-item"
+  input = document.getElementById("recherche");
+  filter = input.value;
+  table = document.getElementById("utilisateurs");
+  tr = table.getElementsByTagName("tr");
 
-		}
-
-	}
-
+  for (i = 0; i < tr.length; i++) {
+    td = tr[i].getElementsByTagName("td")[1];
+    if (td) {
+      txtValue = td.textContent || td.innerText;
+      if (txtValue.toUpperCase().indexOf(filter) > -1) {
+        tr[i].style.display = "";
+      } else {
+        tr[i].style.display = "none";
+      }
+    } 
+  }
 }
-		
-
-
-
-
