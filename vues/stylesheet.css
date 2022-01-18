@@ -538,3 +538,31 @@ td {
     margin-top: 0px;
   }
 }
+
+/* Page Mon Compte */
+
+#recherche {
+  background-position: 10px 12px;
+  width: 100%; 
+  font-size: 16px; 
+  padding: 12px 20px 12px 40px;
+  border: 1px solid #ddd; 
+  margin-bottom: 12px; 
+}
+
+.utilisateurs {
+  border-collapse: collapse; 
+  width: 100%; 
+  border: 1px solid #ddd; 
+  font-size: 18px;
+}
+
+.utilisateurs th, .utilisateurs td {
+  text-align: left; 
+  padding: 12px; 
+}
+
+.utilisateurs tr {
+  border-bottom: 1px solid #ddd; 
+}
+
