@@ -1,11 +1,4 @@
-
-    <form action="" method="POST">
-        <input type="search" name="s" placeholder="Rechercher un utilisateur" autocomplete="off">
-        <input type="submit" name="envoyer">
-    </form>
-    
-   
-	<input type="text" id="recherche" onkeyup="chercher_utilisateur()" placeholder="Rechercher un utilisateur..."> 
+<input type="text" id="recherche" onkeyup="chercher_utilisateur()" placeholder="Rechercher un utilisateur..."> 
 	<?php
 	echo "<table id ='utilisateurs' class='utilisateurs'>";
 		echo "<tr><th>identifiant</th>
