@@ -19,7 +19,7 @@ if(isset($_GET['s']) AND !empty($_GET['s'])){
 			if($allusers->rowCount() > 0){
 				while($user = $allusers->fetch()){
 					?>
-					<p><?= $user['Nom']; ?> <br/><<?= $user['Prénom'] ?> <br/> <?= $user['id_Utilisateur'] ?> <br/><?= $user['Genre'] ?> <br/> <?= $user['Adresse email'] ?> <br/> <?= $user['Mot de passe'] ?></p>
+					<p><?= $user['Nom']; ?> <br/><?= $user['Prénom'] ?> <br/> <?= $user['id_Utilisateur'] ?> <br/><?= $user['Genre'] ?> <br/> <?= $user['Adresse email'] ?> <br/> <?= $user['Mot de passe'] ?></p>
 					<?php  
 				}
 
