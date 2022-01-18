@@ -84,7 +84,6 @@ switch($function) {
     
     case 'profil':
         verification_session('user');
-<<<<<<< HEAD
         $vue = 'profil';
 
         $host = 'localhost';
@@ -107,19 +106,6 @@ switch($function) {
             $data2 = $data2 . '"'. $row['data2'] .'",';
         }
 
-=======
-        include ('modele/connexionBDD.php');
-        /*Premier Graphique profil*/
-        $data1 = '';
-        
-        $sql = "SELECT * FROM mesures WHERE id_Capteur=1 ";
-        $result = $conn->query($sql);
-            
-        while ($row = $result->fetch_array()) {
-        
-            $data1 = $data1 . '"'. $row['Données'].'",';
-        };
->>>>>>> 3fa3d93cd881f2a6711abbbbbbabc1b06081a511
         $data1 = trim($data1,",");
 
         $data2 = '';
