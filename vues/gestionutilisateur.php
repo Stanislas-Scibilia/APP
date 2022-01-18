@@ -12,28 +12,6 @@ if(isset($_GET['s']) AND !empty($_GET['s'])){
 		<input type="search" name="s" placeholder="Rechercher un utilisateur" autocomplete="off">
 		<input type="submit" name="envoyer">
 	</form>
-<<<<<<< HEAD
-	
-	<section class="afficher_utilisateur">
-
-		<?php
-			if($allusers->rowCount() > 0){
-				while($user = $allusers->fetch()){
-					?>
-					<p><?= $user['Nom']; ?> <br/><?= $user['Prénom'] ?> <br/> <?= $user['id_Utilisateur'] ?> <br/><?= $user['Genre'] ?> <br/> <?= $user['Adresse email'] ?> <br/> <?= $user['Mot de passe'] ?></p>
-					<?php  
-				}
-
-			}else{
-				?>
-				<p>Aucun utilisateur trouvé</p>
-				<?php
-			}
-
-		?>
-	</section>
-</body>
-=======
 
 	<input type="text" id="recherche" onkeyup="chercher_utilisateur()" placeholder="Rechercher un utilisateur..."> 
 	<?php
@@ -81,4 +59,3 @@ if(isset($_GET['s']) AND !empty($_GET['s'])){
 	</div>
 </body>
 <script src="vues/gestionutilisateur.js"></script>
->>>>>>> 1e4b10edebb37a419657934a370ec646d272f736
