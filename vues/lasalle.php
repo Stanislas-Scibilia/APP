@@ -37,7 +37,7 @@
         <div class="messagelasalle">
           <p id="messageco2"></p>
           <script>
-            var co2live = 1000;
+            var co2live = [<?php echo $data4; ?>];
               let greeting;
               if (co2live > 1200) {
                 greeting = 'IL FAUT AERER LA SALLE';

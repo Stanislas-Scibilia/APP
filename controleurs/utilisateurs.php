@@ -74,6 +74,7 @@ switch($function) {
             //Vérifie si tous les champs sont remplis et si les 2 mots de passe sont identiques
             if ($_POST["motdepasse"] == $_POST["motdepasse2"] && $_POST["nom"] != "" && $_POST["prenom"] != "" && $_POST["email"] != "" && $_POST["motdepasse"] != "" && $_POST["genre"] != "" && $_POST["datenaissance"] != "" && $_POST["adresse"] != "" && $_POST["ville"] != "" && $_POST["codepostal"] != "" && isset($_POST["CGU"])){
                 $sql = "UPDATE utilisateurs SET Nom = ?, Prenom = ?, Adresse_email = ?, Mot_de_passe = ? , Type = 'Client', Genre = ?, Date_de_naissance = ?, Adresse = ?, Ville = ?, Code_postal = ? WHERE id_Utilisateur = ? ";
+                $hash_pass = password_hash($motdepasse, PASSWORD_DEFAULT);
                 $stmt = $conn->prepare($sql);
                 $stmt->bind_param('ssssssssis', $nom, $prenom, $email, $motdepasse, $genre, $datenaissance, $adresse, $ville, $codepostal, $identifiant);
                 
@@ -91,9 +92,30 @@ switch($function) {
 
                 $stmt->close();
                 $conn->close();
+                //vide les $_SESSION
+                $_SESSION["identifiant"]="";
+                $_SESSION["prenom"]="";
+                $_SESSION["nom"]="";
+                $_SESSION["email"]="";
+                $_SESSION["genre"]="";
+                $_SESSION["datenaissance"]="";
+                $_SESSION["adresse"]="";
+                $_SESSION["ville"]="";
+                $_SESSION["codepostal"]="";
+                //message de confirmation
+                $erreur = "Votre inscription a bien été prise en compte";
             } else {
                 //envoie un message d'erreur dans le cas contraire
-                $erreur="Réessayez";
+                $erreur="Veuillez remplir tous les champs";
+                //rempli les $_SESSION pour garder les valeurs entrées par l'utilisateur
+                $_SESSION["identifiant"]=$_POST["identifiant"];
+                $_SESSION["prenom"]=$_POST["prenom"];
+                $_SESSION["nom"]=$_POST["nom"];
+                $_SESSION["email"]=$_POST["email"];
+                $_SESSION["datenaissance"]=$_POST["datenaissance"];
+                $_SESSION["adresse"]=$_POST["adresse"];
+                $_SESSION["ville"]=$_POST["ville"];
+                $_SESSION["codepostal"]=$_POST["codepostal"];
             }
         }
         $vue = 'inscription';
@@ -161,10 +183,6 @@ switch($function) {
 		include('modele/connexionBDD.php');
         $sql = 'SELECT * FROM utilisateurs ORDER BY id_Utilisateur DESC';
         $allusers = $conn->query($sql);
-        if(isset($_POST['s']) AND !empty($_POST['s'])){
-            $recherche = htmlspecialchars($_POST['s']);
-            $allusers = $conn->query('SELECT Nom, Prenom, id_Utilisateur,Genre,Adresse_email, Mot_de_passe FROM utilisateurs WHERE Nom LIKE"%'.$recherche.'%" ORDER BY id_Utilisateur DESC');
-        }
         $vue = 'gestionutilisateur';
         break;
     
@@ -192,6 +210,8 @@ switch($function) {
         $data4 = trim($data4,",");
 
         $data5 = '';
+        $sql = "SELECT Données from mesures WHERE id_Mesure = (SELECT MAX(id_Mesure) FROM mesures WHERE id_Capteur=2)";
+        $data5 = $conn->query($sql);
 
         $conn->close();
         $vue = 'lasalle'; 
@@ -224,6 +244,5 @@ if (!empty($_SESSION) and $_SESSION['connexion'] === 'admin') {
     include('vues/navbar.php');
 }
 
-include('vues/fildariane.php');
 include('vues/' . $vue . '.php');
 include('vues/footer.php');
