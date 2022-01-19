@@ -539,7 +539,7 @@ td {
   }
 }
 
-/* Page Mon Compte */
+/* Page Gestion utilisateur */
 
 #recherche {
   background-position: 10px 12px;
@@ -553,16 +553,17 @@ td {
 .utilisateurs {
   border-collapse: collapse; 
   width: 100%; 
-  border: 1px solid #ddd; 
+  border: 10px solid #ddd; 
   font-size: 18px;
 }
 
 .utilisateurs th, .utilisateurs td {
   text-align: left; 
   padding: 12px; 
+  color: yellow;
 }
 
-.utilisateurs tr {
-  border-bottom: 1px solid #ddd; 
+.utilisateurs th {
+  border: 10px solid #ddd; 
 }
 
