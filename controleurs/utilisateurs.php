@@ -89,7 +89,6 @@ switch($function) {
             $_POST["ville"] ="";
         }
         $erreur="";
-<<<<<<< Updated upstream
         $_POST["identifiant"] = HTML_chars($_POST["identifiant"]);
         $_POST["prenom"] = HTML_chars($_POST["prenom"]);
         $_POST["nom"] = HTML_chars($_POST["nom"]);
@@ -99,17 +98,6 @@ switch($function) {
         $_POST["codepostal"] = HTML_chars($_POST["codepostal"]);
         $_POST["ville"] = HTML_chars($_POST["ville"]);
         $_POST["motdepasse"] = HTML_chars($_POST["motdepasse"]);
-=======
-        $_POST["id_Utilisateur"] = HTML_chars($_POST["id_Utilisateur"]);
-        $_POST["Prenom"] = HTML_chars($_POST["Prenom"]);
-        $_POST["Nom"] = HTML_chars($_POST["Nom"]);
-        $_POST["Date_de_naissance"] = HTML_chars($_POST["Date_de_naissance"]);
-        $_POST["Adresse_email"] = teHTML_charsst($_POST["Adresse_email"]);
-        $_POST["Adresse"] = HTML_chars($_POST["Adresse"]);
-        $_POST["Code_postal"] = HTML_chars($_POST["Code_postal"]);
-        $_POST["Ville"] = HTML_chars($_POST["Ville"]);
-        $_POST["Mot_de_passe"] = HTML_chars($_POST["Mot_de_passe"]);
->>>>>>> Stashed changes
         //Vérifie si tous les champs sont remplis et si les 2 mots de passe sont identiques
         if ($_POST["motdepasse"] == $_POST["motdepasse2"] && $_POST["nom"] != "" && $_POST["prenom"] != "" && $_POST["email"] != "" && $_POST["motdepasse"] != "" && $_POST["genre"] != "" && $_POST["datenaissance"] != "" && $_POST["adresse"] != "" && $_POST["ville"] != "" && $_POST["codepostal"] != "" && isset($_POST["CGU"])){
             $sql = "UPDATE utilisateurs SET Nom = '$_POST[nom]', Prenom = '$_POST[prenom]', Adresse_email = '$_POST[email]', Mot_de_passe = '$_POST[motdepasse]' , Type = 'Client', Genre = '$_POST[genre]', Date_de_naissance = '$_POST[datenaissance]', Adresse = '$_POST[adresse]', Ville = '$_POST[ville]', Code_postal = '$_POST[codepostal]' WHERE id_Utilisateur = '$_POST[identifiant]' ";
