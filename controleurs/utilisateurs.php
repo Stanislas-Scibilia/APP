@@ -161,10 +161,6 @@ switch($function) {
 		include('modele/connexionBDD.php');
         $sql = 'SELECT * FROM utilisateurs ORDER BY id_Utilisateur DESC';
         $allusers = $conn->query($sql);
-        if(isset($_POST['s']) AND !empty($_POST['s'])){
-            $recherche = htmlspecialchars($_POST['s']);
-            $allusers = $conn->query('SELECT Nom, Prenom, id_Utilisateur,Genre,Adresse_email, Mot_de_passe FROM utilisateurs WHERE Nom LIKE"%'.$recherche.'%" ORDER BY id_Utilisateur DESC');
-        }
         $vue = 'gestionutilisateur';
         break;
     
