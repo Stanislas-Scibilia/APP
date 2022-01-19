@@ -74,7 +74,6 @@ switch($function) {
             //Vérifie si tous les champs sont remplis et si les 2 mots de passe sont identiques
             if ($_POST["motdepasse"] == $_POST["motdepasse2"] && $_POST["nom"] != "" && $_POST["prenom"] != "" && $_POST["email"] != "" && $_POST["motdepasse"] != "" && $_POST["genre"] != "" && $_POST["datenaissance"] != "" && $_POST["adresse"] != "" && $_POST["ville"] != "" && $_POST["codepostal"] != "" && isset($_POST["CGU"])){
                 $sql = "UPDATE utilisateurs SET Nom = ?, Prenom = ?, Adresse_email = ?, Mot_de_passe = ? , Type = 'Client', Genre = ?, Date_de_naissance = ?, Adresse = ?, Ville = ?, Code_postal = ? WHERE id_Utilisateur = ? ";
-                $hash_pass = password_hash($motdepasse, PASSWORD_DEFAULT);
                 $stmt = $conn->prepare($sql);
                 $stmt->bind_param('ssssssssis', $nom, $prenom, $email, $motdepasse, $genre, $datenaissance, $adresse, $ville, $codepostal, $identifiant);
                 
