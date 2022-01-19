@@ -2,7 +2,7 @@
 //établie la connexion avec la base de données
     $servername = "localhost";
     $username = "root";
-    $password = "azerty";
+    $password = "root";
     $dbname = "fit_analysor";
     
     $conn = new mysqli($servername, $username, $password, $dbname);
