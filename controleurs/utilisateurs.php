@@ -210,6 +210,8 @@ switch($function) {
         $data4 = trim($data4,",");
 
         $data5 = '';
+        $sql = "SELECT Données from mesures WHERE id_Mesure = (SELECT MAX(id_Mesure) FROM mesures WHERE id_Capteur=2)";
+        $data5 = $conn->query($sql);
 
         $conn->close();
         $vue = 'lasalle'; 
