@@ -125,7 +125,7 @@ switch($function) {
         $conn->close();
         $vue = 'profil';
         break;
-
+        
     
     case 'faq':
         $vue = 'FAQ';
@@ -159,11 +159,41 @@ switch($function) {
     case 'compte':
         $vue = 'compte';
         break;
+
+    case 'lasalle':
+        verification_session('admin');
+        include("modele/connexionBDD.php");
+
+        $data4 = '';
         
+        $sql = "SELECT * FROM mesures WHERE id_Capteur=2 ";
+        $result = $conn->query($sql);
+            
+        while ($row = $result->fetch_array()) {
+        
+            $data4 = $data4 . '"'. $row['Données'].'",';
+        };
+        $data4 = trim($data4,",");
+        $conn->close();
+        $vue = 'lasalle'; 
+        break;
+   
     default:
         $vue = '404';
         break;
+    
+    case 'modifform':
+        verification_session('admin');
+        include ('modele/connexionBDD.php');
+        $vue = 'modifform';
+        $sql = "UPDATE utilisateurs SET Nom = '$_POST[nom]', Prenom = '$_POST[prenom]', Adresse_email = '$_POST[email]', Mot_de_passe = '$_POST[motdepasse]' , Genre = '$_POST[genre]', Date_de_naissance = '$_POST[datenaissance]', Adresse = '$_POST[adresse]', Ville = '$_POST[ville]', Code_postal = '$_POST[codepostal]' WHERE id_Utilisateur = '$_POST[identifiant]' ";
+                if ($conn->query($sql) !== TRUE) {
+                echo "Error updating record: " . $conn->error;
+                }
+            $conn->close();
+    break;
 }
+
 
 include('vues/header.php');
 
