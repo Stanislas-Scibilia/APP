@@ -91,9 +91,30 @@ switch($function) {
 
                 $stmt->close();
                 $conn->close();
+                //vide les $_SESSION
+                $_SESSION["identifiant"]="";
+                $_SESSION["prenom"]="";
+                $_SESSION["nom"]="";
+                $_SESSION["email"]="";
+                $_SESSION["genre"]="";
+                $_SESSION["datenaissance"]="";
+                $_SESSION["adresse"]="";
+                $_SESSION["ville"]="";
+                $_SESSION["codepostal"]="";
+                //message de confirmation
+                $erreur = "Votre inscription a bien été prise en compte";
             } else {
                 //envoie un message d'erreur dans le cas contraire
-                $erreur="Réessayez";
+                $erreur="Veuillez remplir tous les champs";
+                //rempli les $_SESSION pour garder les valeurs entrées par l'utilisateur
+                $_SESSION["identifiant"]=$_POST["identifiant"];
+                $_SESSION["prenom"]=$_POST["prenom"];
+                $_SESSION["nom"]=$_POST["nom"];
+                $_SESSION["email"]=$_POST["email"];
+                $_SESSION["datenaissance"]=$_POST["datenaissance"];
+                $_SESSION["adresse"]=$_POST["adresse"];
+                $_SESSION["ville"]=$_POST["ville"];
+                $_SESSION["codepostal"]=$_POST["codepostal"];
             }
         }
         $vue = 'inscription';
@@ -221,6 +242,5 @@ if (!empty($_SESSION) and $_SESSION['connexion'] === 'admin') {
     include('vues/navbar.php');
 }
 
-include('vues/fildariane.php');
 include('vues/' . $vue . '.php');
 include('vues/footer.php');
