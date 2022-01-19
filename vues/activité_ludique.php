@@ -58,7 +58,7 @@
     <br>
     <br>
     <p id="Codeal">Code Secret</p>
-    <form class="flexboxactivite" method="post">
+    <form class="flexboxactivite" id="code" method="post" action="">
         <div class=boxal>
                <input id="boxcode" name='1' type="number" min="0" max="9">
         </div>
@@ -72,10 +72,10 @@
                 <input id="boxcode" name='4' type="number" min="0" max="9">
         </div>
         <div class="boxal">
-            <input type="submit" value="Valider">
+        <input type="submit" value="Valider">
         </div>
     </form>
-    <span style = "margin-left : 50px;"> <?php echo $messageAL?> </span>
+    <span style = "font-size : 50px;"> <?php echo $messageAL?> </span>
     <br>
     <br>
     <br>
