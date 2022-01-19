@@ -1,10 +1,10 @@
 <div id="salle">
       <div class="profilh1">
-        <p>CO2 dans la Salle</p>
+        <p>Evolution du CO2 dans la Salle</p>
     </div>
     <div class="bodyprofile">
       <div class="containerprofile">
-      <h1>Evolution du CO2 dans la salle</h1>
+      <h1>CO2 en ppm</h1>
       <canvas id="chart4" style="width: 100%; height: 60vh; background: #222; border: 1px solid #555652; margin-top: 5px;"></canvas>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js"></script>
         <script>
@@ -31,5 +31,22 @@
           });
           </script>
           </div> 
+        </div>
+        <br>
+        <br>
+        <div class="messagelasalle">
+          <p id="messageco2"></p>
+          <script>
+            var co2live = 1000;
+              let greeting;
+              if (co2live > 1200) {
+                greeting = 'IL FAUT AERER LA SALLE';
+              } else {
+                greeting = 'LA SALLE N A PAS BESOIN D ETRE AEREE';
+              }
+
+            document.getElementById("messageco2").innerHTML = greeting;
+            window.alert(greeting)     
+          </script>
         </div>
         <br>

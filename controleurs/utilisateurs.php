@@ -35,7 +35,7 @@ switch($function) {
     
     case 'activité_ludique':
         $vue = 'activité_ludique';
-        if (!empty($_POST) and $_POST['1']==="1" and $_POST['2']==="4" and $_POST['3']==="5" and $_POST['4']==="5") {
+        if (!empty($_POST) and $_POST['1']===1 and $_POST['2']===4 and $_POST['3']===5 and $_POST['4']===5) {
             $messageAL = 'Vous avez gagné !';
         } else{
             $messageAL = 'Vous avez perdu !';
@@ -182,10 +182,6 @@ switch($function) {
 		include('modele/connexionBDD.php');
         $sql = 'SELECT * FROM utilisateurs ORDER BY id_Utilisateur DESC';
         $allusers = $conn->query($sql);
-        if(isset($_POST['s']) AND !empty($_POST['s'])){
-            $recherche = htmlspecialchars($_POST['s']);
-            $allusers = $conn->query('SELECT Nom, Prenom, id_Utilisateur,Genre,Adresse_email, Mot_de_passe FROM utilisateurs WHERE Nom LIKE"%'.$recherche.'%" ORDER BY id_Utilisateur DESC');
-        }
         $vue = 'gestionutilisateur';
         break;
     
@@ -211,6 +207,9 @@ switch($function) {
             $data4 = $data4 . '"'. $row['Données'].'",';
         };
         $data4 = trim($data4,",");
+
+        $data5 = '';
+
         $conn->close();
         $vue = 'lasalle'; 
         break;
