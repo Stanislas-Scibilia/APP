@@ -57,37 +57,6 @@ switch($function) {
     case 'inscription':
         //connexion à la BDD
         include("modele/connexionBDD.php"); 
-        ////vérifie si les variables $_POST[] sont initialisées
-        if (!isset($_POST["nom"])) {
-            $_POST["nom"] ="";
-        }
-        if (!isset($_POST["motdepasse"])) {
-            $_POST["motdepasse"] ="";
-        }
-        if (!isset($_POST["motdepasse2"])) {
-            $_POST["motdepasse2"] ="";
-        }
-        if (!isset($_POST["identifiant"])) {
-            $_POST["identifiant"] ="";
-        }
-        if (!isset($_POST["prenom"])) {
-            $_POST["prenom"] ="";
-        }
-        if (!isset($_POST["datenaisance"])) {
-            $_POST["datenaissance"] ="";
-        }
-        if (!isset($_POST["email"])) {
-            $_POST["email"] ="";
-        }
-        if (!isset($_POST["adresse"])) {
-            $_POST["adresse"] ="";
-        }
-        if (!isset($_POST["codepostal"])) {
-            $_POST["codepostal"] ="";
-        }
-        if (!isset($_POST["ville"])) {
-            $_POST["ville"] ="";
-        }
         $erreur="";
         $_POST["identifiant"] = HTML_chars($_POST["identifiant"]);
         $_POST["prenom"] = HTML_chars($_POST["prenom"]);
