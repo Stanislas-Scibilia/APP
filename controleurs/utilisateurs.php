@@ -167,7 +167,25 @@ switch($function) {
     case 'compte':
         $vue = 'compte';
         break;
+
+    case 'lasalle':
+        verification_session('admin');
+        include("modele/connexionBDD.php");
+
+        $data4 = '';
         
+        $sql = "SELECT * FROM mesures WHERE id_Capteur=2 ";
+        $result = $conn->query($sql);
+            
+        while ($row = $result->fetch_array()) {
+        
+            $data4 = $data4 . '"'. $row['Données'].'",';
+        };
+        $data4 = trim($data4,",");
+        $conn->close();
+        $vue = 'lasalle'; 
+        break;
+   
     default:
         $vue = '404';
         break;
