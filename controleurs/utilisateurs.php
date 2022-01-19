@@ -57,22 +57,12 @@ switch($function) {
     case 'inscription':
         //connexion à la BDD
         include("modele/connexionBDD.php"); 
-        ////vérifie si les variables $_POST[] sont initialisées
-        if (!isset($_POST["nom"])) {
-            $_POST["nom"] ="";
-        }
-        if (!isset($_POST["motdepasse"])) {
-            $_POST["motdepasse"] ="";
-        }
-        if (!isset($_POST["motdepasse2"])) {
-            $_POST["motdepasse2"] ="";
-        }
         $erreur="";
         $_POST["identifiant"] = HTML_chars($_POST["identifiant"]);
         $_POST["prenom"] = HTML_chars($_POST["prenom"]);
         $_POST["nom"] = HTML_chars($_POST["nom"]);
         $_POST["datenaissance"] = HTML_chars($_POST["datenaissance"]);
-        $_POST["email"] = teHTML_charsst($_POST["email"]);
+        $_POST["email"] = HTML_chars($_POST["email"]);
         $_POST["adresse"] = HTML_chars($_POST["adresse"]);
         $_POST["codepostal"] = HTML_chars($_POST["codepostal"]);
         $_POST["ville"] = HTML_chars($_POST["ville"]);
@@ -133,7 +123,7 @@ switch($function) {
         $conn->close();
         $vue = 'profil';
         break;
-
+        
     
     case 'faq':
         $vue = 'FAQ';
@@ -167,7 +157,25 @@ switch($function) {
     case 'compte':
         $vue = 'compte';
         break;
+
+    case 'lasalle':
+        verification_session('admin');
+        include("modele/connexionBDD.php");
+
+        $data4 = '';
         
+        $sql = "SELECT * FROM mesures WHERE id_Capteur=2 ";
+        $result = $conn->query($sql);
+            
+        while ($row = $result->fetch_array()) {
+        
+            $data4 = $data4 . '"'. $row['Données'].'",';
+        };
+        $data4 = trim($data4,",");
+        $conn->close();
+        $vue = 'lasalle'; 
+        break;
+   
     default:
         $vue = '404';
         break;
