@@ -75,7 +75,7 @@
             <input type="submit" value="Valider">
         </div>
     </form>
-    <?php if (isset($message)) {echo $message;}?>
+    <span style = "margin-left : 50px;"> <?php echo $messageAL?> </span>
     <br>
     <br>
     <br>
