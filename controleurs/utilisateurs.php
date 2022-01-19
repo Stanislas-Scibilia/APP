@@ -67,12 +67,33 @@ switch($function) {
         if (!isset($_POST["motdepasse2"])) {
             $_POST["motdepasse2"] ="";
         }
+        if (!isset($_POST["identifiant"])) {
+            $_POST["identifiant"] ="";
+        }
+        if (!isset($_POST["prenom"])) {
+            $_POST["prenom"] ="";
+        }
+        if (!isset($_POST["datenaisance"])) {
+            $_POST["datenaissance"] ="";
+        }
+        if (!isset($_POST["email"])) {
+            $_POST["email"] ="";
+        }
+        if (!isset($_POST["adresse"])) {
+            $_POST["adresse"] ="";
+        }
+        if (!isset($_POST["codepostal"])) {
+            $_POST["codepostal"] ="";
+        }
+        if (!isset($_POST["ville"])) {
+            $_POST["ville"] ="";
+        }
         $erreur="";
         $_POST["identifiant"] = HTML_chars($_POST["identifiant"]);
         $_POST["prenom"] = HTML_chars($_POST["prenom"]);
         $_POST["nom"] = HTML_chars($_POST["nom"]);
         $_POST["datenaissance"] = HTML_chars($_POST["datenaissance"]);
-        $_POST["email"] = teHTML_charsst($_POST["email"]);
+        $_POST["email"] = HTML_chars($_POST["email"]);
         $_POST["adresse"] = HTML_chars($_POST["adresse"]);
         $_POST["codepostal"] = HTML_chars($_POST["codepostal"]);
         $_POST["ville"] = HTML_chars($_POST["ville"]);
