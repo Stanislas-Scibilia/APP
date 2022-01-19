@@ -81,7 +81,7 @@ switch($function) {
                 $nom = $_POST['nom'];
                 $prenom = $_POST['prenom'];
                 $email = $_POST['email'];
-                $motdepasse = $_POST['motdepasse'];
+                $motdepasse = password_hash($_POST['motdepasse'], PASSWORD_DEFAULT);
                 $genre = $_POST['genre'];
                 $datenaissance = $_POST['datenaissance'];
                 $adresse = $_POST['adresse'];
