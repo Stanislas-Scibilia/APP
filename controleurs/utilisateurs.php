@@ -133,7 +133,7 @@ switch($function) {
         $conn->close();
         $vue = 'profil';
         break;
-
+        
     
     case 'faq':
         $vue = 'FAQ';
