@@ -172,6 +172,9 @@ switch($function) {
             $data4 = $data4 . '"'. $row['Données'].'",';
         };
         $data4 = trim($data4,",");
+
+        $data5 = '';
+
         $conn->close();
         $vue = 'lasalle'; 
         break;
