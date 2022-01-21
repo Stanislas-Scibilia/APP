@@ -18,3 +18,9 @@ function creerUser() {
     }
     $conn->close();
 }
+
+function supprUser($valeur) {
+    include('modele/connexionBDD.php');
+    $sql="DELETE FROM utilisateurs WHERE id_Utilisateur='$valeur'";
+    $result = $conn->query($sql);
+}
