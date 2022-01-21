@@ -19,16 +19,24 @@ switch($function) {
         $vue = 'connexion';
         
         if (!empty($_POST)) {
-            if ($_POST['identifiant']==='test' and $_POST['motdepasse']==='test') {
+            include('modele/connexionBDD.php');
+            $sql = 'SELECT Mot_de_passe, Type FROM utilisateurs WHERE id_Utilisateur=?';
+            $stmt = $conn->prepare($sql);
+            $stmt->bind_param('i', $id_Utilisateur);
+            $id_Utilisateur = $_POST['identifiant'];
+            $stmt->execute();
+            $result = $stmt->get_result();
+            $user = $result->fetch_assoc();
+            if (password_verify($_POST['motdepasse'], $user['Mot_de_passe']) and $user['Type'] === 'Client') {
                 $_SESSION['connexion'] = 'user';
                 $message = "Vous êtes connecté en tant qu'utilisateur.";
                 header("Location: /?fonction=profil");
                 exit();
-            } elseif ($_POST['identifiant']==='admin' and $_POST['motdepasse']==='test') {
+            } elseif (password_verify($_POST['motdepasse'], $user['Mot_de_passe']) and $user['Type'] === 'Gérant') {
                 $_SESSION['connexion'] = 'admin';
                 $message = "Vous êtes connecté en tant qu'administrateur.";
-                header("Location: /?fonction=profil");
-                exit();
+                // header("Location: /?fonction=profil");
+                // exit();
             }
         }
         break;
@@ -181,7 +189,7 @@ switch($function) {
     case 'gestion':
         verification_session('admin');
 		include('modele/connexionBDD.php');
-        $sql = 'SELECT * FROM utilisateurs ORDER BY id_Utilisateur DESC';
+        $sql = 'SELECT * FROM utilisateurs ORDER BY id_Utilisateur ASC';
         $allusers = $conn->query($sql);
         $vue = 'gestionutilisateur';
         break;
@@ -229,21 +237,22 @@ switch($function) {
         $conn->close();
         $vue = 'lasalle'; 
         break;
-   
+    
+    case 'modif_form':
+        verification_session('admin');
+        include ('modele/connexionBDD.php');
+        $vue = 'modif_form';
+        $sql = "UPDATE utilisateurs SET Nom = '$_POST[nom]', Prenom = '$_POST[prenom]', Adresse_email = '$_POST[email]', Mot_de_passe = '$_POST[motdepasse]' , Genre = '$_POST[genre]', Date_de_naissance = '$_POST[datenaissance]', Adresse = '$_POST[adresse]', Ville = '$_POST[ville]', Code_postal = '$_POST[codepostal]' WHERE id_Utilisateur = '$_POST[identifiant]' ";
+        if ($conn->query($sql) !== TRUE) {
+            echo "Error updating record: " . $conn->error;
+        }
+        $conn->close();
+        break;
+    
     default:
         $vue = '404';
         break;
     
-    case 'modifform':
-        verification_session('admin');
-        include ('modele/connexionBDD.php');
-        $vue = 'modifform';
-        $sql = "UPDATE utilisateurs SET Nom = '$_POST[nom]', Prenom = '$_POST[prenom]', Adresse_email = '$_POST[email]', Mot_de_passe = '$_POST[motdepasse]' , Genre = '$_POST[genre]', Date_de_naissance = '$_POST[datenaissance]', Adresse = '$_POST[adresse]', Ville = '$_POST[ville]', Code_postal = '$_POST[codepostal]' WHERE id_Utilisateur = '$_POST[identifiant]' ";
-                if ($conn->query($sql) !== TRUE) {
-                echo "Error updating record: " . $conn->error;
-                }
-            $conn->close();
-    break;
 }
 
 
