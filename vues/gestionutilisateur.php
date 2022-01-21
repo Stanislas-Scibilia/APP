@@ -1,5 +1,5 @@
 	<input type="text" id="recherche" onkeyup="chercher_utilisateur()" placeholder="Rechercher un utilisateur...">
-	<input type="button" id="modifier" onclick="window.location.href = 'vues/modifform.php';" value="Modifier les données utilisateur">
+	<input type="button" id="modifier" onclick="window.location.href = 'vues/modif_form.php';" value="Modifier les données utilisateur">
 	<?php
 	echo "<table id ='utilisateurs' class='utilisateurs'>";
 		echo "<tr><th>identifiant</th>
