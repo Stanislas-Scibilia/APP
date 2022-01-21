@@ -254,26 +254,28 @@ switch($function) {
             $_POST["codepostal"] = HTML_chars($_POST["codepostal"]);
             $_POST["ville"] = HTML_chars($_POST["ville"]);
 
-            $sql = "UPDATE utilisateurs SET Nom = ?, Prenom = ?, Adresse_email = ?, Mot_de_passe = ? , Type = 'Client', Genre = ?, Date_de_naissance = ?, Adresse = ?, Ville = ?, Code_postal = ? WHERE id_Utilisateur = ? ";
-            $stmt = $conn->prepare($sql);
-            $stmt->bind_param('ssssssssis', $nom, $prenom, $email, $motdepasse, $genre, $datenaissance, $adresse, $ville, $codepostal, $identifiant);
-                
-            $identifiant = $_POST['identifiant'];
-            $nom = $_POST['nom'];
-            $prenom = $_POST['prenom'];
-            $email = $_POST['email'];
-            $genre = $_POST['genre'];
-            $datenaissance = $_POST['datenaissance'];
-            $adresse = $_POST['adresse'];
-            $ville = $_POST['ville'];
-            $codepostal = $_POST['codepostal'];
-            $identifiant = $_POST["identifiant"];
-            $stmt->execute();
+            if ($_POST["identifiant"] != "") {
+                $sql = "UPDATE utilisateurs SET Nom = ?, Prenom = ?, Adresse_email = ?, Mot_de_passe = ? , Type = 'Client', Genre = ?, Date_de_naissance = ?, Adresse = ?, Ville = ?, Code_postal = ? WHERE id_Utilisateur = ? ";
+                $stmt = $conn->prepare($sql);
+                $stmt->bind_param('ssssssssis', $nom, $prenom, $email, $motdepasse, $genre, $datenaissance, $adresse, $ville, $codepostal, $identifiant);
+                    
+                $identifiant = $_POST['identifiant'];
+                $nom = $_POST['nom'];
+                $prenom = $_POST['prenom'];
+                $email = $_POST['email'];
+                $genre = $_POST['genre'];
+                $datenaissance = $_POST['datenaissance'];
+                $adresse = $_POST['adresse'];
+                $ville = $_POST['ville'];
+                $codepostal = $_POST['codepostal'];
+                $identifiant = $_POST["identifiant"];
+                $stmt->execute();
 
-            $stmt->close();
-            $conn->close();
-            //message de confirmation
-            $confirmation = "La modification a bien été prise en compte";
+                $stmt->close();
+                $conn->close();
+                //message de confirmation
+                $confirmation = "La modification a bien été prise en compte";
+            }
         }
         $vue = 'modif_form';
         break;

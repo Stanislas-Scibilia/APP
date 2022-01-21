@@ -21,6 +21,14 @@ function creerUser() {
 
 function supprUser($valeur) {
     include('modele/connexionBDD.php');
-    $sql="DELETE FROM utilisateurs WHERE id_Utilisateur='$valeur'";
-    $result = $conn->query($sql);
+    global $suppresion;
+    $sql="DELETE FROM utilisateurs_capteurs WHERE id_Utilisateur='$valeur'";
+    $conn->query($sql);
+    $sql2="DELETE FROM utilisateurs WHERE id_Utilisateur='$valeur'";
+    $conn->query($sql2);
+    if ($conn->connect_error) {
+        $suppression = "La suppression n'a pas été prise en compte";
+    } else {
+       $suppression = "La suppresion a bien été prise en compte";
+    }
 }
