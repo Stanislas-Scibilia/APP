@@ -20,7 +20,7 @@ switch($function) {
         
         if (!empty($_POST)) {
             include('modele/connexionBDD.php');
-            $sql = 'SELECT Mot_de_passe, Type FROM utilisateurs WHERE id_Utilisateur=?';
+            $sql = 'SELECT Mot_de_passe, Type, Prenom, Nom FROM utilisateurs WHERE id_Utilisateur=?';
             $stmt = $conn->prepare($sql);
             $stmt->bind_param('i', $id_Utilisateur);
             $id_Utilisateur = $_POST['identifiant'];
@@ -29,6 +29,8 @@ switch($function) {
             $user = $result->fetch_assoc();
             if (password_verify($_POST['motdepasse'], $user['Mot_de_passe']) and $user['Type'] === 'Client') {
                 $_SESSION['connexion'] = 'user';
+                $_SESSION['Prenom'] = $user['Prenom'];
+                $_SESSION['Nom'] = $user['Nom'];
                 $message = "Vous êtes connecté en tant qu'utilisateur.";
                 header("Location: /?fonction=profil");
                 exit();
