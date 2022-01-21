@@ -34,6 +34,8 @@
         </div>
         <br>
         <br>
+        <p>Attention: Le Haut Conseil de la Santé Publique préconise d'aérer toute salle ayant une concentration de dioxyde de carbone dans l'air suppérieure à 1200ppm.</p>
+        <p>Concentration actuelle dans la salle: <?php echo $data5; ?> ppm </p>
         <div class="messagelasalle">
           <p id="messageco2"></p>
           <script>
