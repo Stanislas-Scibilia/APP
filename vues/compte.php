@@ -15,7 +15,6 @@ echo'
             <li>Adresse : '.$_SESSION['adresse'].'</li>
             <li>Ville : '.$_SESSION['ville'].'</li>
             <li>Code postal : '.$_SESSION['code'].'</li>
-
     </ul>
 </div>';
 ?>
