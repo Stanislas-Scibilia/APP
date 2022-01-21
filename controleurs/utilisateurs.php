@@ -20,7 +20,7 @@ switch($function) {
         
         if (!empty($_POST)) {
             include('modele/connexionBDD.php');
-            $sql = 'SELECT Mot_de_passe, Type, Prenom, Nom FROM utilisateurs WHERE id_Utilisateur=?';
+            $sql = 'SELECT Mot_de_passe, Type, Prenom, Nom, Adresse_email, id_Utilisateur, Genre, Date_de_naissance, Adresse, Ville, Code_postal FROM utilisateurs WHERE id_Utilisateur=?';
             $stmt = $conn->prepare($sql);
             $stmt->bind_param('i', $id_Utilisateur);
             $id_Utilisateur = $_POST['identifiant'];
@@ -31,6 +31,13 @@ switch($function) {
                 $_SESSION['connexion'] = 'user';
                 $_SESSION['Prenom'] = $user['Prenom'];
                 $_SESSION['Nom'] = $user['Nom'];
+                $_SESSION['Email'] = $user['Adresse_email'];
+                $_SESSION['id'] = $user['id_Utilisateur'];
+                $_SESSION['genre'] = $user['Genre'];
+                $_SESSION['date'] = $user['Date_de_naissance'];
+                $_SESSION['adresse'] = $user['Adresse'];
+                $_SESSION['ville'] = $user['Ville'];
+                $_SESSION['code'] = $user['Code_postal'];
                 $message = "Vous êtes connecté en tant qu'utilisateur.";
                 header("Location: /?fonction=profil");
                 exit();
@@ -175,8 +182,11 @@ switch($function) {
         break;
         
     
-    case 'FAQ':
-        $vue = 'FAQ';
+    case 'faq':
+        $vue = 'faq';
+        include('modele/connexionBDD.php');
+        $sql = 'SELECT id_question, question, reponse FROM faq';
+        $result = $conn->query($sql);
         break;
     
     case 'deconnexion':
@@ -201,19 +211,6 @@ switch($function) {
         break;
     
     case 'compte':
-        //include('modele/connexionBDD.php');
-        // $erreur="";
-        // if (!empty($_POST)) {
-        //    $_POST["identifiant"] = HTML_chars($_POST["identifiant"]);
-        //    $_POST["prenom"] = HTML_chars($_POST["prenom"]);
-        //    $_POST["nom"] = HTML_chars($_POST["nom"]);
-        //    $_POST["datenaissance"] = HTML_chars($_POST["datenaissance"]);
-        //    $_POST["email"] = HTML_chars($_POST["email"]);
-        //    $_POST["adresse"] = HTML_chars($_POST["adresse"]);
-        //    $_POST["codepostal"] = HTML_chars($_POST["codepostal"]);
-        //    $_POST["ville"] = HTML_chars($_POST["ville"]);
-        //    $_POST["motdepasse"] = HTML_chars($_POST["motdepasse"]);
-        //}
         $vue = 'compte';
         break;
 
@@ -277,7 +274,13 @@ switch($function) {
                 $confirmation = "La modification a bien été prise en compte";
             }
         }
+        $conn->close();
         $vue = 'modif_form';
+        break;
+    
+    case 'gererfaq':
+        $vue = 'gererfaq';
+        
         break;
     
     default:

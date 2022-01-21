@@ -192,58 +192,6 @@ footer {
   text-align: center;
 }
 
-#Question1 {
-  font-size: 28px;
-  color: white;
-  background-color: #32244c;
-}
-
-#Question2 {
-  font-size: 28px;
-  color: white;
-  background-color: #32244c;
-}
-
-#Question3 {
-  font-size: 28px;
-  color: white;
-  background-color: #32244c;
-}
-
-#Question4 {
-  font-size: 28px;
-  color: white;
-  background-color: #32244c;
-}
-
-#Q1 {
-  font-size: 28px;
-  color: white;
-  background-color: #32244c;
-  display: none;
-}
-
-#Q2 {
-  font-size: 28px;
-  color: white;
-  background-color: #32244c;
-  display: none;
-}
-
-#Q3 {
-  font-size: 28px;
-  color: white;
-  background-color: #32244c;
-  display: none;
-}
-
-#Q4 {
-  font-size: 28px;
-  color: white;
-  background-color: #32244c;
-  display: none;
-}
-
 .image-FAQ {
   float: right;
   margin-right: 15em;
@@ -368,7 +316,7 @@ footer {
   height: 72px;
   border-radius: 8px;
   position: absolute;
-  top: 472px;
+  top: 420px;
   left: 50%;
   transform: translateX(-50%);
 }

@@ -14,8 +14,8 @@
            <div class="bloc footer-AideInfo">
                 <h3>Nous contacter</h3>
                    <ul class="liste-Aide&Info">
-                   <li><a href="#">06 01 02 03 04</a></li>
-                   <li><a href="#">fitanalysor@contact.fr</a></li>
+                   <li><a href="tel:+33601020304">Nous appeler</a></li>
+                   <li><a href="mailto:fitanalysor@contact.fr">Nous envoyer un e-mail</a></li>
            </div>
 
             <div class="bloc footer-InfiniteMeasures">
