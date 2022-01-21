@@ -252,8 +252,10 @@ switch($function) {
             $_POST["ville"] = HTML_chars($_POST["ville"]);
 
             if ($_POST["identifiant"] != "") {
-                $sql = "UPDATE utilisateurs SET Nom = ?, Prenom = ?, Adresse_email = ?, Mot_de_passe = ? , Type = 'Client', Genre = ?, Date_de_naissance = ?, Adresse = ?, Ville = ?, Code_postal = ? WHERE id_Utilisateur = ? ";
-                $stmt = $conn->prepare($sql);
+                $sql = "SELECT * FROM utilisateurs WHERE id_Utilisateur=$_POST["identifiant"]";
+                $result = $conn->query($sql);
+                $sql2 = "UPDATE utilisateurs SET Nom = ?, Prenom = ?, Adresse_email = ?, Mot_de_passe = ? , Type = 'Client', Genre = ?, Date_de_naissance = ?, Adresse = ?, Ville = ?, Code_postal = ? WHERE id_Utilisateur = ? ";
+                $stmt = $conn->prepare($sql2);
                 $stmt->bind_param('ssssssssis', $nom, $prenom, $email, $motdepasse, $genre, $datenaissance, $adresse, $ville, $codepostal, $identifiant);
                     
                 $identifiant = $_POST['identifiant'];
@@ -274,7 +276,6 @@ switch($function) {
                 $confirmation = "La modification a bien été prise en compte";
             }
         }
-        $conn->close();
         $vue = 'modif_form';
         break;
     

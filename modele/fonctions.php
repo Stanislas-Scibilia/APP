@@ -23,7 +23,7 @@ function supprUser($valeur) {
     include('modele/connexionBDD.php');
     global $suppresion;
     $sql="DELETE FROM utilisateurs_capteurs WHERE id_Utilisateur='$valeur'";
-    $conn->query($sql);
+    $conn->query($s);
     $sql2="DELETE FROM utilisateurs WHERE id_Utilisateur='$valeur'";
     $conn->query($sql2);
     if ($conn->connect_error) {
