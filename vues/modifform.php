@@ -35,10 +35,8 @@
         <br>
         <p>Au moins 8 caractères et doit comporter des caractères spéciaux et numériques</p>
         <br>
-        <input type="checkbox" name="CGU" id="CGU">
-        <label for="CGU">Accepter les conditions générales d'utilisation et les règles de confidentialité.</label>
-        <br>
         <input type="submit" value="Modifier les informations">
+        <input type="submit" value="supprimer l'utilisateur" onclick=supprUser(<?php echo $_POST['identifiant']?>)>
     </form>
     
 </div>
