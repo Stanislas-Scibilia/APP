@@ -3,15 +3,15 @@
     <?php echo $erreur ?>
     <form action="" method="post">
            
-        <input class="barre_inscription" type="text" name="identifiant" id="identifiant" placeholder="Identifiant" maxlength="50" value = <?php if (isset($message)) {echo $message;}$_SESSION["identifiant"];?>>
+        <input class="barre_inscription" type="text" name="identifiant" id="identifiant" placeholder="Identifiant" maxlength="50" value = <?php if (isset($_SESSION["identifiant"])) {echo $_SESSION["identifiant"];}?>>
         <br>
-        <input class="barre_inscription" type="text" name="prenom" id="prenom" placeholder="Prénom" maxlength="50" value = <?php if (isset($message)) {echo $message;}$_SESSION["prenom"];?>>
+        <input class="barre_inscription" type="text" name="prenom" id="prenom" placeholder="Prénom" maxlength="50" value = <?php if (isset($_SESSION["prenom"])) {echo $_SESSION["prenom"];}?>>
         <br>
-        <input class="barre_inscription" type="text" name="nom" id="nom" placeholder="Nom" maxlength="50" value = <?php if (isset($message)) {echo $message;}$_SESSION["nom"];?>>
+        <input class="barre_inscription" type="text" name="nom" id="nom" placeholder="Nom" maxlength="50" value = <?php if (isset($_SESSION["nom"])) {echo $_SESSION["nom"];}?>>
         <br>
         <label for="datenaissance"> Date de naissance</label>
         <br>
-        <input class="barre_inscription" type="date" name="datenaissance" id="datenaissance" value = <?php if (isset($message)) {echo $message;}$_SESSION["datenaissance"];?>>
+        <input class="barre_inscription" type="date" name="datenaissance" id="datenaissance" value = <?php if (isset($_SESSION["datenaissance"])) {echo $_SESSION["datenaissance"];}?>>
         <br>
         <label for="genre">Genre</label>
         <br>
