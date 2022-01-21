@@ -144,7 +144,7 @@ switch($function) {
 
         $data1 = '';
         
-        $sql = "SELECT * FROM (SELECT * FROM mesures WHERE id_capteur=1 ORDER BY id_Mesure DESC LIMIT 15)Var1 ORDER BY id_Mesure ASC";
+        $sql = "SELECT * FROM (SELECT * FROM mesures WHERE id_Capteur= (SELECT id_Capteur FROM utilisateurs_capteurs WHERE id_Utilisateur=3) ORDER BY id_Mesure DESC LIMIT 15)Var1 ORDER BY id_Mesure ASC;";
         $result = $conn->query($sql);
             
         while ($row = $result->fetch_array()) {
@@ -209,11 +209,7 @@ switch($function) {
 
         $data4 = '';
         
-<<<<<<< HEAD
         $sql = "SELECT * FROM (SELECT * FROM mesures WHERE id_capteur=2 ORDER BY id_Mesure DESC LIMIT 15)Var1 ORDER BY id_Mesure ASC";
-=======
-        $sql = "SELECT * FROM mesures WHERE id_Capteur=2 ";
->>>>>>> 4cc501ade5a0968f82e3424f4ef44b8db42f9309
         $result = $conn->query($sql);
             
         while ($row = $result->fetch_array()) {
