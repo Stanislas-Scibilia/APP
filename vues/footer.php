@@ -12,11 +12,10 @@
             </div>
 
            <div class="bloc footer-AideInfo">
-                <h3>Aide et informations</h3>
+                <h3>Nous contacter</h3>
                    <ul class="liste-Aide&Info">
-                   <li><a href="#">FAQ</a></li>
-                   <li><a href="#">Abonnements</a></li>
-                   <li><a href="#">Contact</a></li>
+                   <li><a href="#">06 01 02 03 04</a></li>
+                   <li><a href="#">fitanalysor@contact.fr</a></li>
            </div>
 
             <div class="bloc footer-InfiniteMeasures">
@@ -29,11 +28,9 @@
            <div class="bloc footer-Activités">
                <h3>Activités</h3>
                <ul class="liste-Activités">
-                   <li><a href="#">Données physiques</a></li>
-                   <li><a href="#">Données environnementales</a></li>
-                   <li><a href="#">Activité ludique</a></li>
+                   <li><a href="/?fonction=FAQ">FAQ</a></li>
+                   <li><a href="/?fonction=activité_ludique">Activité ludique</a></li>
                 </div>
-                
             </div>
         </div>
     </footer>

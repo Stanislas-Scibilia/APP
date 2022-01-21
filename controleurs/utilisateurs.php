@@ -165,7 +165,7 @@ switch($function) {
         break;
         
     
-    case 'faq':
+    case 'FAQ':
         $vue = 'FAQ';
         break;
     
