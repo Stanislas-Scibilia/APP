@@ -225,20 +225,21 @@ switch($function) {
         $vue = 'lasalle'; 
         break;
    
-    default:
-        $vue = '404';
-        break;
-    
     case 'modifform':
         verification_session('admin');
         include ('modele/connexionBDD.php');
         $vue = 'modifform';
         $sql = "UPDATE utilisateurs SET Nom = '$_POST[nom]', Prenom = '$_POST[prenom]', Adresse_email = '$_POST[email]', Mot_de_passe = '$_POST[motdepasse]' , Genre = '$_POST[genre]', Date_de_naissance = '$_POST[datenaissance]', Adresse = '$_POST[adresse]', Ville = '$_POST[ville]', Code_postal = '$_POST[codepostal]' WHERE id_Utilisateur = '$_POST[identifiant]' ";
-                if ($conn->query($sql) !== TRUE) {
-                echo "Error updating record: " . $conn->error;
-                }
-            $conn->close();
-    break;
+        if ($conn->query($sql) !== TRUE) {
+            echo "Error updating record: " . $conn->error;
+        }
+        $conn->close();
+        break;
+    
+    default:
+        $vue = '404';
+        break;
+    
 }
 
 
