@@ -1,6 +1,6 @@
 <div id="salle">
       <div class="profilh1">
-        <p>Evolution du CO2 dans la Salle</p>
+        <p>Evolution du CO2 dans la Salle en direct</p>
     </div>
     <div class="bodyprofile">
       <div class="containerprofile">
@@ -12,7 +12,7 @@
           var myChart4 = new Chart(ctx4, {
           type: 'line',
           data: {
-              labels: [1,2,3,4,5,6,7,8,9,10],
+              labels: [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15],
               datasets: 
               [{
                   label: 'Données',
@@ -37,7 +37,7 @@
         <div class="messagelasalle">
           <p id="messageco2"></p>
           <script>
-            var co2live = [<?php echo $data4; ?>];
+            var co2live = [<?php echo $data5; ?>];
               let greeting;
               if (co2live > 1200) {
                 greeting = 'IL FAUT AERER LA SALLE';
