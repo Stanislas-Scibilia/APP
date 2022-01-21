@@ -19,16 +19,24 @@ switch($function) {
         $vue = 'connexion';
         
         if (!empty($_POST)) {
-            if ($_POST['identifiant']==='test' and $_POST['motdepasse']==='test') {
+            include('modele/connexionBDD.php');
+            $sql = 'SELECT Mot_de_passe, Type FROM utilisateurs WHERE id_Utilisateur=?';
+            $stmt = $conn->prepare($sql);
+            $stmt->bind_param('i', $id_Utilisateur);
+            $id_Utilisateur = $_POST['identifiant'];
+            $stmt->execute();
+            $result = $stmt->get_result();
+            $user = $result->fetch_assoc();
+            if (password_verify($_POST['motdepasse'], $user['Mot_de_passe']) and $user['Type'] === 'Client') {
                 $_SESSION['connexion'] = 'user';
                 $message = "Vous êtes connecté en tant qu'utilisateur.";
                 header("Location: /?fonction=profil");
                 exit();
-            } elseif ($_POST['identifiant']==='admin' and $_POST['motdepasse']==='test') {
+            } elseif (password_verify($_POST['motdepasse'], $user['Mot_de_passe']) and $user['Type'] === 'Gérant') {
                 $_SESSION['connexion'] = 'admin';
                 $message = "Vous êtes connecté en tant qu'administrateur.";
-                header("Location: /?fonction=profil");
-                exit();
+                // header("Location: /?fonction=profil");
+                // exit();
             }
         }
         break;
