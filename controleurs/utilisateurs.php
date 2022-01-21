@@ -175,8 +175,11 @@ switch($function) {
         break;
         
     
-    case 'FAQ':
-        $vue = 'FAQ';
+    case 'faq':
+        $vue = 'faq';
+        include('modele/connexionBDD.php');
+        $sql = 'SELECT id_question, question, reponse FROM faq';
+        $result = $conn->query($sql);
         break;
     
     case 'deconnexion':
@@ -276,6 +279,11 @@ switch($function) {
             $confirmation = "La modification a bien été prise en compte";
         }
         $vue = 'modif_form';
+        break;
+    
+    case 'gererfaq':
+        $vue = 'gererfaq';
+        
         break;
     
     default:
