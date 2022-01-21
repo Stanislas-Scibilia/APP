@@ -200,7 +200,7 @@ switch($function) {
 
         $data4 = '';
         
-        $sql = "SELECT * FROM mesures WHERE id_Capteur=2 ";
+        $sql = "SELECT * FROM (SELECT * FROM mesures ORDER BY id_Mesure DESC LIMIT 15)Var1 ORDER BY id_Mesure ASC";
         $result = $conn->query($sql);
             
         while ($row = $result->fetch_array()) {
@@ -211,7 +211,14 @@ switch($function) {
 
         $data5 = '';
         $sql = "SELECT Données from mesures WHERE id_Mesure = (SELECT MAX(id_Mesure) FROM mesures WHERE id_Capteur=2)";
-        $data5 = $conn->query($sql);
+        $result = $conn->query($sql);
+            
+        while ($row = $result->fetch_array()) {
+        
+            $data5 = $data5 . '"'. $row['Données'].'",';
+        };
+        $data5 = trim($data5,",");
+        
 
         $conn->close();
         $vue = 'lasalle'; 
