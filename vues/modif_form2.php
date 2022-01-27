@@ -26,8 +26,6 @@
         <br>
         <input class="barre_inscription" type="text" name="ville" id="ville" placeholder="Ville" maxlength="50" value="<?php if(isset($_SESSION["ville"])){echo $_SESSION["ville"];}?>">
         <br>
-        <input class="barre_inscription" type="text" name="motdepasse" id="motdepasse" placeholder="Mot de passe" maxlength="50" value="<?php if(isset($_SESSION["motdepasse"])){echo $_SESSION["motdepasse"];}?>">
-        <br>
         <label for="type">Type</label>
         <br>
         <select name="type">
@@ -38,7 +36,6 @@
         <br>
         <input type="submit" value="Modifier les informations">
         <br>
-       <!-- <input type="submit" value="Supprimer l'utilisateur" onclick=supprUser(<?php if (isset($_SESSION["identifiant"])) {echo $_SESSION["identifiant"];}?>)> -->
     </form>
     
 </div>
