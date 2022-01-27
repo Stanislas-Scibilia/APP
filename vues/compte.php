@@ -48,4 +48,5 @@ echo'
         <br>
         <input type="submit" value="Modifier les informations">
         <br>
-        <?php echo $erreur ?>
+    </form>
+<?php echo $erreur ?>
