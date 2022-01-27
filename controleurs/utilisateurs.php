@@ -60,11 +60,6 @@ switch($function) {
         }
         break;
 
-    case 'admin':
-        verification_session('admin');
-        $vue = 'admin';
-        break;
-    
     case 'gen.id':
         verification_session('admin');
         $vue = 'gen.id';
