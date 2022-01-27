@@ -40,62 +40,68 @@
       </div>
       </div>
     <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="profilh1">
+        <p>Estimation de votre age en fonction de vos BPM maximums lors de l'effort</p></div>
     <div class="bodyprofile">
-    <table id="tableauprofile1" style="width: 100%; height: 60vh; background: #222; border: 1px solid #555652; margin-top: 5px;">
+    <table id="tableauprofile1" style="width: 100%; height: 50vh; background: #222; border: 1px solid #555652; margin-top: 5px;">
           <tr>
-            <th>a</th>
-            <th>b</th>
-            <th>c</th>
-            <th>d</th>
-            <th>e</th>
-            <th>f</th>
-            <th>g</th>
-            <th>h</th>
-            <th>i</th>
+            <th>15-20 ans</th>
+            <th>20-30 ans</th>
+            <th>30-40 ans</th>
+            <th>40-50 ans</th>
+            <th>50-60 ans</th>
+            <th>60-70 ans</th>
+            <th>70-80 ans</th>
+            <th>80-90 ans</th>
+            <th>90-100 ans</th>
           </tr>
           <tr>
-            <td>1</td>
-            <td>1</td>
-            <td>1</td>
-            <td>1</td>
-            <td>1</td>
-            <td>1</td>
-            <td>1</td>
-            <td>1</td>
-            <td>1</td>
+            <td>195,1 bpm</td>
+            <td>189,5 bpm</td>
+            <td>182,5 bpm</td>
+            <td>175,5 bpm</td>
+            <td>168,5 bpm</td>
+            <td>161,5 bpm</td>
+            <td>154,5 bpm</td>
+            <td>147,5 bpm</td>
+            <td>140,5 bpm</td>
+          </tr>
+          </table>
+          </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="profilh1">
+        <p>Estimation de votre age en fonction de vos BPM au repos</p></div>
+    <div class="bodyprofile">
+    <table id="tableauprofile1" style="width: 100%; height: 50vh; background: #222; border: 1px solid #555652; margin-top: 5px;">
+          <tr>
+            <th>15-20 ans</th>
+            <th>20-30 ans</th>
+            <th>30-40 ans</th>
+            <th>40-50 ans</th>
+            <th>50-60 ans</th>
+            <th>60-70 ans</th>
+            <th>70-80 ans</th>
+            <th>80-90 ans</th>
+            <th>90-100 ans</th>
           </tr>
           <tr>
-            <td>1</td>
-            <td>1</td>
-            <td>1</td>
-            <td>1</td>
-            <td>1</td>
-            <td>1</td>
-            <td>1</td>
-            <td>1</td>
-            <td>1</td>
-          </tr>
-            <tr>
-            <td>1</td>
-            <td>1</td>
-            <td>1</td>
-            <td>1</td>
-            <td>1</td>
-            <td>1</td>
-            <td>1</td>
-            <td>1</td>
-            <td>1</td>
-          </tr>
-          <tr>
-            <td>1</td>
-            <td>1</td>
-            <td>1</td>
-            <td>1</td>
-            <td>1</td>
-            <td>1</td>
-            <td>1</td>
-            <td>1</td>
-            <td>1</td>
+            <td>110 bpm</td>
+            <td>100 bpm</td>
+            <td>80 bpm</td>
+            <td>75 bpm</td>
+            <td>70 bpm</td>
+            <td>65 bpm</td>
+            <td>60 bpm</td>
+            <td>55 bpm</td>
+            <td>50 bpm</td>
           </tr>
           </table>
           </div>
@@ -105,10 +111,10 @@
           <br>
       <div id="donnees-env">
       <div class="profilh1">
-        <p>Données environnementales</p></div>
+        <p>Données sonores</p></div>
       <div class="bodyprofile">
       <div class="containerprofile">
-      <h1>dB dans la salle</h1>
+      <h1>Moyenne des dB dans la salle au cours de la journée</h1>
       <canvas id="chart3" style="width: 100%; height: 60vh; background: #222; border: 1px solid #555652; margin-top: 5px;"></canvas>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js"></script>
         <script>
@@ -116,7 +122,7 @@
           var myChart3 = new Chart(ctx3, {
           type: 'polarArea',
           data: {
-              labels: [1,2,3,4,5,6,7,8,9,10],
+              labels: ['10-11h','11-12h','12-13h','13-14h','14-16h','16-18h','18-20h'],
               datasets: 
               [{
                   label: 'Données',
@@ -136,67 +142,4 @@
           </script>
       </div>
       </div>
-    <div class="bodyprofile">
-    <table id="tableauprofile1" style="width: 100%; height: 60vh; background: #222; border: 1px solid #555652; margin-top: 10px;">
-          <tr>
-            <th>a</th>
-            <th>b</th>
-            <th>c</th>
-            <th>d</th>
-            <th>e</th>
-            <th>f</th>
-            <th>g</th>
-            <th>h</th>
-            <th>i</th>
-          </tr>
-          <tr>
-            <td>1</td>
-            <td>1</td>
-            <td>1</td>
-            <td>1</td>
-            <td>1</td>
-            <td>1</td>
-            <td>1</td>
-            <td>1</td>
-            <td>1</td>
-          </tr>
-          <tr>
-            <td>1</td>
-            <td>1</td>
-            <td>1</td>
-            <td>1</td>
-            <td>1</td>
-            <td>1</td>
-            <td>1</td>
-            <td>1</td>
-            <td>1</td>
-          </tr>
-            <tr>
-            <td>1</td>
-            <td>1</td>
-            <td>1</td>
-            <td>1</td>
-            <td>1</td>
-            <td>1</td>
-            <td>1</td>
-            <td>1</td>
-            <td>1</td>
-          </tr>
-          <tr>
-            <td>1</td>
-            <td>1</td>
-            <td>1</td>
-            <td>1</td>
-            <td>1</td>
-            <td>1</td>
-            <td>1</td>
-            <td>1</td>
-            <td>1</td>
-          </tr>
-          </table>
-          </div>
-
-
-
-
-    <!--yAxes: [{ticks: {min: 0,max: 100,stepSize: 20}}]-->
+    
