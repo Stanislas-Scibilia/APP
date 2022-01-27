@@ -15,7 +15,7 @@
                 <h3>Nous contacter</h3>
                    <ul class="liste-Aide&Info">
                    <li><a href="tel:+33601020304">Nous appeler</a></li>
-                   <li><a href="mailto:fitanalysor@contact.fr">Nous envoyer un e-mail</a></li>
+                   <li><a href="mailto:contact@fitanalysor.fr">Nous envoyer un e-mail</a></li>
            </div>
 
             <div class="bloc footer-InfiniteMeasures">
