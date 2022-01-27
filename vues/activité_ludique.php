@@ -27,7 +27,7 @@
         <em>"Les espèces qui survivent ne sont pas les espèces les plus fortes, ni les plus intelligentes, mais celles qui s'adaptent le mieux aux changements"</em>  
         <br>
         <h3 id="auteurcitation">Charles Darwin</h3>
-    </p>  
+        </p>  
     </div>
     <div class="videoal2">
         <video id="vidal1" src="vues/vidact2.mp4" controls controlsList="nodownload nofullscreen noremoteplayback" loop muted height="300"></video>  
@@ -72,7 +72,7 @@
                 <input id="boxcode" name='4' type="number" min="0" max="9">
         </div>
         <div class="boxal">
-        <input type="submit" value="Valider">
+            <input type="submit" value="Valider">
         </div>
     </form>
     <span style = "font-size : 50px;"> <?php echo $messageAL?> </span>
@@ -81,4 +81,4 @@
     <br>
     <br>
     <br>
-    </section>
+</section>
