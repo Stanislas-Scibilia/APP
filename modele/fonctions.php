@@ -18,18 +18,3 @@ function creerUser() {
     }
     $conn->close();
 }
-
-function supprCompte($valeur) {
-    include('modele/connexionBDD.php');
-    var_dump($valeur);
-    global $suppression;
-    $sql="DELETE FROM utilisateurs_capteurs WHERE id_Utilisateur='$valeur'";
-    $conn->query($sql);
-    /*$sql2="DELETE FROM utilisateurs WHERE id_Utilisateur='$valeur'";
-    $conn->query($sql2);*/
-    if ($conn->connect_error) {
-        $suppression = "Le compté n'a pas été supprimé";
-    } else {
-       $suppression = "Le compte a bien été supprimé";
-    }
-}
