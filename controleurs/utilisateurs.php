@@ -225,7 +225,7 @@ switch($function) {
 
         $data5 = '';
         $sql = "SELECT Données from mesures WHERE id_Mesure = (SELECT MAX(id_Mesure) FROM mesures WHERE id_Capteur=2)";
-        $data5 = $conn->query($sql);
+        $data5 = $conn->query($sql)->fetch_assoc()["Données"];
 
         $conn->close();
         $vue = 'lasalle'; 
