@@ -355,7 +355,12 @@ switch($function) {
     
     case 'gererfaq':
         $vue = 'gererfaq';
-        
+        include('modele/connexionBDD.php');
+        $sql = 'SELECT id_question, question, reponse FROM faq';
+        $result = $conn->query($sql);
+        if (!empty($_POST)) {
+            
+        }
         break;
     
     default:

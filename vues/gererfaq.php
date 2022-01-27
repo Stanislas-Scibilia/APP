@@ -6,6 +6,22 @@
 
 <section>
 	<article>
+	
+	<div class="bouton_connexion">
+		<a id="ajouterQuestion">Ajouter une question</a>
+	</div>
+	
+	<div id="form" style="display: none;">
+		<form method="post">
+			<label for="question">Question</label> <br>
+			<textarea name="question" id="question" cols="30" rows="10"></textarea> <br> <br>
+
+			<label for="reponse">Réponse</label> <br>
+			<textarea name="reponse" id="reponse" cols="30" rows="10"></textarea> <br> <br>
+
+			<input type="submit" value="Enregistrer"> <br> <br>
+		</form>
+	</div>
 
 		<?php while ($question = $result->fetch_assoc()): ?>
 			
@@ -33,3 +49,16 @@
 
 	</article>
 </section>
+
+<script>
+	ajouterQuestion = document.getElementById('ajouterQuestion')
+	form = document.getElementById('form')
+
+	ajouterQuestion.addEventListener('click', () => {
+		if(getComputedStyle(form).display != "none"){
+			form.style.display = "none";
+		} else {
+			form.style.display = "block";
+		}
+	})
+</script>
