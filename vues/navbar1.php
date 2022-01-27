@@ -8,4 +8,3 @@
 		<li class="nav-item"><a href="/?fonction=deconnexion" onclick="pop_up()">DECONNEXION</a></li>
 	</ul>
 </nav>
-<script src="vues/deconnexion.js"></script>
