@@ -199,5 +199,5 @@
 
 
 
-    yAxes: [{ticks: {min: 0,max: 100,stepSize: 20}}]
+    <!--yAxes: [{ticks: {min: 0,max: 100,stepSize: 20}}]-->
 
