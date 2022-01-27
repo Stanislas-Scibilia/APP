@@ -1,6 +1,6 @@
 <div class="container">
     <h1>Modification</h1>
-    <?php echo $confirmation ?>
+    <?php if (isset($confirmation)) {echo $confirmation;} ?>
     <form action="" method="post">
         <input class="barre_inscription" type="text" name="identifiant" id="identifiant" placeholder="Identifiant" maxlength="50">
         <br> 

@@ -143,13 +143,18 @@ switch($function) {
         include("modele/connexionBDD.php");
 
         $data1 = '';
-        
-        $sql = "SELECT * FROM (SELECT * FROM mesures WHERE id_capteur=1 ORDER BY id_Mesure DESC LIMIT 15)Var1 ORDER BY id_Mesure ASC";
-        $result = $conn->query($sql);
-            
-        while ($row = $result->fetch_array()) {
-        
-            $data1 = $data1 . '"'. $row['Données'].'",';
+        $id = $_SESSION['id'];
+        $sql1 = "SELECT id_Capteur FROM utilisateurs_capteurs WHERE id_Utilisateur=$id;";
+        $result = $conn->query($sql1);
+        $row = $result->fetch_array();
+        $id_Capteur = $row['id_Capteur'];
+
+        $sql2 = "SELECT * FROM mesures WHERE id_Capteur=$id_Capteur ORDER BY id_Mesure DESC LIMIT 15";
+        $result = $conn->query($sql2);
+        $rows = array_reverse($result->fetch_all());
+    
+        foreach ($rows as $row) {
+            $data1 = $data1 . '"'. $row[2].'",';
         };
         $data1 = trim($data1,",");
 
@@ -209,11 +214,7 @@ switch($function) {
 
         $data4 = '';
         
-<<<<<<< HEAD
         $sql = "SELECT * FROM (SELECT * FROM mesures WHERE id_capteur=2 ORDER BY id_Mesure DESC LIMIT 15)Var1 ORDER BY id_Mesure ASC";
-=======
-        $sql = "SELECT * FROM mesures WHERE id_Capteur=2 ";
->>>>>>> 4cc501ade5a0968f82e3424f4ef44b8db42f9309
         $result = $conn->query($sql);
             
         while ($row = $result->fetch_array()) {
@@ -267,7 +268,6 @@ switch($function) {
                 $confirmation = "La modification a bien été prise en compte";
             }
         }
-        $conn->close();
         $vue = 'modif_form';
         break;
     
