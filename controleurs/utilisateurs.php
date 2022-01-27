@@ -305,7 +305,6 @@ switch($function) {
         $_SESSION['ville'] = $row['Ville'];
         $_SESSION['codepostal'] = $row['Code_postal']; 
         $_SESSION['genre'] = $row['Genre']; 
-        $_SESSION['motdepasse'] = $row['Mot_de_passe'];
         }
         if (!empty($_POST)) {
             $_POST["prenom"] = HTML_chars($_POST["prenom"]);
@@ -316,15 +315,14 @@ switch($function) {
             $_POST["codepostal"] = HTML_chars($_POST["codepostal"]);
             $_POST["ville"] = HTML_chars($_POST["ville"]);
 
-                $sql = "UPDATE utilisateurs SET Nom = ?, Prenom = ?, Adresse_email = ?, Mot_de_passe = ? , Type = ?, Genre = ?, Date_de_naissance = ?, Adresse = ?, Ville = ?, Code_postal = ? WHERE id_Utilisateur = ? ";
+                $sql = "UPDATE utilisateurs SET Nom = ?, Prenom = ?, Adresse_email = ?, Type = ?, Genre = ?, Date_de_naissance = ?, Adresse = ?, Ville = ?, Code_postal = ? WHERE id_Utilisateur = ? ";
                 $stmt = $conn->prepare($sql);
-                $stmt->bind_param('sssssssssis', $nom, $prenom, $email, $motdepasse, $type, $genre, $datenaissance, $adresse, $ville, $codepostal, $identifiant);
+                $stmt->bind_param('ssssssssis', $nom, $prenom, $email, $type, $genre, $datenaissance, $adresse, $ville, $codepostal, $identifiant);
                     
                 $identifiant = $_SESSION['identifiant'];
                 $nom = $_POST['nom'];
                 $prenom = $_POST['prenom'];
                 $email = $_POST['email'];
-                $motdepasse = password_hash($_POST['motdepasse'], PASSWORD_DEFAULT);
                 $type = $_POST['type'];
                 $genre = $_POST['genre'];
                 $datenaissance = $_POST['datenaissance'];
