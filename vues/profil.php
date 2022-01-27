@@ -1,6 +1,6 @@
 <div class="contenant">
 <div class="imageal1">
-        <img id="imageduhaut" src="vues/Capturegraffiti.PNG"></img>
+    <img id="imageduhaut" src="vues/Capturegraffiti.PNG"></img>
     </div>
 <h1 id="bienvenueprofil">&nbsp; Bienvenue <?= $_SESSION['Prenom'], ' ', $_SESSION['Nom'] ?> !</h1>
 <br>
@@ -17,15 +17,15 @@
           var myChart = new Chart(ctx, {
           type: 'line',
           data: {
-              labels: [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15],
-              datasets: 
-              [{
-                  label: 'Données',
-                  data: [<?php echo $data1; ?>],
-                  backgroundColor: 'transparent',
-                  borderColor:'rgba(0, 255, 255)',
-                  borderWidth: 3
-              }]
+            labels: [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15],
+            datasets: 
+            [{
+              label: 'Données',
+              data: [<?php echo $data1; ?>],
+              backgroundColor: 'transparent',
+              borderColor:'rgba(0, 255, 255)',
+              borderWidth: 3
+            }]
           },
 
           options: {
@@ -34,7 +34,7 @@
           legend:{display: false, position: 'top', labels: {fontColor: 'rgb(255,255,255)', fontSize: 16}}
           }
           });
-          </script> 
+        </script> 
         <br>
       </div>
       </div>
@@ -200,4 +200,3 @@
 
 
     <!--yAxes: [{ticks: {min: 0,max: 100,stepSize: 20}}]-->
-

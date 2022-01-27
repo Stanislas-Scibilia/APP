@@ -1,5 +1,6 @@
 	<input type="text" id="recherche" onkeyup="chercher_utilisateur()" placeholder="Rechercher un utilisateur...">
 	<input type="button" id="modifier" onclick="window.location.href = '/?fonction=modif_form';" value="Modifier les données utilisateur">
+	
 	<?php
 	echo "<table id ='utilisateurs' class='utilisateurs'>";
 		echo "<tr><th>identifiant</th>

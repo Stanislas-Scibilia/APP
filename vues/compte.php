@@ -2,7 +2,7 @@
 
 echo'
 <div class="compte">
-    <h1>Veuillez contacter votre salle pour modifier les informations de votre compte</h1>
+    <h1>Ici vous trouverez les informations de votre compte ainsi que la possibilité de les modifier !</h1>
    
     <ul>
         <h3>Voici vos informations actuelles :</h3>
@@ -16,7 +16,8 @@ echo'
             <li>Ville : '.$_SESSION['ville'].'</li>
             <li>Code postal : '.$_SESSION['code'].'</li>
     </ul>
-    </div>';
+</div>';
+
 ?>
     <form action="" method="post">
         <input class="barre_inscription" type="text" name="prenom" id="prenom" placeholder="Prénom" maxlength="50" value="<?php if(isset($_SESSION["prenom"])){echo $_SESSION["prenom"];}?>">

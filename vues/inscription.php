@@ -1,8 +1,8 @@
 <div class="container">
     <h1>Inscription</h1>
     <?php echo $erreur ?>
-    <form action="" method="post">
-           
+    
+    <form action="" method="post">   
         <input class="barre_inscription" type="text" name="identifiant" id="identifiant" placeholder="Identifiant" maxlength="50" value = <?php if (isset($_SESSION["identifiant"])) {echo $_SESSION["identifiant"];}?>>
         <br>
         <input class="barre_inscription" type="text" name="prenom" id="prenom" placeholder="Prénom" maxlength="50" value = <?php if (isset($_SESSION["prenom"])) {echo $_SESSION["prenom"];}?>>

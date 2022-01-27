@@ -1,5 +1,5 @@
 function chercher_utilisateur() {
-
+  
   input = document.getElementById("recherche");
 
   filter = input.value.toUpperCase();

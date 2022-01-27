@@ -7,5 +7,4 @@
 
     <p><?php if (isset($message)) {echo $message;}?></p>
     <p><?php if (isset($id_Utilisateur)) {echo $id_Utilisateur;}?></p>
-
 </div>
