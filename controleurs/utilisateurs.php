@@ -28,6 +28,7 @@ switch($function) {
             $result = $stmt->get_result();
             $user = $result->fetch_assoc();
             if (password_verify($_POST['motdepasse'], $user['Mot_de_passe']) and $user['Type'] === 'Client') {
+                $_SESSION['identifiant'] = $id_Utilisateur;
                 $_SESSION['connexion'] = 'user';
                 $_SESSION['Prenom'] = $user['Prenom'];
                 $_SESSION['Nom'] = $user['Nom'];
@@ -200,6 +201,58 @@ switch($function) {
         break;
     
     case 'compte':
+        verification_session('user');
+        include ('modele/connexionBDD.php');
+        $confirmation="";
+        $erreur="";
+        $utilisateur = $_SESSION['identifiant'];
+        $sql1= "SELECT * FROM utilisateurs WHERE id_Utilisateur = $utilisateur ";
+        $result = $conn->query($sql1);
+        while ($row = $result->fetch_assoc()){
+        $_SESSION['nom'] = $row['Nom'];
+        $_SESSION['prenom'] = $row['Prenom'];
+        $_SESSION['email'] = $row['Adresse_email'];
+        $_SESSION['datenaissance'] = $row['Date_de_naissance'];
+        $_SESSION['adresse'] = $row['Adresse'];
+        $_SESSION['ville'] = $row['Ville'];
+        $_SESSION['codepostal'] = $row['Code_postal']; 
+        $_SESSION['genre'] = $row['Genre']; 
+        $_SESSION['motdepasse'] = $row['Mot_de_passe'];
+        }
+        if (!empty($_POST)) {
+            $_POST["prenom"] = HTML_chars($_POST["prenom"]);
+            $_POST["nom"] = HTML_chars($_POST["nom"]);
+            $_POST["datenaissance"] = HTML_chars($_POST["datenaissance"]);
+            $_POST["email"] = HTML_chars($_POST["email"]);
+            $_POST["adresse"] = HTML_chars($_POST["adresse"]);
+            $_POST["codepostal"] = HTML_chars($_POST["codepostal"]);
+            $_POST["ville"] = HTML_chars($_POST["ville"]);
+        if (!empty($_POST['motdepasse'])) {
+                $sql = "UPDATE utilisateurs SET Nom = ?, Prenom = ?, Adresse_email = ?, Mot_de_passe = ? , Type = 'Client', Genre = ?, Date_de_naissance = ?, Adresse = ?, Ville = ?, Code_postal = ? WHERE id_Utilisateur = ? ";
+                $stmt = $conn->prepare($sql);
+                $stmt->bind_param('ssssssssis', $nom, $prenom, $email, $motdepasse, $genre, $datenaissance, $adresse, $ville, $codepostal, $identifiant);
+                    
+                $identifiant = $_SESSION['identifiant'];
+                $nom = $_POST['nom'];
+                $prenom = $_POST['prenom'];
+                $email = $_POST['email'];
+                $motdepasse = password_hash($_POST['motdepasse'], PASSWORD_DEFAULT);
+                $genre = $_POST['genre'];
+                $datenaissance = $_POST['datenaissance'];
+                $adresse = $_POST['adresse'];
+                $ville = $_POST['ville'];
+                $codepostal = $_POST['codepostal'];
+                $stmt->execute();
+
+                $stmt->close();
+                $conn->close();
+                //message de confirmation
+                $confirmation = "La modification a bien été prise en compte";
+            } else {
+                //envoie un message d'erreur dans le cas contraire
+                $erreur="Veuillez remplir tous les champs";
+            }
+        }
         $vue = 'compte';
         break;
 
@@ -229,9 +282,31 @@ switch($function) {
     case 'modif_form':
         verification_session('admin');
         include ('modele/connexionBDD.php');
-        $confirmation="";
         if (!empty($_POST)) {
-            $_POST["identifiant"] = HTML_chars($_POST["identifiant"]);
+            $_SESSION["identifiant"]=$_POST["identifiant"];
+        }
+        $conn->close();
+        $vue = 'modif_form';
+        break;
+
+    case 'modif_form2':
+        verification_session('admin');
+        include ('modele/connexionBDD.php');
+        $confirmation="";
+        $id_utilisateur = $_SESSION['identifiant'];
+        $sql1= "SELECT * FROM utilisateurs WHERE id_Utilisateur = $id_utilisateur ";
+        $result = $conn->query($sql1);
+        while ($row = $result->fetch_assoc()){
+        $_SESSION['nom'] = $row['Nom'];
+        $_SESSION['prenom'] = $row['Prenom'];
+        $_SESSION['email'] = $row['Adresse_email'];
+        $_SESSION['datenaissance'] = $row['Date_de_naissance'];
+        $_SESSION['adresse'] = $row['Adresse'];
+        $_SESSION['ville'] = $row['Ville'];
+        $_SESSION['codepostal'] = $row['Code_postal']; 
+        $_SESSION['genre'] = $row['Genre']; 
+        }
+        if (!empty($_POST)) {
             $_POST["prenom"] = HTML_chars($_POST["prenom"]);
             $_POST["nom"] = HTML_chars($_POST["nom"]);
             $_POST["datenaissance"] = HTML_chars($_POST["datenaissance"]);
@@ -240,31 +315,43 @@ switch($function) {
             $_POST["codepostal"] = HTML_chars($_POST["codepostal"]);
             $_POST["ville"] = HTML_chars($_POST["ville"]);
 
-            if ($_POST["identifiant"] != "") {
-                $sql = "UPDATE utilisateurs SET Nom = ?, Prenom = ?, Adresse_email = ?, Mot_de_passe = ? , Type = 'Client', Genre = ?, Date_de_naissance = ?, Adresse = ?, Ville = ?, Code_postal = ? WHERE id_Utilisateur = ? ";
+                $sql = "UPDATE utilisateurs SET Nom = ?, Prenom = ?, Adresse_email = ?, Type = ?, Genre = ?, Date_de_naissance = ?, Adresse = ?, Ville = ?, Code_postal = ? WHERE id_Utilisateur = ? ";
                 $stmt = $conn->prepare($sql);
-                $stmt->bind_param('ssssssssis', $nom, $prenom, $email, $motdepasse, $genre, $datenaissance, $adresse, $ville, $codepostal, $identifiant);
+                $stmt->bind_param('ssssssssis', $nom, $prenom, $email, $type, $genre, $datenaissance, $adresse, $ville, $codepostal, $identifiant);
                     
-                $identifiant = $_POST['identifiant'];
+                $identifiant = $_SESSION['identifiant'];
                 $nom = $_POST['nom'];
                 $prenom = $_POST['prenom'];
                 $email = $_POST['email'];
+                $type = $_POST['type'];
                 $genre = $_POST['genre'];
                 $datenaissance = $_POST['datenaissance'];
                 $adresse = $_POST['adresse'];
                 $ville = $_POST['ville'];
                 $codepostal = $_POST['codepostal'];
-                $identifiant = $_POST["identifiant"];
                 $stmt->execute();
 
                 $stmt->close();
                 $conn->close();
                 //message de confirmation
                 $confirmation = "La modification a bien été prise en compte";
-            }
         }
-        $vue = 'modif_form';
+        $vue = 'modif_form2';
         break;
+    
+        case 'suppr_compte' :
+            verification_session('admin');
+            include ('modele/connexionBDD.php');
+            $message_suppresion = "";
+            $utilisateur = $_SESSION['identifiant'];
+            $sql="DELETE FROM utilisateurs WHERE id_Utilisateur = $utilisateur";
+            $conn->query($sql);
+            if($conn == TRUE){
+                $message_suppression = "Le compte a bien été supprimé";
+            }
+            $conn->close();
+            $vue = 'suppr_compte';
+            break;   
     
     case 'gererfaq':
         $vue = 'gererfaq';

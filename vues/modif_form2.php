@@ -1,24 +1,6 @@
-<?php
-
-echo'
-<div class="compte">
-    <h1>Ici vous trouverez les informations de votre compte ainsi que la possibilité de les modifier !</h1>
-   
-    <ul>
-        <h3>Voici vos informations actuelles :</h3>
-            <li>Identifiant : '.$_SESSION['id'].'</li>
-            <li>Prénom : '.$_SESSION['Prenom'].'</li>
-            <li>Nom : '.$_SESSION['Nom'].'</li>
-            <li>Date de naissance : '.$_SESSION['date'].'</li>
-            <li>Genre : '.$_SESSION['genre'].'</li>
-            <li>Adresse mail : '.$_SESSION['Email'].'</li>
-            <li>Adresse : '.$_SESSION['adresse'].'</li>
-            <li>Ville : '.$_SESSION['ville'].'</li>
-            <li>Code postal : '.$_SESSION['code'].'</li>
-    </ul>
-</div>';
-
-?>
+<div class="container">
+    <h1>Modification</h1>
+    <?php if (isset($confirmation)) {echo $confirmation;} ?>
     <form action="" method="post">
         <input class="barre_inscription" type="text" name="prenom" id="prenom" placeholder="Prénom" maxlength="50" value="<?php if(isset($_SESSION["prenom"])){echo $_SESSION["prenom"];}?>">
         <br>
@@ -44,8 +26,16 @@ echo'
         <br>
         <input class="barre_inscription" type="text" name="ville" id="ville" placeholder="Ville" maxlength="50" value="<?php if(isset($_SESSION["ville"])){echo $_SESSION["ville"];}?>">
         <br>
-        <input class="barre_inscription" type="password" name="motdepasse" id="motdepasse" placeholder="Mot de passe" maxlength="50">
+        <label for="type">Type</label>
+        <br>
+        <select name="type">
+        <option value="Client"> Client </option>
+        <option value="Gérant"> Gérant </option>
+        </select>
+        <br>
         <br>
         <input type="submit" value="Modifier les informations">
         <br>
-        <?php echo $erreur ?>
+    </form>
+    
+</div>
