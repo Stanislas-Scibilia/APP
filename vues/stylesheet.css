@@ -8,8 +8,8 @@ body {
   margin: 0;
 }
 
-.bouton_connexion a:link,
-.bouton_connexion a:visited {
+#bouton_connexion a:link,
+#bouton_connexion a:visited {
   /*bouton de connexion*/
   border-style: solid;
   border-color: #e91e63;
@@ -21,8 +21,8 @@ body {
   text-decoration: none;
 }
 
-.bouton_connexion a:hover,
-.bouton_connexion a:active {
+#bouton_connexion a:hover,
+#bouton_connexion a:active {
   background-color: red;
   color: black;
   text-decoration: underline;
