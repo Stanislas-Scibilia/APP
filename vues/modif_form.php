@@ -9,4 +9,7 @@
     <?php echo "Identifiant sélectionné : " .$_SESSION["identifiant"]; ?>
     <br>
     <input type="button" onclick="window.location.href = '/?fonction=modif_form2';" value="Modifier les informations">
+    <br>
+    <input type="button" onclick="window.location.href = '/?fonction=suppr_compte';" value="Supprimer le compte">
+
 </div>

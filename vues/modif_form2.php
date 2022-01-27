@@ -38,7 +38,6 @@
         <br>
         <input type="submit" value="Modifier les informations">
         <br>
-       <!-- <input type="submit" value="Supprimer l'utilisateur" onclick=supprUser(<?php if (isset($_SESSION["identifiant"])) {echo $_SESSION["identifiant"];}?>)> -->
     </form>
     
 </div>

@@ -341,6 +341,20 @@ switch($function) {
         $vue = 'modif_form2';
         break;
     
+        case 'suppr_compte' :
+            verification_session('admin');
+            include ('modele/connexionBDD.php');
+            $message_suppresion = "";
+            $utilisateur = $_SESSION['identifiant'];
+            $sql="DELETE FROM utilisateurs WHERE id_Utilisateur = $utilisateur";
+            $conn->query($sql);
+            if($conn == TRUE){
+                $message_suppression = "Le compte a bien été supprimé";
+            }
+            $conn->close();
+            $vue = 'suppr_compte';
+            break;   
+    
     case 'gererfaq':
         $vue = 'gererfaq';
         
