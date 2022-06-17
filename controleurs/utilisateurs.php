@@ -259,11 +259,54 @@ switch($function) {
     case 'lasalle':
         verification_session('admin');
         include("modele/connexionBDD.php");
+        
+        if (!empty($_POST) and $_POST['mesure'] === 'mesure') {
+            
+            $ch = curl_init();
+            curl_setopt($ch, CURLOPT_URL, "http://projets-tomcat.isep.fr:8080/appService?ACTION=GETLOG&TEAM=G5cy");
+            curl_setopt($ch, CURLOPT_HEADER, FALSE);
+            curl_setopt($ch, CURLOPT_RETURNTRANSFER, TRUE);
+            $data = curl_exec($ch);
+            curl_close($ch);
+            echo "Raw Data:<br />";
+            echo("$data");
+
+            $data_tab = str_split($data,33);
+            echo "Tabular Data:<br />";
+            for($i=0, $size=count($data_tab); $i<$size; $i++){
+                echo "Trame $i: $data_tab[$i]<br />";
+            }
+            
+            $trame = $data_tab[1];
+            // décodage avec des substring
+            $t = substr($trame,0,1);
+            $o = substr($trame,1,4);
+            // …
+            // décodage avec sscanf
+            list($t, $o, $r, $c, $n, $v, $a, $x, $year, $month, $day, $hour, $min, $sec) =
+            sscanf($trame,"%1s%4s%1s%1s%2s%4s%4s%2s%4s%2s%2s%2s%2s%2s");
+            echo("<br />$t,$o,$r,$c,$n,$v,$a,$x,$year,$month,$day,$hour,$min,$sec<br />");
+
+            global $id_Mesure;
+    
+            $sql = 'SELECT id_Mesure FROM mesures ORDER BY id_Mesure DESC LIMIT 1';
+            $result = $conn->query($sql);
+            $id_Mesure = $result->fetch_assoc()['id_Mesure'];
+            
+            $id_Mesure+=1;
+            $sql = "INSERT INTO mesures (id_Mesure, Données,id_Capteur) VALUES ($id_Mesure, '1000', '2')";
+        
+            if ($conn->query($sql) === TRUE) {
+                $message = "New record created successfully";
+            } else {
+                $message = "Error: " . $sql . "<br>" . $conn->error;
+            }
+        }
 
         $data4 = '';
         
-        $sql = "SELECT * FROM (SELECT * FROM mesures WHERE id_capteur=2 ORDER BY id_Mesure DESC LIMIT 15)Var1 ORDER BY id_Mesure ASC";
-        $result = $conn->query($sql);
+        $sql2 = "SELECT * FROM (SELECT * FROM mesures WHERE id_capteur=2 ORDER BY id_Mesure DESC LIMIT 15)Var1 ORDER BY id_Mesure ASC";
+        $result = $conn->query($sql2);
             
         while ($row = $result->fetch_array()) {
         
@@ -272,8 +315,8 @@ switch($function) {
         $data4 = trim($data4,",");
 
         $data5 = '';
-        $sql = "SELECT Données from mesures WHERE id_Mesure = (SELECT MAX(id_Mesure) FROM mesures WHERE id_Capteur=2)";
-        $data5 = $conn->query($sql)->fetch_assoc()["Données"];
+        $sql3 = "SELECT Données from mesures WHERE id_Mesure = (SELECT MAX(id_Mesure) FROM mesures WHERE id_Capteur=2)";
+        $data5 = $conn->query($sql3)->fetch_assoc()["Données"];
 
         $conn->close();
         $vue = 'lasalle'; 

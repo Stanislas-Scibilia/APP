@@ -1,4 +1,7 @@
 <div id="salle">
+<form method="post">
+    <button type="submit" name="mesure" value = "mesure">Actualiser mesure</button>
+  </form>
       <div class="profilh1">
         <p>Evolution du CO2 dans la Salle en direct</p>
     </div>
