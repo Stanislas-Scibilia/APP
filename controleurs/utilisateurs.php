@@ -263,21 +263,17 @@ switch($function) {
         if (!empty($_POST) and $_POST['mesure'] === 'mesure') {
             
             $ch = curl_init();
-            curl_setopt($ch, CURLOPT_URL, "http://projets-tomcat.isep.fr:8080/appService?ACTION=GETLOG&TEAM=G5cy");
+            curl_setopt($ch, CURLOPT_URL, "http://projets-tomcat.isep.fr:8080/appService/?ACTION=GETLOG&TEAM=G5cy");
             curl_setopt($ch, CURLOPT_HEADER, FALSE);
             curl_setopt($ch, CURLOPT_RETURNTRANSFER, TRUE);
             $data = curl_exec($ch);
             curl_close($ch);
-            echo "Raw Data:<br />";
-            echo("$data");
-
-            $data_tab = str_split($data,33);
-            echo "Tabular Data:<br />";
-            for($i=0, $size=count($data_tab); $i<$size; $i++){
-                echo "Trame $i: $data_tab[$i]<br />";
-            }
             
-            $trame = $data_tab[1];
+            $data_tab = str_split($data,33);
+            
+            $last_trame = count($data_tab)-2;
+
+            $trame = $data_tab[$last_trame];
             // décodage avec des substring
             $t = substr($trame,0,1);
             $o = substr($trame,1,4);
@@ -285,7 +281,6 @@ switch($function) {
             // décodage avec sscanf
             list($t, $o, $r, $c, $n, $v, $a, $x, $year, $month, $day, $hour, $min, $sec) =
             sscanf($trame,"%1s%4s%1s%1s%2s%4s%4s%2s%4s%2s%2s%2s%2s%2s");
-            echo("<br />$t,$o,$r,$c,$n,$v,$a,$x,$year,$month,$day,$hour,$min,$sec<br />");
 
             global $id_Mesure;
     
@@ -294,7 +289,7 @@ switch($function) {
             $id_Mesure = $result->fetch_assoc()['id_Mesure'];
             
             $id_Mesure+=1;
-            $sql = "INSERT INTO mesures (id_Mesure, Données,id_Capteur) VALUES ($id_Mesure, '1000', '2')";
+            $sql = "INSERT INTO mesures (id_Mesure, Données,id_Capteur) VALUES ($id_Mesure, '$v', '2')";
         
             if ($conn->query($sql) === TRUE) {
                 $message = "New record created successfully";
