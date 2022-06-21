@@ -282,6 +282,19 @@ switch($function) {
             list($t, $o, $r, $c, $n, $v, $a, $x, $year, $month, $day, $hour, $min, $sec) =
             sscanf($trame,"%1s%4s%1s%1s%2s%4s%4s%2s%4s%2s%2s%2s%2s%2s");
 
+            while($c != 'D') {
+                $last_trame -= 1;
+
+                $trame = $data_tab[$last_trame];
+                // décodage avec des substring
+                $t = substr($trame,0,1);
+                $o = substr($trame,1,4);
+                // …
+                // décodage avec sscanf
+                list($t, $o, $r, $c, $n, $v, $a, $x, $year, $month, $day, $hour, $min, $sec) =
+                sscanf($trame,"%1s%4s%1s%1s%2s%4s%4s%2s%4s%2s%2s%2s%2s%2s");
+            }
+
             global $id_Mesure;
     
             $sql = 'SELECT id_Mesure FROM mesures ORDER BY id_Mesure DESC LIMIT 1';
